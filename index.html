@@ -6,84 +6,192 @@
 
 <title>Athangudi Tiles Manufacturer in Tamil Nadu | YirehMex</title>
 
-<meta name="description" content="YirehMex Athangudi Tiles - Premium handmade tiles manufacturer in Tamil Nadu.">
+<meta name="description" content="YirehMex Athangudi Tiles - Handmade tiles manufacturer in Karaikudi, Tamil Nadu. Traditional designs with 60-70 year durability.">
+<meta name="keywords" content="Athangudi tiles, Karaikudi tiles, handmade tiles Tamil Nadu, traditional tiles">
 <meta name="robots" content="index, follow">
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+body { margin:0; font-family: Arial; background:#f4f4f4; }
+
+header { background:#111; color:white; padding:20px; text-align:center; }
+
+.hero {
+  background:#8B0000;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
 }
 
-/* Loading screen */
-#loader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    flex-direction: column;
+.section {
+  background:white;
+  margin:20px;
+  padding:30px;
+  border-radius:10px;
 }
 
-#loader h2 {
-    margin-top: 10px;
-    font-weight: normal;
+h2 { color:#8B0000; }
+
+.btn {
+  background:green;
+  color:white;
+  padding:12px 20px;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+  margin:10px;
 }
 
-/* iframe */
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: none;
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background:#111;
+  color:white;
+  padding:30px;
+}
+
+input, textarea, select {
+  width:100%;
+  padding:10px;
+  margin-top:10px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Loading Screen -->
-<div id="loader">
-    <h1>YirehMex</h1>
-    <h2>Loading...</h2>
+<header>
+<h1>YirehMex Athangudi Tiles</h1>
+<p>The LORD our provider</p>
+</header>
+
+<div class="hero">
+<h1>Traditional Athangudi Tile Patterns</h1>
+<p>Handcrafted Excellence from Karaikudi</p>
+<a class="btn" href="app.html">View Full Catalog</a>
+<a class="btn" href="https://wa.me/919080581547">WhatsApp</a>
 </div>
 
-<!-- Your App / Website -->
-<iframe 
-    id="contentFrame"
-    src="https://app.emergent.sh/loading-preview?host=showcase-me-32.preview.emergentagent.com"
-    allowfullscreen>
-</iframe>
+<div class="section">
+<h2>Our Story</h2>
+<p>
+Founded by the Durai brothers in 2023, YirehMex brings the ancient art of Athangudi tile-making to the modern world.
+Our name, YIREH, comes from Genesis 22:14 and means "The LORD our provider".
+</p>
+
+<p>
+Our factory stands proudly on Athangudi Road in Chockalingampudur, Karaikudi, Tamil Nadu - the birthplace of this centuries-old craft.
+</p>
+
+<p><strong>"We preserve traditional craftsmanship while serving customers worldwide with tiles that last 60-70 years."</strong></p>
+</div>
+
+<div class="section">
+<h2>Why Choose YirehMex?</h2>
+<div class="grid">
+<div class="card">100% Eco-Friendly</div>
+<div class="card">60-70 Year Lifespan</div>
+<div class="card">100% Handcrafted</div>
+<div class="card">Natural Curing</div>
+<div class="card">Re-polishable</div>
+<div class="card">Medic Nature</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Our Collection</h2>
+<div class="grid">
+<div class="card"><b>Traditional</b><br>Classic Geometric (YAT-001-A)</div>
+<div class="card"><b>Floral Elegance</b><br>YAT-002-B</div>
+<div class="card"><b>Heritage Blue</b><br>YAT-003-C</div>
+<div class="card"><b>Mosaic Blend</b><br>YAT-004-D</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Our Crafting Process</h2>
+<div class="grid">
+<div class="card">Step 1: Blending</div>
+<div class="card">Step 2: Molding</div>
+<div class="card">Step 3: Pressing</div>
+<div class="card">Step 4: Curing</div>
+<div class="card">Step 5: Finishing</div>
+<div class="card">Step 6: Quality Check</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Request a Quote</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="email" id="email" placeholder="Email">
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<select id="type">
+<option>Select Tile Type</option>
+<option>Traditional</option>
+<option>Modern</option>
+<option>Plain</option>
+</select>
+
+<select id="size">
+<option>Select Tile Size</option>
+<option>8x8</option>
+<option>10x10</option>
+<option>Custom</option>
+</select>
+
+<input type="text" id="qty" placeholder="Quantity (sq ft or tiles)">
+<textarea id="message" placeholder="Custom Design Details"></textarea>
+
+<button class="btn">Submit Quote Request</button>
+</form>
+
+</div>
+
+<footer>
+
+<h3>YirehMex</h3>
+<p>Handcrafted Athangudi tiles made with heritage techniques.</p>
+
+<p><b>Contact</b><br>
++91-9080581547<br>
+yirehmex@gmail.com<br>
+www.athanguditiles.run.place
+</p>
+
+<p>
+433, Mahalaksmi Nagar, Athangudi Road,<br>
+Chockalingampudur, Karaikudi Taluk,<br>
+Tamil Nadu - 630101
+</p>
+
+</footer>
 
 <script>
-const iframe = document.getElementById('contentFrame');
-const loader = document.getElementById('loader');
+function sendToWhatsApp() {
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let msg = document.getElementById("message").value;
 
-/* Show site after load */
-iframe.onload = function() {
-    loader.style.display = "none";
-    iframe.style.display = "block";
-};
+  let url = "https://wa.me/919080581547?text="
+    + "Name: " + name + "%0a"
+    + "Phone: " + phone + "%0a"
+    + "Requirement: " + msg;
 
-/* Communication handling */
-window.addEventListener('message', function(event) {
-
-    if (event.data && event.data.type === 'reload') {
-        window.location.reload();
-    }
-
-    if (event.data && event.data.type === 'url') {
-        window.open(event.data.url, '_blank');
-    }
-
-});
+  window.open(url, '_blank');
+}
 </script>
 
 </body>
