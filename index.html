@@ -175,6 +175,18 @@ footer {
   padding:30px;
   text-align:center;
 }
+ #waForm {
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+#waForm input,
+#waForm select,
+#waForm textarea {
+  margin-top:10px;
+}
 </style>
 </head>
 
@@ -463,7 +475,30 @@ function sendToWhatsApp() {
 
   window.open(url, '_blank');
 }
-</script>
 
+<script>
+function sendWhatsApp() {
+
+let name = document.getElementById("wa_name").value;
+let phone = document.getElementById("wa_phone").value;
+let tile = document.getElementById("wa_tile").value;
+let size = document.getElementById("wa_size").value;
+let qty = document.getElementById("wa_qty").value;
+let msg = document.getElementById("wa_msg").value;
+
+let text = "Hello YirehMex,%0a%0a"
++ "Name: " + name + "%0a"
++ "Phone: " + phone + "%0a"
++ "Tile Type: " + tile + "%0a"
++ "Size: " + size + "%0a"
++ "Quantity: " + qty + "%0a"
++ "Details: " + msg + "%0a%0a"
++ "Looking for Athangudi tiles.";
+
+let url = "https://wa.me/919080581547?text=" + text;
+
+window.open(url, '_blank');
+}
+</script>
 </body>
 </html>
