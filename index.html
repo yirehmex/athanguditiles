@@ -174,22 +174,22 @@ while delivering premium tiles that last 60+ years.
 <div class="grid">
 
 <div class="card" onclick="sendTile('Classic Tile')">
-<img src="images/tile1.jpg">
+<img src="images/yirehmex athangudi tile1.jpg">
 <h3>Classic Design</h3>
 </div>
 
 <div class="card" onclick="sendTile('Floral Tile')">
-<img src="images/tile2.jpg">
+<img src="images/yirehmex athangudi tile2.jpg">
 <h3>Floral Elegance</h3>
 </div>
 
 <div class="card" onclick="sendTile('Geometric Tile')">
-<img src="images/tile3.jpg">
+<img src="images/yirehmex athangudi tile3.jpg">
 <h3>Geometric Style</h3>
 </div>
 
 <div class="card" onclick="sendTile('Modern Tile')">
-<img src="images/tile4.jpg">
+<img src="images/yirehmex athangudi tile4.jpg">
 <h3>Modern Pattern</h3>
 </div>
 
@@ -211,7 +211,58 @@ while delivering premium tiles that last 60+ years.
 </div>
 
 </div>
+<!-- PRODUCT CATALOG -->
+<div class="section">
+<h2>Our Products</h2>
 
+<div class="products">
+
+<div class="card">
+<img src="images/yirehmex athangudi tile plain.jpg">
+<h3>Plain Tile - ₹57</h3>
+<a class="btn" onclick="selectTile('Plain Tile ₹57')">Select</a>
+</div>
+
+<div class="card">
+<img src="images/yirehmex athangudi tile double.jpg">
+<h3>2 Color Tile - ₹62</h3>
+<a class="btn" onclick="selectTile('2 Color ₹62')">Select</a>
+</div>
+
+<div class="card">
+<img src="images/yirehmex athangudi tile multi.jpg">
+<h3>Multi Color - ₹67</h3>
+<a class="btn" onclick="selectTile('Multi Color ₹67')">Select</a>
+
+<div class="card">
+<img src="images/yirehmex athangudi tile borde.jpg">
+<h3>Border/Skirting - ₹32</h3>
+<a class="btn" onclick="selectTile('Border/Skirting ₹32')">Select</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- ORDER SYSTEM -->
+<div class="section" id="order">
+<h2>Place Your Order</h2>
+
+<form onsubmit="orderNow(); return false;">
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="text" id="tile" placeholder="Selected Tile">
+
+<input type="text" id="qty" placeholder="Quantity (sq ft)">
+<textarea id="msg" placeholder="Additional details"></textarea>
+
+<button class="btn">Submit Order</button>
+
+</form>
+
+</div>
 <!-- REVIEWS -->
 <div class="section fade">
 <h2>Customer Reviews</h2>
