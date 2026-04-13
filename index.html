@@ -1,536 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="geo.placename" content="Athangudi, Tamil Nadu">
-<meta name="geo.region" content="IN-TN">
-<meta name="geo.position" content="10.07;78.78">
 
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "YirehMex Athangudi Tiles",
- "image": "https://www.athanguditiles.run.place/images/logo.png",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "433, Mahalakshmi Nagar, Athangudi Road",
-   "addressLocality": "Karaikudi",
-   "addressRegion": "Tamil Nadu",
-   "postalCode": "630101",
-   "addressCountry": "India"
- },
- "telephone": "+919080581547"
-}
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Athangudi Tiles Manufacturer in Tamil Nadu | YirehMex</title>
 
-<meta name="description" content="YirehMex Athangudi Tiles - Handmade tiles manufacturer in Athangudi, Tamil Nadu. Traditional designs with 60-70 year durability.">
-<meta name="keywords" content="Athangudi tiles, Karaikudi tiles, handmade tiles Tamil Nadu, traditional tiles">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Luxury Athangudi tiles from YirehMex. Handmade, eco-friendly, 60+ years durability.">
 
 <style>
- .pricing h2 {
-  text-align:center;
-  font-size:28px;
-}
 
-.subtitle {
-  text-align:center;
-  color:#777;
-  margin-bottom:30px;
-}
-
-.price-box {
+/* GLOBAL */
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background:#fff;
-  padding:25px;
-  border-radius:12px;
-  margin-bottom:20px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  color:#111;
 }
-
-.price {
-  font-size:22px;
-  font-weight:bold;
-  color:#8B0000;
-}
-
-.highlight {
-  border:2px solid #8B0000;
-}
-
-.list {
-  padding-left:20px;
-}
-
-.catalog-box {
-  text-align:center;
-}
-
-.small-card {
-  padding:15px;
-}
-
-.small-btn {
-  display:inline-block;
-  padding:6px 14px;
-  background:#8B0000;
-  color:#fff;
-  border-radius:20px;
-  font-size:12px;
-  text-decoration:none;
-  margin-top:10px;
-}
-
-.contact-box {
-  text-align:center;
-  background:#111;
-  color:#fff;
-  padding:25px;
-  border-radius:12px;
-}
-body { margin:0; font-family: Arial; background:#f4f4f4; }
 
 /* HEADER */
 header {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-header img.logo {
-  height:80px;
-}
-.header-banner {
+  position:fixed;
+  top:0;
   width:100%;
-  height:420px;   /* BIGGER */
-  object-fit:cover;
-  display:block;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  padding:10px;
+  text-align:center;
+  z-index:1000;
+}
+header img {
+  height:50px;
 }
 
-/* HERO */
+/* HERO (APPLE STYLE) */
 .hero {
-  background:#8B0000;
-  color:white;
-  padding:60px 20px;
+  height:100vh;
+  background:url('images/header.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  color:#fff;
   text-align:center;
+}
+.hero h1 {
+  font-size:48px;
+  margin:0;
+}
+.hero p {
+  font-size:18px;
+  margin:10px 0;
+}
+.hero .btn {
+  background:#25D366;
+  padding:12px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#fff;
 }
 
 /* SECTION */
 .section {
-  background:white;
-  margin:20px;
-  padding:30px;
-  border-radius:10px;
+  padding:80px 20px;
+  text-align:center;
 }
 
-h2 { color:#8B0000; }
-
-/* BUTTON */
-.btn {
-  background:green;
-  color:white;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:5px;
-  display:inline-block;
-  margin-top:10px;
-  font-size:14px;
+/* ANIMATION */
+.fade {
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+.fade.show {
+  opacity:1;
+  transform:translateY(0);
 }
 
 /* GRID */
 .grid {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap:20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:30px;
+  margin-top:30px;
 }
 
 /* CARD */
 .card {
-  background:#fff;
-  padding:18px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.4s;
 }
-
-/* SMALL CATALOG STYLE */
-.catalog .card {
-  padding:15px;
-  text-align:center;
+.card:hover {
+  transform:scale(1.05);
 }
-
-/* FORM */
-input, textarea, select {
+.card img {
   width:100%;
-  padding:10px;
+  height:250px;
+  object-fit:cover;
+}
+.card h3 {
+  padding:15px;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
   margin-top:10px;
+  padding:10px 20px;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  border-radius:20px;
+}
+
+/* REVIEWS */
+.review {
+  font-style:italic;
+}
+
+/* FLOAT WHATSAPP */
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
 }
 
 /* FOOTER */
 footer {
-  background:#111;
-  color:white;
-  padding:30px;
+  background:#000;
+  color:#fff;
   text-align:center;
+  padding:40px;
 }
- #waForm {
-  background:#fff;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
-}
-<div class="section">
 
-<h2>🧾 Quick Enquiry</h2>
-
-<form id="waForm">
-
-<input type="text" id="wa_name" placeholder="Full Name" required>
-<input type="tel" id="wa_phone" placeholder="Phone Number" required>
-
-<select id="wa_tile">
-<option value="">Select Tile Type</option>
-<option>Plain Colored - ₹57</option>
-<option>Two Colors - ₹62</option>
-<option>Multi Color - ₹67</option>
-<option>Border Tile - ₹32</option>
-</select>
-
-<select id="wa_size">
-<option value="">Select Tile Size</option>
-<option>10x10</option>
-<option>10x5 (Border)</option>
-</select>
-
-<input type="text" id="wa_qty" placeholder="Quantity (sq ft or tiles)">
-
-<textarea id="wa_msg" placeholder="Custom Design / Notes"></textarea>
-
-<button type="button" class="btn" onclick="sendWhatsApp()">Send Enquiry on WhatsApp</button>
-
-</form>
-
-</div>
-#waForm input,
-#waForm select,
-#waForm textarea {
-  margin-top:10px;
-}
- 
 </style>
 </head>
 
 <body>
 
 <header>
-<img src="images/logo.png" class="logo">
-<h1>YirehMex Athangudi Tiles</h1>
+<img src="images/logo.png">
 </header>
 
-<img src="images/header.jpg" class="header-banner">
-
+<!-- HERO -->
 <div class="hero">
-<h1>Traditional Athangudi Tile Patterns</h1>
-<p>Handcrafted Excellence from Athangudi</p>
-<a class="btn" href="https://wa.me/919080581547">WhatsApp</a>
-</div>
-
-<!-- SMALL CATALOG -->
-<div class="section catalog">
-<h2>View Full Catalog</h2>
-<p>Browse our complete Athangudi tile designs and collections.</p>
-
-<div class="grid">
-
-<div class="card">
-<h4>Traditional & Classic</h4>
-<a class="btn" href="https://www.athanguditile.in/portfolio-collections/my-portfolio/my-project" target="_blank">View</a>
-</div>
-
-<div class="card">
-<h4>YirehMex Exclusive</h4>
-<a class="btn" href="https://www.athanguditile.in/portfolio-collections/my-portfolio/yirehmex-athangudi-traditional-tiles-design-2" target="_blank">View</a>
-</div>
-
-</div>
+<h1>Athangudi Tiles</h1>
+<p>Luxury Handmade Tiles from Athangudi</p>
+<a class="btn" href="https://wa.me/919080581547">Order Now</a>
 </div>
 
 <!-- STORY -->
-<div class="section">
+<div class="section fade">
 <h2>Our Story</h2>
-
 <p>
-Founded by the Durai brothers in 2023, YirehMex brings the ancient art of Athangudi tile-making to the modern world. 
-Our name, YIREH, comes from Genesis 22:14 and means "The LORD our provider".
+Founded by Durai brothers, YirehMex preserves traditional Athangudi craftsmanship 
+while delivering premium tiles that last 60+ years.
 </p>
+</div>
 
-<p>
-Our factory stands proudly on Athangudi Main Road in Chockalingampudur, Karaikudi, Tamil Nadu.
-</p>
+<!-- SHOWROOM -->
+<div class="section fade">
+<h2>Tile Showroom</h2>
 
-<p><b>"We preserve traditional craftsmanship while serving customers worldwide with tiles that last 60-70 years."</b></p>
+<div class="grid">
+
+<div class="card" onclick="sendTile('Classic Tile')">
+<img src="images/tile1.jpg">
+<h3>Classic Design</h3>
+</div>
+
+<div class="card" onclick="sendTile('Floral Tile')">
+<img src="images/tile2.jpg">
+<h3>Floral Elegance</h3>
+</div>
+
+<div class="card" onclick="sendTile('Geometric Tile')">
+<img src="images/tile3.jpg">
+<h3>Geometric Style</h3>
+</div>
+
+<div class="card" onclick="sendTile('Modern Tile')">
+<img src="images/tile4.jpg">
+<h3>Modern Pattern</h3>
+</div>
 
 </div>
 
-<!-- WHY CHOOSE -->
-<div class="section">
+<p>Tap any design → instant enquiry 💬</p>
+
+</div>
+
+<!-- WHY -->
+<div class="section fade">
 <h2>Why Choose YirehMex?</h2>
 
-<p>Our tiles combine heritage craftsmanship with modern sustainability and unmatched durability</p>
-
 <div class="grid">
-
-<div class="card"><b>100% Eco-Friendly</b><br>No kiln firing, made with sustainable materials</div>
-
-<div class="card"><b>60-70 Year Lifespan</b><br>Exceptional durability with proper maintenance</div>
-
-<div class="card"><b>100% Handcrafted</b><br>Each tile is individually made by skilled artisans</div>
-
-<div class="card"><b>Natural Curing</b><br>Water-cured for optimal strength and longevity</div>
-
-<div class="card"><b>Re-polishable</b><br>Can be re-polished multiple times over its lifetime</div>
-
-<div class="card"><b>Medic Nature</b><br>Balances weather and helps prevent leg pain</div>
+<div>Eco-Friendly</div>
+<div>60+ Years Life</div>
+<div>Handcrafted</div>
+<div>Natural Cooling</div>
+</div>
 
 </div>
-</div>
-<div class="section">
+
+<!-- REVIEWS -->
+<div class="section fade">
 <h2>Customer Reviews</h2>
 
-<div class="grid">
-
-<div class="card">
-⭐⭐⭐⭐⭐<br>
-"Excellent quality Athangudi tiles. Very durable and beautiful designs."
-</div>
-
-<div class="card">
-⭐⭐⭐⭐⭐<br>
-"Best manufacturer in Athangudi. Highly recommended!"
-</div>
-
-<div class="card">
-⭐⭐⭐⭐⭐<br>
-"Traditional tiles with modern quality. Worth every rupee."
-</div>
-
-</div>
+<p class="review">⭐⭐⭐⭐⭐ “Best Athangudi tiles manufacturer!”</p>
+<p class="review">⭐⭐⭐⭐⭐ “Beautiful designs and strong tiles.”</p>
+<p class="review">⭐⭐⭐⭐⭐ “Highly recommended in Athangudi.”</p>
 
 <a class="btn" href="https://www.google.com/search?q=YirehMex+Athangudi+Tiles" target="_blank">
 View on Google
 </a>
 
 </div>
-<!-- PROCESS -->
-<div class="section">
-<h2>Our Crafting Process</h2>
 
-<p>Each tile is a masterpiece, handcrafted through a time-honored 6-step process</p>
-
-<div class="grid">
-
-<div class="card"><b>STEP 1 – Blending</b><br>High-quality cement, Athangudi sand, and natural pigments are blended.</div>
-
-<div class="card"><b>STEP 2 – Molding</b><br>Poured into brass molds on glass with design precision.</div>
-
-<div class="card"><b>STEP 3 – Pressing</b><br>Manual press creates strong compact structure.</div>
-
-<div class="card"><b>STEP 4 – Curing</b><br>Water curing + air drying ensures durability.</div>
-
-<div class="card"><b>STEP 5 – Finishing</b><br>Surface removed and edges grinded perfectly.</div>
-
-<div class="card"><b>STEP 6 – Quality Check</b><br>Each tile inspected to meet standards.</div>
-
-</div>
-</div>
-
-<!-- ENQUIRY -->
- <div class="section pricing">
-
-<h2>🏠 Welcome to YirehMex Athangudi Tiles</h2>
-<p class="subtitle">Authentic • Eco-Friendly • Handcrafted Beauty</p>
-
-<div class="price-box">
-
-<h3>📐 FLOOR TILES (10" x 10") - 18mm Thickness</h3>
-<p>Choose from our range of stunning designs:</p>
-
-<div class="grid">
-
-<div class="card highlight">
-<h4>♦️ Plain Colored</h4>
-<p class="price">₹57 / sq.ft</p>
-<p>Perfect for a clean, elegant look.</p>
-</div>
-
-<div class="card highlight">
-<h4>♦️♦️ Two Colors</h4>
-<p class="price">₹62 / sq.ft</p>
-<p>Adds a touch of traditional charm.</p>
-</div>
-
-<div class="card highlight">
-<h4>♦️♦️♦️ Multi Color</h4>
-<p class="price">₹67 / sq.ft</p>
-<p>Intricate and vibrant patterns.</p>
-</div>
-
-</div>
-
-<h3 style="margin-top:30px;">🟫 BORDER / SKIRTING TILES (10" x 5")</h3>
-<p class="price">₹32 per piece</p>
-<p>Perfectly complements floor tiles.</p>
-
-</div>
-
-<div class="price-box">
-
-<h3>💰 Additional Costs</h3>
-
-<ul class="list">
-<li><b>Installation:</b> ₹22 / sq.ft (Food, stay & travel extra)</li>
-<li><b>Transportation:</b> Based on location & quantity</li>
-<li><b>GST / IGST:</b> Applicable</li>
-</ul>
-
-<h3>📄 Payment Terms</h3>
-
-<ul class="list">
-<li>40% Advance (Order Confirmation)</li>
-<li>40% Before Delivery</li>
-<li>20% During Loading</li>
-</ul>
-
-</div>
-
-<div class="price-box">
-
-<h3>🎨 Customization Available</h3>
-<p>
-We create custom colors & designs to match your vision.  
-(Stencil charges applicable for custom tiles)
-</p>
-
-</div>
-
-<div class="catalog-box">
-
-<h3>📖 Browse Our Catalog</h3>
-
-<div class="grid">
-
-<div class="card small-card">
-<h4>🎞️ Traditional & Classic</h4>
-<a href="https://www.athanguditile.in/portfolio-collections/my-portfolio/my-project" target="_blank" class="small-btn">
-View
-</a>
-</div>
-
-<div class="card small-card">
-<h4>🎞️ Yirehmex Exclusive</h4>
-<a href="https://www.athanguditile.in/portfolio-collections/my-portfolio/yirehmex-athangudi-traditional-tiles-design-2" target="_blank" class="small-btn">
-View
-</a>
-</div>
-
-</div>
-
-</div>
-
-<div class="contact-box">
-
-<h3>📞 Contact Us</h3>
-<p><b>Mr. Durai</b></p>
-<p>📞 9080581547</p>
-<p>📧 yirehmex@gmail.com</p>
-
-<a href="https://wa.me/919080581547" class="btn">Chat on WhatsApp</a>
-
-</div>
-
-</div>
-<div class="section">
-<h2>Request a Quote</h2>
-
-<form onsubmit="sendToWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Full Name" required>
-<input type="tel" id="phone" placeholder="Phone Number" required>
-
-<textarea id="message" placeholder="Your Requirement"></textarea>
-
-<button class="btn">Send Enquiry</button>
-</form>
-
-</div>
-
-<footer>
-<div class="section">
-<h2>Our Location</h2>
-
-<p><b>YirehMex Athangudi Tiles - Manufacturer in Karaikudi</b></p>
+<!-- MAP -->
+<div class="section fade">
+<h2>Visit Our Factory</h2>
 
 <iframe 
-src="https://www.google.com/maps?q=Athangudi,Karaikudi,Tamil Nadu&output=embed"
+src="https://www.google.com/maps?q=Athangudi,Tamil Nadu&output=embed"
 width="100%" height="350" style="border:0;">
 </iframe>
 
 </div>
-<h3>YirehMex</h3>
-<p>The LORD our provider</p>
 
-<p>
-+91-9080581547<br>
-yirehmex@gmail.com<br>
-https://www.athanguditiles.run.place
-</p>
+<footer>
 
-<p>
-433, Mahalakshmi Nagar, Athangudi Road,<br>
-Chockalingampudur, Karaikudi,<br>
-Tamil Nadu - 630101
-</p>
+<h3>YirehMex Athangudi Tiles</h3>
+<p>📞 9080581547</p>
+<p>📧 yirehmex@gmail.com</p>
+<p>Athangudi, Tamil Nadu</p>
 
 </footer>
 
-<script>
-function sendToWhatsApp() {
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let msg = document.getElementById("message").value;
-
-  let url = "https://wa.me/919080581547?text="
-    + "Name: " + name + "%0a"
-    + "Phone: " + phone + "%0a"
-    + "Requirement: " + msg;
-
-  window.open(url, '_blank');
-}
+<a class="float" href="https://wa.me/919080581547">💬</a>
 
 <script>
-function sendWhatsApp() {
 
-let name = document.getElementById("wa_name").value;
-let phone = document.getElementById("wa_phone").value;
-let tile = document.getElementById("wa_tile").value;
-let size = document.getElementById("wa_size").value;
-let qty = document.getElementById("wa_qty").value;
-let msg = document.getElementById("wa_msg").value;
+/* SCROLL ANIMATION */
+const elements = document.querySelectorAll('.fade');
 
-let text = "Hello YirehMex,%0a%0a"
-+ "Name: " + name + "%0a"
-+ "Phone: " + phone + "%0a"
-+ "Tile Type: " + tile + "%0a"
-+ "Size: " + size + "%0a"
-+ "Quantity: " + qty + "%0a"
-+ "Details: " + msg + "%0a%0a"
-+ "Looking for Athangudi tiles.";
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if(pos < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
 
-let url = "https://wa.me/919080581547?text=" + text;
+/* TILE CLICK AUTO WHATSAPP */
+function sendTile(tile){
+  let url="https://wa.me/919080581547?text="
+  +"Hello, I want "+tile+" from YirehMex";
 
-window.open(url, '_blank');
+  window.open(url);
 }
+
 </script>
+
 </body>
 </html>
