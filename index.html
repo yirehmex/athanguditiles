@@ -33,7 +33,23 @@ header {
 header img {
   height:60px;
 }
+header {
+  position:relative;   /* or keep fixed if you want sticky */
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:30px 20px;
+}
 
+header p {
+  margin-top:10px;
+  color:#ccc;
+}
+
+/* GAP CONTROL */
+.hero {
+  margin-top:20px;   /* THIS creates proper gap */
+}
 /* HERO (APPLE STYLE) */
 .hero {
   height:60vh;
@@ -148,17 +164,14 @@ footer {
 <body>
 
 <header>
-<img src="images/logo.png">
+  <img src="images/logo.png">
   <h1>Yirehmex Athangudi Tiles</h1>
-<p>Luxury Handmade Tiles from Athangudi in Yirehmex</p>
+  <p>Luxury Handmade Tiles from Athangudi in Yirehmex</p>
 </header>
-<p>  
-</div>
-  
+
 <!-- HERO -->
 <div class="hero">
-<a class="btn" href="https://wa.me/919080581547">Order Now</a>
-<p>
+  <a class="btn" href="https://wa.me/919080581547">Order Now</a>
 </div>
 <!-- STORY -->
 <div class="section fade">
