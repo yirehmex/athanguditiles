@@ -150,6 +150,69 @@ header p {
   text-decoration:none;
 }
 
+/* 4 COLUMN GRID */
+.products {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .products { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:500px){
+  .products { grid-template-columns: 1fr; }
+}
+
+/* CARD */
+.card {
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.card:hover {
+  transform:translateY(-5px);
+}
+.card img {
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+/* CENTER FORM */
+form {
+  max-width:500px;
+  margin:40px auto;
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  text-align:left;
+}
+
+/* INPUTS */
+input, textarea {
+  width:100%;
+  padding:12px;
+  margin-top:12px;
+  border-radius:6px;
+  border:1px solid #ddd;
+}
+
+/* BUTTON */
+.btn {
+  display:block;
+  text-align:center;
+  background:#25D366;
+  color:#fff;
+  padding:12px;
+  margin:15px auto;
+  border-radius:25px;
+  cursor:pointer;
+}
 /* FOOTER */
 footer {
   background:#000;
