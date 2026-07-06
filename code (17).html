@@ -1,11 +1,12 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Heritage Tile Dossier | The Azure Coastal Villa</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind Configuration -->
 <script id="tailwind-config">
         tailwind.config = {
@@ -123,6 +124,12 @@
             overflow: hidden;
         }
 
+        .cover-page {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
         .watermark {
             position: absolute;
             bottom: 40px;
@@ -130,7 +137,7 @@
             opacity: 0.3;
             transform: rotate(-15deg);
             pointer-events: none;
-            z-index: 0;
+            z-index: 10;
         }
 
         .page-number {
@@ -139,11 +146,12 @@
             left: 50%;
             transform: translateX(-50%);
             font-family: 'Manrope', sans-serif;
+            z-index: 10;
         }
 
         .crimson-line {
-            height: 4px;
-            width: 80px;
+            height: 2px;
+            width: 120px;
             background-color: #B22222;
         }
 
@@ -153,12 +161,15 @@
                 margin: 0;
                 box-shadow: none;
             }
+            .cover-page {
+                padding: 0;
+            }
         }
     </style>
 </head>
 <body class="bg-surface-cream">
 <!-- TopNavBar -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant h-20 flex items-center print:hidden">
+<header class="fixed top-0 left-0 right-0 z-[60] bg-surface border-b border-outline-variant h-20 flex items-center print:hidden">
 <div class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto">
 <div class="font-headline-md text-headline-md text-heritage-crimson">Heritage Tile Dossier</div>
 <nav class="hidden md:flex gap-8 items-center h-full">
@@ -177,34 +188,63 @@
 </div>
 </header>
 <main class="pt-24 pb-20">
-<!-- SECTION 1: COVER PAGE -->
-<section class="pdf-page flex flex-col justify-center items-center text-center" id="cover">
-<div class="mb-12">
-<p class="font-label-sm text-label-sm uppercase tracking-widest text-architectural-blue mb-4">Confidential Architectural Division</p>
-<h1 class="font-display-lg text-display-lg text-architectural-blue mb-2">Project Dossier</h1>
-<h2 class="font-headline-lg text-headline-lg text-heritage-crimson">The Azure Coastal Villa</h2>
-<div class="crimson-line mx-auto mt-6"></div>
+<!-- SECTION 1: REFINED COVER PAGE -->
+<section class="pdf-page cover-page" id="cover">
+<div class="flex-grow flex flex-col">
+<!-- Cover Header Branding -->
+<div class="px-16 pt-20 pb-12 flex justify-between items-end border-b border-outline-variant/30">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 flex items-center justify-center border-2 border-architectural-blue rounded-full">
+<span class="material-symbols-outlined text-architectural-blue">architecture</span>
 </div>
-<div class="w-full h-[600px] relative mb-12 overflow-hidden rounded-lg">
-<img class="w-full h-full object-cover" data-alt="A sprawling coastal villa interior showcasing a masterpiece installation of custom Cerulean blue Athangudi tiles. The tiles feature intricate geometric patterns and are reflecting soft, warm sunlight streaming through large glass doors. The setting is luxurious, modern, and highlights the architectural precision and artisanal warmth of the floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNfetfLqx7kR1G8zh_sPHUwpX5w85oeozs5h92_FkKRpF-y1ENfKRH7NvjHqyH9XVH6rmjgekZ8bHsoFqCwVg_4un6l90rT7VnNsl6iHSfF97OGLgWRkB73dWvP2HNe454KTGC_wsESxyvq2irn66IUpb4Twd4CcbWJ94I4GrplxlJiglPft2x7WshhcnYq_e-WXRaCJ9_Jb9GGRcRsHCkwRFM_0ZB3Vb6QrNfyX7x4E1AmP3eDgYCTSI2OAXLzWxSuBUoCc7RfnE">
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-<div class="absolute bottom-8 left-8 text-white text-left">
-<p class="font-label-sm text-label-sm opacity-80">Phase: Final Installation</p>
-<p class="font-body-lg text-body-lg font-bold">Site: Amalfi Cliffs, Site #YM-2024-8842</p>
+<div class="text-architectural-blue">
+<p class="font-label-sm text-[10px] uppercase tracking-[0.2em] leading-none mb-1">Athangudi Artisanal</p>
+<p class="font-headline-md text-lg leading-none">YirehMex</p>
 </div>
 </div>
-<div class="grid grid-cols-2 gap-12 text-left w-full max-w-2xl">
+<div class="text-right">
+<p class="font-label-sm text-on-surface-variant/60 uppercase tracking-widest text-[10px]">Document Reference</p>
+<p class="font-body-md font-bold text-architectural-blue">VER. 2024.08.A</p>
+</div>
+</div>
+<!-- Title Section -->
+<div class="px-16 py-16">
+<p class="font-label-sm text-label-sm uppercase tracking-[0.4em] text-on-surface-variant/80 mb-6">Confidential Architectural Division</p>
+<h1 class="font-display-lg text-[72px] text-architectural-blue mb-4 leading-tight">Project Dossier</h1>
+<h2 class="font-headline-lg text-[48px] text-heritage-crimson italic">The Azure Coastal Villa</h2>
+<div class="crimson-line mt-10"></div>
+</div>
+<!-- Hero Image - Full Width Bleed Style -->
+<div class="w-full h-[640px] relative overflow-hidden">
+<img alt="Architectural wide shot of the Coastal Villa installation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNfetfLqx7kR1G8zh_sPHUwpX5w85oeozs5h92_FkKRpF-y1ENfKRH7NvjHqyH9XVH6rmjgekZ8bHsoFqCwVg_4un6l90rT7VnNsl6iHSfF97OGLgWRkB73dWvP2HNe454KTGC_wsESxyvq2irn66IUpb4Twd4CcbWJ94I4GrplxlJiglPft2x7WshhcnYq_e-WXRaCJ9_Jb9GGRcRsHCkwRFM_0ZB3Vb6QrNfyX7x4E1AmP3eDgYCTSI2OAXLzWxSuBUoCc7RfnE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-architectural-blue/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-16 text-white max-w-xl">
+<p class="font-label-sm text-xs uppercase tracking-widest opacity-80 mb-2">Phase: Completion &amp; Handover</p>
+<h3 class="font-headline-md text-3xl mb-4">Masterpiece Installation: Amalfi Cliffs</h3>
+<p class="font-body-md opacity-90 leading-relaxed">A specialized study on custom Cerulean blue Athangudi tiles and their structural integration within Mediterranean coastal environments.</p>
+</div>
+</div>
+<!-- Cover Footer Details -->
+<div class="px-16 py-12 grid grid-cols-3 gap-12 mt-auto bg-surface-cream/50">
 <div>
-<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-2">Lead Architect</h4>
-<p class="font-body-md text-body-md font-bold">YirehMex Architectural Division</p>
+<h4 class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest mb-3">Prepared For</h4>
+<p class="font-body-md text-body-md font-bold text-architectural-blue">Sartori &amp; Associati</p>
+<p class="font-label-sm text-on-surface-variant">Principal Interior Architects</p>
 </div>
 <div>
-<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-2">Project ID</h4>
-<p class="font-body-md text-body-md font-bold">#YM-2024-8842</p>
+<h4 class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest mb-3">Lead Architect</h4>
+<p class="font-body-md text-body-md font-bold text-architectural-blue">YirehMex Architectural Division</p>
+<p class="font-label-sm text-on-surface-variant">Artisanal Ceramics Specialist</p>
+</div>
+<div>
+<h4 class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest mb-3">Project ID</h4>
+<p class="font-body-md text-body-md font-bold text-architectural-blue">#YM-2024-8842</p>
+<p class="font-label-sm text-on-surface-variant">Issued: August 14, 2024</p>
+</div>
 </div>
 </div>
 <div class="page-number font-label-sm text-on-surface-variant">Page 01</div>
-<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
+<div class="watermark font-headline-md text-outline-variant/20 select-none text-5xl tracking-[0.2em] font-bold">YIREHMEX DOSSIER</div>
 </section>
 <!-- SECTION 2: EXECUTIVE SUMMARY & STUDIO LOGS -->
 <section class="pdf-page" id="studio">
@@ -227,7 +267,7 @@
 <div class="flex gap-12 items-start">
 <div class="w-1/3">
 <div class="aspect-square bg-surface-cream rounded overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Close up shot of a master artisan's hands meticulously mixing cerulean blue mineral pigments in a traditional ceramic bowl. The scene is set in an airy studio with multiple shades of blue powders on a wooden workbench, illustrating the precise 'Cerulean Blue Gradient' calibration mentioned in the dossier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEfJk9vw54pPd6FkLv8nQPMnn9N5cByAECDTRjjGA3NOUGQHko0FbWC_0i6DOav_LtvEluwyaRwQeUBpEoLyb45hR7rn6bR8R4VsQZ4a5Nvq7x8Os6FBSurxxrQ7W-PC0PmFDyAuOYM2Ft3F1e-30xb6STeFJnxcvpN1ZgtTQrnZZXVZW_F7l9uRBWHA0kXOwBfVnqVikJle0WJSQotVr_K9nuIO-JjdV1oUo2cjCGCyiGkn9wlR_PsjVXs-WnlWop_bRtaGjcp7g">
+<img alt="Artisan mixing pigment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEfJk9vw54pPd6FkLv8nQPMnn9N5cByAECDTRjjGA3NOUGQHko0FbWC_0i6DOav_LtvEluwyaRwQeUBpEoLyb45hR7rn6bR8R4VsQZ4a5Nvq7x8Os6FBSurxxrQ7W-PC0PmFDyAuOYM2Ft3F1e-30xb6STeFJnxcvpN1ZgtTQrnZZXVZW_F7l9uRBWHA0kXOwBfVnqVikJle0WJSQotVr_K9nuIO-JjdV1oUo2cjCGCyiGkn9wlR_PsjVXs-WnlWop_bRtaGjcp7g"/>
 </div>
 </div>
 <div class="w-2/3">
@@ -245,7 +285,7 @@
 <div class="flex gap-12 items-start">
 <div class="w-1/3">
 <div class="aspect-square bg-surface-cream rounded overflow-hidden">
-<img alt="Curing process" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuYxLWJYDExj2StQksqQuRPjC4nyZm7DLU1QBxAbJejuQud65_rxqgOxs4iMop3-7izwDaVLmCc-l7_2pMNDQlMgLfhmYu3oNZzB9bEs6u97bVVFU7ux30lV2KVVwJzVnJN7Yje30cHMkA78S3BvAAyRof1FqLOVkfjDYHne5B8eDj2EOmXZvaeUIL5loWv2MalWc4G84pmlijEPuwjZ0-DtxZm2sK7zyBR_1QWNSZwXMM9cApjx1Tg7sE">
+<img alt="Curing process" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuYxLWJYDExj2StQksqQuRPjC4nyZm7DLU1QBxAbJejuQud65_rxqgOxs4iMop3-7izwDaVLmCc-l7_2pMNDQlMgLfhmYu3oNZzB9bEs6u97bVVFU7ux30lV2KVVwJzVnJN7Yje30cHMkA78S3BvAAyRof1FqLOVkfjDYHne5B8eDj2EOmXZvaeUIL5loWv2MalWc4G84pmlijEPuwjZ0-DtxZm2sK7zyBR_1QWNSZwXMM9cApjx1Tg7sE"/>
 </div>
 </div>
 <div class="w-2/3">
@@ -281,7 +321,7 @@
 </div>
 </div>
 <div class="page-number font-label-sm text-on-surface-variant">Page 02</div>
-<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
+<div class="watermark font-headline-md text-outline-variant/10 select-none">CONFIDENTIAL: YIREHMEX</div>
 </section>
 <!-- SECTION 3: TECHNICAL SPECIFICATIONS -->
 <section class="pdf-page" id="specs">
@@ -292,7 +332,7 @@
 <table class="w-full font-body-md text-body-md"><thead><tr class="bg-surface-cream text-architectural-blue border-b border-outline-variant"><th class="text-left p-4 font-bold uppercase tracking-wider text-label-sm">Parameter</th><th class="text-left p-4 font-bold uppercase tracking-wider text-label-sm">Architectural Specification</th></tr></thead><tbody class="divide-y divide-outline-variant"><tr><td class="p-4 bg-surface-cream/30 font-bold w-1/3">Dimensions</td><td class="p-4">200mm x 200mm (Tolerance: ±0.5mm)</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Thickness</td><td class="p-4">12mm - 14mm (Wear layer: 4mm)</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Composition</td><td class="p-4">Portland Cement, Marble Dust, Mineral Oxides, Graded Sand</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Water Absorption</td><td class="p-4">&lt; 8.5% (Natural state), &lt; 1% (Sealed)</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Compression Strength</td><td class="p-4">250 - 300 kg/cm²</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Surface Finish</td><td class="p-4">Hand-polished Natural Matte-Sheen</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Slip Resistance</td><td class="p-4">P3 (Dry) / P1 (Wet) - AS 4586 standards</td></tr></tbody></table>
 </div>
 <!-- Material Palette -->
-<div id="materials" class="pt-2">
+<div class="pt-2" id="materials">
 <h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-6">Material Breakdown</h4>
 <div class="space-y-6">
 <div class="flex items-center gap-4">
@@ -332,7 +372,7 @@
 </div>
 </div>
 <div class="page-number font-label-sm text-on-surface-variant">Page 03</div>
-<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
+<div class="watermark font-headline-md text-outline-variant/10 select-none">CONFIDENTIAL: YIREHMEX</div>
 </section>
 </main>
 <!-- Footer -->
@@ -372,6 +412,4 @@
             });
         });
     </script>
-
-
 </body></html>

@@ -1,68 +1,73 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"><meta name="description" content="Explore our meticulously curated portfolio of handcrafted Athangudi tiles. From vibrant floral patterns to geometric classics, discover the perfect heritage flooring for your project.">
-<meta content="width=device-width, initial-scale=1.0" name="viewport"><meta name="keywords" content="tile collections, floral tiles, geometric tiles, Chettinad patterns, handmade flooring">
-<title>Our Collections | YirehMex Athangudi Tiles</title>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Artisan Collections | YIREHMEX Athangudi Tiles</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "secondary-fixed": "#d6e3ff",
-                        "surface-dim": "#efd4d1",
-                        "on-surface-variant": "#5a403e",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary-fixed": "#410003",
-                        "primary": "#8f000d",
-                        "secondary-fixed-dim": "#aec7f7",
-                        "on-primary-fixed-variant": "#92030f",
-                        "secondary": "#465f88",
-                        "on-error": "#ffffff",
-                        "surface-cream": "#F9F7F2",
-                        "tertiary-container": "#006292",
-                        "error": "#ba1a1a",
-                        "on-secondary": "#ffffff",
-                        "primary-fixed-dim": "#ffb4ac",
-                        "heritage-crimson": "#B22222",
-                        "tertiary-fixed": "#cbe6ff",
-                        "primary-container": "#b22222",
-                        "on-secondary-fixed": "#001b3d",
-                        "on-error-container": "#93000a",
-                        "surface-tint": "#b52424",
-                        "architectural-blue": "#1B365D",
-                        "on-tertiary-fixed-variant": "#004b71",
-                        "surface-container": "#ffe9e6",
+                        "inverse-on-surface": "#ffedea",
                         "secondary-container": "#b6d0ff",
-                        "surface-container-high": "#fee2df",
-                        "tertiary-fixed-dim": "#8fcdff",
-                        "inverse-primary": "#ffb4ac",
-                        "on-surface": "#261816",
-                        "on-background": "#261816",
-                        "surface-container-low": "#fff0ef",
+                        "on-primary-fixed": "#410003",
+                        "surface-container-lowest": "#ffffff",
                         "on-secondary-fixed-variant": "#2e476f",
+                        "primary-container": "#b22222",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "inverse-surface": "#3d2c2b",
+                        "outline-variant": "#e2beba",
+                        "tertiary-fixed": "#cbe6ff",
+                        "on-primary-fixed-variant": "#92030f",
+                        "inverse-primary": "#ffb4ac",
+                        "on-error": "#ffffff",
+                        "heritage-crimson": "#B22222",
+                        "secondary": "#465f88",
+                        "on-secondary-container": "#3f5881",
+                        "surface-dim": "#efd4d1",
+                        "surface-container-low": "#fff0ef",
+                        "surface-container-high": "#fee2df",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#006292",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#ffc8c2",
+                        "surface-container": "#ffe9e6",
+                        "tertiary": "#00496e",
+                        "background": "#fff8f7",
+                        "surface-cream": "#F9F7F2",
+                        "surface": "#fff8f7",
+                        "secondary-fixed": "#d6e3ff",
+                        "primary": "#8f000d",
+                        "surface-container-highest": "#f8dcd9",
+                        "on-secondary-fixed": "#001b3d",
+                        "on-background": "#261816",
+                        "primary-fixed": "#ffdad6",
+                        "on-tertiary-fixed": "#001e30",
+                        "secondary-fixed-dim": "#aec7f7",
+                        "on-surface-variant": "#5a403e",
+                        "on-tertiary-container": "#b1daff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#b52424",
+                        "surface-bright": "#fff8f7",
+                        "on-surface": "#261816",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "terracotta-warmth": "#D2691E",
                         "surface-variant": "#f8dcd9",
                         "error-container": "#ffdad6",
-                        "background": "#fff8f7",
-                        "outline": "#8e706d",
-                        "on-primary-container": "#ffc8c2",
-                        "on-primary": "#ffffff",
-                        "surface-container-highest": "#f8dcd9",
-                        "primary-fixed": "#ffdad6",
-                        "surface": "#fff8f7",
-                        "on-secondary-container": "#3f5881",
-                        "outline-variant": "#e2beba",
-                        "on-tertiary": "#ffffff",
-                        "inverse-surface": "#3d2c2b",
-                        "on-tertiary-fixed": "#001e30",
-                        "terracotta-warmth": "#D2691E",
-                        "inverse-on-surface": "#ffedea",
-                        "tertiary": "#00496e",
-                        "surface-bright": "#fff8f7",
-                        "on-tertiary-container": "#b1daff"
+                        "tertiary-fixed-dim": "#8fcdff",
+                        "architectural-blue": "#1B365D",
+                        "outline": "#8e706d"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -71,29 +76,29 @@
                         "full": "0.75rem"
                     },
                     "spacing": {
+                        "max-width": "1440px",
                         "gutter": "24px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "64px",
                         "base": "8px",
-                        "max-width": "1440px"
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px"
                     },
                     "fontFamily": {
-                        "headline-lg": ["Libre Caslon Text"],
-                        "body-md": ["Manrope"],
                         "headline-md": ["Libre Caslon Text"],
-                        "headline-lg-mobile": ["Libre Caslon Text"],
                         "display-lg": ["Libre Caslon Text"],
-                        "body-lg": ["Manrope"],
-                        "label-sm": ["Manrope"]
+                        "label-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"]
                     },
                     "fontSize": {
-                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
                     }
                 }
             }
@@ -102,244 +107,195 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
         }
-        .glass-header {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        .tile-card-hover {
-            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        .tile-card-hover:hover {
-            transform: translateY(-8px);
-        }
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 24px;
-        }
+        .text-shadow-sm { text-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<body class="bg-surface-cream text-on-surface selection:bg-heritage-crimson/20">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-on-surface/90 border-b border-outline-variant/30 dark:border-outline/20">
-<div class="max-w-max-width mx-auto px-margin-desktop flex items-center justify-between h-20">
-<a class="font-headline-md text-headline-md font-bold tracking-tight text-heritage-crimson dark:text-primary-fixed-dim" href="#">YIREHMEX</a>
+<header class="bg-surface dark:bg-inverse-surface fixed top-0 w-full z-50 transition-all duration-300">
+<nav class="flex justify-between items-center px-margin-desktop py-4 w-full max-width mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md tracking-tight font-bold text-heritage-crimson dark:text-inverse-primary" href="#">YIREHMEX</a>
 <div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">About</a>
-<a class="text-primary dark:text-inverse-primary font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Products</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Services</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Visualizer</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-heritage-crimson transition-colors" href="#">Heritage</a>
+<a class="font-body-md text-body-md text-heritage-crimson dark:text-inverse-primary border-b-2 border-heritage-crimson font-bold pb-1" href="#">Patterns</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-heritage-crimson transition-colors" href="#">Visualizer</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-heritage-crimson transition-colors" href="#">Services</a>
 </div>
-<div class="flex items-center space-x-6">
-<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/20">
-<span class="material-symbols-outlined text-outline mr-2">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm w-32" placeholder="Search designs..." type="text">
 </div>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all scale-[1] active:scale-[0.98]">ENQUIRE NOW</button>
-</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-2.5 rounded-lg hover:opacity-80 transition-opacity active:scale-95 uppercase tracking-wider">
+                    Visualizer PRO
+                </button>
+<button class="md:hidden text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </nav>
-<main class="pt-32 pb-24">
-<!-- Header Section -->
-<header class="max-w-max-width mx-auto px-margin-desktop mb-16">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
-<div class="max-w-2xl">
-<span class="text-heritage-crimson font-label-sm tracking-widest uppercase mb-4 block">Handcrafted Heritage</span>
-<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Authentic Athangudi Collections</h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant opacity-80 leading-relaxed">
-                        Where tradition meets innovation. Explore our meticulously curated portfolio of Chettinad's finest handmade tiles, renowned for vibrant colors and intricate geometric precision.
-                    </p>
-</div>
-<div class="flex gap-4">
-<div class="flex flex-wrap gap-3">
-    <div class="relative group">
-        <button class="flex items-center gap-2 border border-outline px-4 py-3 rounded-lg font-label-sm hover:bg-surface-container-low transition-all">
-            <span class="text-on-surface-variant/60">SERIES:</span>
-            <span class="">ALL</span>
-            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
-        </button>
-        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-outline-variant/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Floral Series</a>
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Geometric Series</a>
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Symmetric Series</a>
-        </div>
-    </div>
-    <div class="relative group">
-        <button class="flex items-center gap-2 border border-outline px-4 py-3 rounded-lg font-label-sm hover:bg-surface-container-low transition-all">
-            <span class="text-on-surface-variant/60">COLOR:</span>
-            <span class="">ALL</span>
-            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
-        </button>
-        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-outline-variant/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Traditional Red</a>
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Terracotta</a>
-            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Monochrome</a>
-        </div>
-    </div>
-</div>
-<button class="flex items-center gap-2 bg-architectural-blue text-white px-6 py-3 rounded-lg font-label-sm hover:opacity-90 transition-all">
-<span class="material-symbols-outlined">brush</span>
-                        VISUALIZER PRO
-                    </button>
-</div>
-</div>
 </header>
-<!-- Product Gallery Bento Grid -->
-<section class="max-w-max-width mx-auto px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
-<!-- Large Feature Card: Lotus Tile -->
-<div class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant/30 tile-card-hover rounded-xl transition-all duration-700 opacity-100 translate-y-0">
-<div class="aspect-square md:aspect-video w-full overflow-hidden">
-<img alt="Lotus tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuVdSXNpE3BYyP94cMkl0kgcrlNBs1YChhg6FbhAZfYxyr94xcyZXIVkQqbS-AnyHokgmWszKFupZhE6-Ch-riM_AqFT9MKqKInxIlmLJCRDMiDLYAV3kePKOb_y8RjUvC8X9tu34BDjZKUADLLTkXMYOmpgap_7DRL9V3NnUD39nksw2PVwOjc7otalI6NSaW1xATdst0w24B2XzV1lzDLajTpUApKzfvFWBnld9-pu3Yixn2B_bQL9ys">
-</div>
-<div class="p-8 flex justify-between items-center bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 w-full border-t border-outline-variant/10">
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Lotus Tile</h3>
-<p class="font-label-sm text-on-surface-variant opacity-70">FLORAL COLLECTION • TRADITIONAL RED</p>
-</div>
-<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-margin-desktop py-24 md:py-32 flex flex-col items-center text-center max-width mx-auto">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-[0.03] pointer-events-none overflow-hidden select-none">
+<div class="grid grid-cols-6 gap-4 rotate-12 scale-150">
+<!-- Subtle background tile pattern decoration -->
+<div class="aspect-square bg-heritage-crimson/20 rounded"></div>
+<div class="aspect-square border border-architectural-blue rounded"></div>
+<div class="aspect-square bg-heritage-crimson/20 rounded"></div>
+<div class="aspect-square border border-architectural-blue rounded"></div>
+<div class="aspect-square bg-heritage-crimson/20 rounded"></div>
+<div class="aspect-square border border-architectural-blue rounded"></div>
 </div>
 </div>
-<!-- Small Grid Card: Flower Star -->
-<div class="lg:col-span-4 group bg-white border border-outline-variant/30 tile-card-hover rounded-xl flex flex-col transition-all duration-700 opacity-100 translate-y-0">
-<div class="aspect-square w-full overflow-hidden">
-<img alt="Flower star tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLu2ze_f5UcWb9KryONV49JYAkfQjTx6CAB5z6AK8FjE1zZVsG_H0Rfgt-f2w0mX1VYY35HC_hkOyl-ZJsKqfDCHrTX3GRGOrpa4t1PVfemKMqVkBnRsNCZr2Da4ZTzrmS14gG3ENofaMUp1jdCd9ctty-IhVMBKYRWyD-Uz1LVLDflaYLfHrS-YxyoesYTwF8Q2L5Q5YfiBWAzUZflDNIDUraii3oKrXQ8dCzS56pOIDYc_voKjrANep24">
-</div>
-<div class="p-6">
-<h3 class="font-headline-md text-[24px] mb-1">Flower Star</h3>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Geometric Series</p>
-</div>
-</div>
-<!-- Small Grid Card: Butterfly Tiles -->
-<div class="lg:col-span-4 group bg-white border border-outline-variant/30 tile-card-hover rounded-xl flex flex-col transition-all duration-700 opacity-100 translate-y-0">
-<div class="aspect-square w-full overflow-hidden">
-<img alt="Butterfly tiles" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLtdQELe8Lac2RglSnDAyKrIVFG8Zhba0oYaD6hDeBDXRV2rSTe1-tOVUiQ4Ka7srlG3VIV2NoKBy3NL6cwG2iKZEDZOB5MicCbMuBtEenbhp37XYF23AUdX3GB3Uo-S8FIIx5ijIu2YQR39nH-5VFqCXIeAhVdvGc9GzN6ygrl5Jr9xs0NTOFZodApIqgeonq8IVIZVa4KLkEgeoXEoySFfkjflrPLFcqNyYPcb94Si3cztKVRfrbMxk_Q">
-</div>
-<div class="p-6">
-<h3 class="font-headline-md text-[24px] mb-1">Butterfly Suite</h3>
-<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Artisanal Whimsy</p>
-</div>
-</div>
-<!-- Large Feature Card: Chockkatan Tile -->
-<div class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant/30 tile-card-hover rounded-xl transition-all duration-700 opacity-100 translate-y-0">
-<div class="aspect-square md:aspect-[21/9] w-full overflow-hidden">
-<img alt="Chockkatan tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLsqN4uGKrwEDRmWrpkY79jpZSc1CLBLlZHClBm8B_dWFaoLH8ZW7W0poLioXR8ifKFeAEUB-4NvFo38mQlFXP0dXQVj-oOVCJ_MRdLXMRAjhuOu9RL8Xejucqpbm6C1JzmvQ5I6MGL3MZUVTCMBsDmvKV1xkqZW5Am2j0EUB6fp6hX9kOKJwGdrobSG-imQzh7LX0DnMU7pkIGk5DBDMrMGrE7iy_zYZrkADiAYi-vN5fgJfrCQw46XNw">
-</div>
-<div class="p-8 flex justify-between items-center bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 w-full border-t border-outline-variant/10">
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Chockkatan Classic</h3>
-<p class="font-label-sm text-on-surface-variant opacity-70">SYMMETRIC SERIES • TERRACOTTA WARMTH</p>
-</div>
-<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant group-hover:bg-primary group-hover:text-white transition-all">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Design Tools / Call to Action -->
-<section class="mt-32 max-w-max-width mx-auto px-margin-desktop">
-<div class="bg-architectural-blue rounded-2xl p-12 lg:p-24 relative overflow-hidden flex flex-col items-center text-center">
-<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 40px 40px;"></div>
-<h2 class="font-headline-lg text-headline-lg text-white mb-6 relative z-10">Bring Your Vision to Life</h2>
-<p class="text-body-lg font-body-lg text-white/80 max-w-2xl mb-12 relative z-10">
-                    Not sure how these vibrant patterns will look in your space? Use our Visualizer PRO to preview any Athangudi tile design in a realistic room setting.
+<div class="relative z-10 max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-architectural-blue mb-6 block">Premium Craftsmanship</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-8 text-on-surface">Our Artisan Collections</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Explore the timeless beauty of handcrafted heritage tiles, from vibrant floral patterns to geometric classics. Each piece is a testament to centuries-old traditions refined for modern spaces.
                 </p>
-<div class="flex flex-wrap justify-center gap-6 relative z-10">
-<button class="bg-white text-architectural-blue px-8 py-4 rounded-lg font-label-sm hover:bg-surface-cream transition-all flex items-center gap-3">
-<span class="material-symbols-outlined">auto_awesome</span>
-                        START VISUALIZING
-                    </button>
-<button class="border border-white/30 text-white px-8 py-4 rounded-lg font-label-sm hover:bg-white/10 transition-all">
-                        REQUEST FREE SAMPLE
-                    </button>
+</div>
+</section>
+<!-- Collections Bento Grid -->
+<section class="px-margin-desktop pb-32 max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Floral Collection (Large Featured) -->
+<div class="md:col-span-8 group cursor-pointer overflow-hidden bg-white border border-heritage-crimson/10 rounded-lg transition-all duration-500 hover:shadow-2xl hover:shadow-heritage-crimson/5">
+<div class="relative h-[500px] overflow-hidden">
+<div class="grid grid-cols-2 h-full">
+<div class="h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A macro photograph of an Athangudi Lotus tile showcasing vibrant, hand-poured dyes in crimson and cream. The intricate floral symmetry is captured with high architectural precision under soft gallery lighting, emphasizing the organic texture of the cement material. The aesthetic is clean, minimalist, and focuses on the heritage craftsmanship of the tile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbjxkUdqX8ymYklNAZRKVL7PaKlXy6mUH4c3te0rw9siewZNTDzOnOERV7xrBdFd1qGVQq-RTFOpJloKPs9sMx34eU5OAC637mkSgAZ2qwxVBqZRDhpfmjoggqoAgWFKmd-0FH2Ev-2Z7ZyhevdXxNoc6fcIqULdiMCTCjrSbo5hB3k2CjqVvqetB_MlkfrnfU5HVfohKkqr5l-kvvD-_uYzZ9mAKXPM-YWdqxdSHCgO6lLhWePAv3hAv-E0S9Vh9q9IlF1sWX0C4"/>
+</div>
+<div class="h-full">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A detailed overhead view of an Athangudi Butterfly Suite tile pattern, featuring delicate mirrored butterfly motifs in deep architectural blue and warm terracotta hues. The lighting is diffused, highlighting the artisanal quality of the hand-crafted tile in a modern, light-mode setting. The composition is strictly geometric and balanced." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrtodasVIhn8KxNICgL0K_iyy7dMHJIQBWQGRruFmE4vt3z69Jy1fFTEUxFwyYY8iDJ-QLYigw_hjm1jDXCVFosdZXV2s2bQJ4cgGAV9aDPOfjr8FXcNb1nnlkdG0rWkHJL_MCWJzyK_qpJwGhfhmJSRRbPCVyrs7v3OePKoOWP0ENTdwY6aZTZbvrLNTaFGS2DjYIJiJiYxYfX50PNaoglHHCC7pfiVVTRZkP64ZAmT3Rytic_1xLoKR4xMTvBLz5RNnAqyQAKQU')"></div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-architectural-blue/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-10 flex justify-between items-end">
+<div class="max-w-md">
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Floral Collection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Vibrant, hand-poured patterns inspired by nature's organic geometry and seasonal blooms.</p>
+</div>
+<button class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-heritage-crimson group-hover:translate-x-2 transition-transform">
+                            View Collection <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Geometric Series (Vertical Tall) -->
+<div class="md:col-span-4 group cursor-pointer overflow-hidden bg-white border border-heritage-crimson/10 rounded-lg transition-all duration-500 hover:shadow-2xl hover:shadow-heritage-crimson/5">
+<div class="relative h-[400px] md:h-[500px] overflow-hidden">
+<div class="flex flex-col h-full">
+<img alt="Flower Star" class="w-full h-1/2 object-cover border-b border-outline-variant/20 transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLu_u8r-Iv5-tMa5R65BEnnvu3OjzwLWE_piZRQ-FDQmutDvntH3gY2osypzUdyAGAbbIrwp9gpzcth0fkc0i7tw4FYF-WJT-lI3y4dgBLfN76mK0CN7Ld2aspZpo0yxc8thrPUmsX049PBH7XQsF0S2__kSJb5DxTJXX0fhonB7odJW0Nj4z7hRFO56WxPfaeEjFMJOohBhKU5XiNS-9owq6dbo0vl2Je9KjrRb0jc9bMIS0qKpTi4Q0i0"/>
+<img alt="Octagon Star" class="w-full h-1/2 object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLu2ze_f5UcWb9KryONV49JYAkfQjTx6CAB5z6AK8FjE1zZVsG_H0Rfgt-f2w0mX1VYY35HC_hkOyl-ZJsKqfDCHrTX3GRGOrpa4t1PVfemKMqVkBnRsNCZr2Da4ZTzrmS14gG3ENofaMUp1jdCd9ctty-IhVMBKYRWyD-Uz1LVLDflaYLfHrS-YxyoesYTwF8Q2L5Q5YfiBWAzUZflDNIDUraii3oKrXQ8dCzS56pOIDYc_voKjrANep24"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-architectural-blue/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Geometric Series</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Rigorous mathematical precision meets the warmth of cement artistry.</p>
+<button class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-heritage-crimson group-hover:translate-x-2 transition-transform">
+                            Explore Series <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Symmetric Classics (Square) -->
+<div class="md:col-span-6 group cursor-pointer overflow-hidden bg-white border border-heritage-crimson/10 rounded-lg transition-all duration-500 hover:shadow-2xl hover:shadow-heritage-crimson/5">
+<div class="relative h-[400px] overflow-hidden bg-surface-container">
+<img alt="Chockkatan Classic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuVdSXNpE3BYyP94cMkl0kgcrlNBs1YChhg6FbhAZfYxyr94xcyZXIVkQqbS-AnyHokgmWszKFupZhE6-Ch-riM_AqFT9MKqKInxIlmLJCRDMiDLYAV3kePKOb_y8RjUvC8X9tu34BDjZKUADLLTkXMYOmpgap_7DRL9V3NnUD39nksw2PVwOjc7otalI6NSaW1xATdst0w24B2XzV1lzDLajTpUApKzfvFWBnld9-pu3Yixn2B_bQL9ys"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/20"></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Symmetric Classics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Traditional motifs that have graced the floors of Chettinad mansions for generations.</p>
+<button class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-heritage-crimson group-hover:translate-x-2 transition-transform">
+                            View Classics <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Botanical Series (Square) -->
+<div class="md:col-span-6 group cursor-pointer overflow-hidden bg-white border border-heritage-crimson/10 rounded-lg transition-all duration-500 hover:shadow-2xl hover:shadow-heritage-crimson/5">
+<div class="relative h-[400px] overflow-hidden">
+<img alt="Chettinad Vine" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuVeFcQZtF_AtkEDIXuaxSqQkiVUzo0VEHjvRv4Ti2AEYfyUkutlH1f9QI1GQm_8ThZ-RSE6HRioG0dAtljmkBNb6Stfc2VX_H-bFOmtXHb8V3siDeOFu0ej13f3067acBYzUKqLnekWFPlCvlFJv-SEx8GdL1-7U0ZNeCB4APnL9IZnAEshgyDKKnlvRB-EdU3Gn1TBY8At2oppAT3e9Ddsya460crIauWiGezLQq5T2AQuHGsOKbeTg"/>
+<div class="absolute inset-0 bg-heritage-crimson/5 mix-blend-overlay"></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Botanical Series</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Winding vines and leafy abstractions that bring an organic pulse to any architectural space.</p>
+<button class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-heritage-crimson group-hover:translate-x-2 transition-transform">
+                            Browse Botanical <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
 </div>
 </div>
 </section>
-<!-- Newsletter / Contact -->
-<section class="mt-32 border-t border-outline-variant/20 pt-24 bg-surface-cream">
-<div class="max-w-max-width mx-auto px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
-<div>
-<h2 class="font-headline-lg text-headline-lg mb-4">Stay Inspired</h2>
-<p class="text-body-md font-body-md text-on-surface-variant">Sign up to receive our seasonal lookbooks and architectural inspiration from the heart of Chettinad.</p>
+<!-- Visualizer CTA Section (Glassmorphism overlap) -->
+<section class="relative px-margin-desktop mb-32 max-width mx-auto">
+<div class="bg-architectural-blue rounded-lg overflow-hidden flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 p-12 md:p-20 z-10">
+<h2 class="font-display-lg text-headline-lg text-white mb-6">Design Your Own Space</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-10 leading-relaxed">
+                        Cannot decide? Our Visualizer PRO tool allows you to place any of our artisan tiles in your room in real-time. Experience the scale and pattern before you commit.
+                    </p>
+<button class="bg-white text-architectural-blue font-label-sm text-label-sm px-10 py-4 rounded-lg hover:bg-surface-cream transition-colors uppercase tracking-widest font-bold">
+                        Launch Visualizer
+                    </button>
 </div>
-<form class="flex gap-4">
-<input class="flex-grow bg-white border border-outline-variant px-6 py-4 rounded-lg focus:ring-primary focus:border-primary" placeholder="Your email address" type="email">
-<button class="bg-heritage-crimson text-white px-8 py-4 rounded-lg font-label-sm uppercase tracking-widest hover:opacity-95 transition-all">JOIN</button>
-</form>
+<div class="w-full md:w-1/2 h-[400px] md:h-auto relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-end modern interior living room with sunlight streaming through large windows. On the floor, a custom Athangudi tile pattern is being digitally overlaid via an augmented reality interface, showing the transformation of the space. The scene is bright, airy, and professional, blending heritage craft with cutting-edge technology." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuhuUkmtgWPIwYOCINHqs9oLv2osk4-rh8v9Y9XpIzdReRkcsQxoNpAJ7-OWF_LTBdNdf08M5xc3e3x01rbaE9nWHBtx4AtbRfeo6ustSFhceywL9ac_ZEaaZ0n3JPAeuaJ-yBynFvzrDUxlwGxVl5dsBRhcbKUcj4nA1j0rs5BUqxnD6L3StBQv0FARtjG2Zsm8jp5CM3uxfbdTyMV-tDSF860d4qv3AeVSlq9UQNUMiiQcJmSV28OQWesHQivh7qgQAupyONeis')"></div>
+<div class="absolute inset-0 bg-architectural-blue/20 backdrop-blur-[2px]"></div>
 </div>
-<div class="h-32"></div>
+</div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-architectural-blue dark:bg-surface-container-lowest w-full pt-16 pb-8 border-t border-white/10">
-<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<div class="flex flex-col space-y-6">
-<a class="font-headline-md text-headline-md font-bold text-surface-bright dark:text-primary" href="#">YIREHMEX</a>
-<p class="text-surface-variant/80 font-label-sm">433, Mahalakshmi nagar, Athangudi via, Karaikudi taluk, Tamil Nadu - 630101</p>
-<div class="flex space-x-4">
-<a class="text-surface-variant hover:text-surface-bright transition-all" href="#"><span class="material-symbols-outlined">call</span></a>
-<a class="text-surface-variant hover:text-surface-bright transition-all" href="#"><span class="material-symbols-outlined">mail</span></a>
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-12 w-full max-width mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-display-lg text-headline-md text-heritage-crimson">YIREHMEX</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant max-w-xs text-center md:text-left">
+                    © 2024 YIREHMEX Athangudi Tiles. Handcrafted Excellence.
+                </p>
 </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-heritage-crimson transition-colors" href="#">About Us</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-heritage-crimson transition-colors" href="#">Installation Guide</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-heritage-crimson transition-colors" href="#">Sustainability</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-heritage-crimson transition-colors" href="#">Contact</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant hover:text-heritage-crimson transition-colors" href="#">Privacy Policy</a>
 </div>
-<div class="flex flex-col space-y-4">
-<h4 class="text-surface-bright font-headline-md text-[18px]">Collections</h4>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Floral Series</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Geometric Modern</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Heritage Classics</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Monochrome Elite</a>
-</div>
-<div class="flex flex-col space-y-4">
-<h4 class="text-surface-bright font-headline-md text-[18px]">Support</h4>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Installation Guide</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Maintenance Tips</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Contact Us</a>
-<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Terms of Service</a>
-</div>
-<div class="flex flex-col space-y-4">
-<h4 class="text-surface-bright font-headline-md text-[18px]">Follow Our Craft</h4>
-<div class="grid grid-cols-2 gap-4">
-<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Instagram</a>
-<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Pinterest</a>
-<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">LinkedIn</a>
-<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Facebook</a>
-</div>
-</div>
-</div>
-<div class="max-w-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-center gap-4">
-<p class="text-surface-variant/60 font-label-sm">© 2024 YirehMex Athangudi Tiles. Handcrafted Heritage, Modern Precision.</p>
-<div class="flex space-x-6">
-<a class="text-surface-variant/60 hover:text-surface-bright font-label-sm" href="#">Privacy Policy</a>
-<a class="text-surface-variant/60 hover:text-surface-bright font-label-sm" href="#">Terms</a>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-architectural-blue hover:bg-heritage-crimson hover:text-white hover:border-heritage-crimson transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-architectural-blue hover:bg-heritage-crimson hover:text-white hover:border-heritage-crimson transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
 </div>
 </div>
 </footer>
 <script>
-        // Micro-interaction for smooth reveal on scroll
-        const observerOptions = {
-            threshold: 0.1
-        };
+        // Micro-interaction for Navbar Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('shadow-md', 'py-2');
+                header.classList.add('py-4');
+            }
+        });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
+        // Hover Effect Logic for Grid Cards
+        const cards = document.querySelectorAll('.group');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential JS logic for complex animations if needed
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.tile-card-hover').forEach(el => {
-            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
-            observer.observe(el);
         });
     </script>
-
-
-
-
 </body></html>

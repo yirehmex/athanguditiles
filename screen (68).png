@@ -1,12 +1,14 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>YirehMex | Project Dashboard</title>
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -127,7 +129,7 @@
                 Visualizer PRO
             </button>
 <div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center overflow-hidden active-dot">
-<img class="w-full h-full object-cover" data-alt="A professional headshot of a senior architect in a minimalist grey turtleneck, set against a clean white studio background. The lighting is soft and directional, emphasizing professional authority and modern style in a high-key light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAv0w3fsQ6qwNSnK5Ic6LGm-4kU2eyuB3qqIsAb34MUA-rkojhZQfhGYzeJuwMkDT2Lfd1cL3B_iB0TPrOUq6wx_9WjD3QEO6bEmVa1fHzwyYrjWFzInbhqwCbLcsMa-s4iYkdhG1NENTbp-mOR2feuLwCDFnq1IJUYfVbcuocrVfKMdzRTeax_xKuVEB5s-Bf7dc655agiNDiDUY2mAStnfdJCVJkNjZBO9qQjgIWP5euSXgvItwSeYIV5T_juFFrLeL1YpRiYdo">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a senior architect in a minimalist grey turtleneck, set against a clean white studio background. The lighting is soft and directional, emphasizing professional authority and modern style in a high-key light mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAv0w3fsQ6qwNSnK5Ic6LGm-4kU2eyuB3qqIsAb34MUA-rkojhZQfhGYzeJuwMkDT2Lfd1cL3B_iB0TPrOUq6wx_9WjD3QEO6bEmVa1fHzwyYrjWFzInbhqwCbLcsMa-s4iYkdhG1NENTbp-mOR2feuLwCDFnq1IJUYfVbcuocrVfKMdzRTeax_xKuVEB5s-Bf7dc655agiNDiDUY2mAStnfdJCVJkNjZBO9qQjgIWP5euSXgvItwSeYIV5T_juFFrLeL1YpRiYdo"/>
 </div>
 </div>
 </nav>
@@ -165,42 +167,42 @@
 <div class="h-full bg-heritage-crimson rounded-full" style="width: 25%;"></div>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
-    <div class="opacity-100">
-        <span class="material-symbols-outlined text-heritage-crimson mb-2" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">DESIGN FINALIZED</p>
-        <p class="text-[10px] text-on-surface-variant uppercase">Completed</p>
-    </div>
-    <div class="opacity-100 relative">
-        <span class="material-symbols-outlined text-heritage-crimson mb-2 animate-pulse">science</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">PIGMENT MIXING</p>
-        <p class="text-[10px] text-heritage-crimson font-bold uppercase">In Progress</p>
-    </div>
-    <div class="opacity-50">
-        <span class="material-symbols-outlined text-outline mb-2">pan_tool</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">HAND-PRESSING</p>
-        <p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
-    </div>
-    <div class="opacity-50">
-        <span class="material-symbols-outlined text-outline mb-2">wb_sunny</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">CURING &amp; POLISH</p>
-        <p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
-    </div>
-    <div class="opacity-50">
-        <span class="material-symbols-outlined text-outline mb-2">verified</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">QUALITY ASSURE</p>
-        <p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
-    </div>
-    <div class="opacity-50">
-        <span class="material-symbols-outlined text-outline mb-2">local_shipping</span>
-        <p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">DISPATCH</p>
-        <p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
-    </div>
+<div class="opacity-100">
+<span class="material-symbols-outlined text-heritage-crimson mb-2" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">DESIGN FINALIZED</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Completed</p>
+</div>
+<div class="opacity-100 relative">
+<span class="material-symbols-outlined text-heritage-crimson mb-2 animate-pulse">science</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">PIGMENT MIXING</p>
+<p class="text-[10px] text-heritage-crimson font-bold uppercase">In Progress</p>
+</div>
+<div class="opacity-50">
+<span class="material-symbols-outlined text-outline mb-2">pan_tool</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">HAND-PRESSING</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
+</div>
+<div class="opacity-50">
+<span class="material-symbols-outlined text-outline mb-2">wb_sunny</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">CURING &amp; POLISH</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
+</div>
+<div class="opacity-50">
+<span class="material-symbols-outlined text-outline mb-2">verified</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">QUALITY ASSURE</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
+</div>
+<div class="opacity-50">
+<span class="material-symbols-outlined text-outline mb-2">local_shipping</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface mb-1">DISPATCH</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Scheduled</p>
+</div>
 </div>
 </div>
 <div class="mt-8 pt-6 border-t border-outline-variant/20 flex justify-end">
-    <button class="text-primary font-label-sm flex items-center gap-1 hover:underline uppercase tracking-wider">
+<button class="text-primary font-label-sm flex items-center gap-1 hover:underline uppercase tracking-wider">
         VIEW DETAILED LOGS <span class="material-symbols-outlined text-[16px]">history</span>
-    </button>
+</button>
 </div></div>
 <!-- Digital Moodboard -->
 <div class="bg-surface-cream p-8 rounded-xl border border-outline-variant/30">
@@ -217,7 +219,7 @@
 <!-- Tile Card 1 -->
 <div class="group cursor-pointer" style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.5s;">
 <div class="aspect-square bg-white overflow-hidden rounded mb-3 border border-outline-variant/10">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-resolution close-up of a handcrafted Chettinad tile pattern featuring intricate floral motifs in deep crimson and cream. The texture of the cement is visible, showing artisanal quality and a matte finish. Professional architectural photography with soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzp7R3hdsx_w9rm6lkFJfeduEsU5nbTimSVRbeYAPc-cDFejZ_vh3NwsHo8h0lHIiKHS3Cblq2wpXgbm2lydZY1m79JMuYXnfV5GX8xUBBIOCJE8ueC5PUVBUzC-DZt6qdxJlKh74iWO0_oscFx-79bnn-cUCFe74AXQ9Xji3I4Sn2MLRSibOZLivh3o-VgTWhIozktQqUCFvv2zdqdSsXBWsCgtY6a4HVL_-mT4QP3Bhr72Pfa0dBqZWIY8EAn-PwTd3qh5umq6E">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-resolution close-up of a handcrafted Chettinad tile pattern featuring intricate floral motifs in deep crimson and cream. The texture of the cement is visible, showing artisanal quality and a matte finish. Professional architectural photography with soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzp7R3hdsx_w9rm6lkFJfeduEsU5nbTimSVRbeYAPc-cDFejZ_vh3NwsHo8h0lHIiKHS3Cblq2wpXgbm2lydZY1m79JMuYXnfV5GX8xUBBIOCJE8ueC5PUVBUzC-DZt6qdxJlKh74iWO0_oscFx-79bnn-cUCFe74AXQ9Xji3I4Sn2MLRSibOZLivh3o-VgTWhIozktQqUCFvv2zdqdSsXBWsCgtY6a4HVL_-mT4QP3Bhr72Pfa0dBqZWIY8EAn-PwTd3qh5umq6E"/>
 </div>
 <p class="font-label-sm text-label-sm uppercase text-on-surface">CHETTINAD NO.4</p>
 <p class="text-[10px] text-on-surface-variant">HERITAGE RED / BONE</p>
@@ -225,7 +227,7 @@
 <!-- Tile Card 2 -->
 <div class="group cursor-pointer" style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.6s;">
 <div class="aspect-square bg-white overflow-hidden rounded mb-3 border border-outline-variant/10">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A square Athangudi tile with a geometric star pattern in architectural blue and soft white. The surface has a characteristic handmade sheen and subtle color variations typical of traditional firing. High-end product photography for a minimalist architectural catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-u9lbDkcUncgHF6Q8v4wqVuVmOdkxBtG8EgfISLziV07Y9e3xmYtrfQz53GZ4_-NvGq9Hb30VsCrVqZ2m2kCDVmaR6FCejjpoDICnGvJ2h-_Qrfn4GaXxCoFq_diEha4d_E6jP7xM6eMGxnIvP0ccDXV8QCoNGT6MmkIv5xIsWshilubSarpOkrjZM9o_wYgJ7o8egUW6WRKKiQg5-ah4no1szU2lP4bGqUMGtIxxoVmTlP-sxwUH1E92oavCWqT5xZDEAd7IhFo">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A square Athangudi tile with a geometric star pattern in architectural blue and soft white. The surface has a characteristic handmade sheen and subtle color variations typical of traditional firing. High-end product photography for a minimalist architectural catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-u9lbDkcUncgHF6Q8v4wqVuVmOdkxBtG8EgfISLziV07Y9e3xmYtrfQz53GZ4_-NvGq9Hb30VsCrVqZ2m2kCDVmaR6FCejjpoDICnGvJ2h-_Qrfn4GaXxCoFq_diEha4d_E6jP7xM6eMGxnIvP0ccDXV8QCoNGT6MmkIv5xIsWshilubSarpOkrjZM9o_wYgJ7o8egUW6WRKKiQg5-ah4no1szU2lP4bGqUMGtIxxoVmTlP-sxwUH1E92oavCWqT5xZDEAd7IhFo"/>
 </div>
 <p class="font-label-sm text-label-sm uppercase text-on-surface">STELLAR GEOMETRIC</p>
 <p class="text-[10px] text-on-surface-variant">ARCHITECTURAL BLUE</p>
@@ -233,7 +235,7 @@
 <!-- Tile Card 3 -->
 <div class="group cursor-pointer" style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.7s;">
 <div class="aspect-square bg-white overflow-hidden rounded mb-3 border border-outline-variant/10">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A monochrome cement tile with a sophisticated interlocking link pattern in charcoal grey and light silver. The lighting captures the flat matte texture and precise lines of the modern design. Clean, high-contrast aesthetic suitable for a premium corporate portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuConP-ZWpTYmTR7H1s1R5v9gPKWFiITLxCjy7trj8X8zdrcU8myVSdJ3YpN5sc6CLS91dizgDv-XtHo4FNIvyyIpW-ECAWsqPI-9TybYcqetrOGswGaEJ99NNBLXGJW7I10_l8ESvAxyogqPh5O73RecZKOarojQw7ZKok_LQnTdaB9qgXFcahfsHP3U2Q7FNfMqJvjfp4n04Ksb3oC3tVswF95Y6aNr_vSYJ6MervC5VvwjnwxxAhN6tZBNGBpQhoRQlvPwdPc8EI">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A monochrome cement tile with a sophisticated interlocking link pattern in charcoal grey and light silver. The lighting captures the flat matte texture and precise lines of the modern design. Clean, high-contrast aesthetic suitable for a premium corporate portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuConP-ZWpTYmTR7H1s1R5v9gPKWFiITLxCjy7trj8X8zdrcU8myVSdJ3YpN5sc6CLS91dizgDv-XtHo4FNIvyyIpW-ECAWsqPI-9TybYcqetrOGswGaEJ99NNBLXGJW7I10_l8ESvAxyogqPh5O73RecZKOarojQw7ZKok_LQnTdaB9qgXFcahfsHP3U2Q7FNfMqJvjfp4n04Ksb3oC3tVswF95Y6aNr_vSYJ6MervC5VvwjnwxxAhN6tZBNGBpQhoRQlvPwdPc8EI"/>
 </div>
 <p class="font-label-sm text-label-sm uppercase text-on-surface">LINK MONOCHROME</p>
 <p class="text-[10px] text-on-surface-variant">CARBON / ASH</p>
@@ -288,7 +290,42 @@
 </div>
 </div>
 <!-- RIGHT COLUMN: Messaging & Artisan Contact (4 Columns) -->
-<div class="lg:col-span-4 space-y-gutter" style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1) 1.1s;">
+<div class="lg:col-span-4 space-y-gutter" style="opacity: 1; transform: translateY(0px); transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1) 1.1s;"><div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/30 mb-gutter">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-[20px] text-on-surface">Live Studio Feed</h3>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-heritage-crimson rounded-full animate-pulse"></span>
+<span class="font-label-sm text-[10px] text-heritage-crimson font-bold uppercase tracking-widest">Live</span>
+</div>
+</div>
+<div class="space-y-6">
+<!-- Feed Item 1 -->
+<div class="group">
+<div class="relative aspect-video rounded-lg overflow-hidden mb-3 border border-outline-variant/20">
+<img alt="Mixing Crimson Pigment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWB_Wj6BhakC3WP3tX0csKV8UOToYgyiMXGlbRQJEHglykBdiXW1O1MaOTofYZZ6UL5EzWCPUTFDAXaYKerumzwb8ut_FiMjy3XiPAX9klcELQRCCoPDgTCa138V_v1bXh-8LN_kLV-PfuZZVJ3AF_ux52feCGkuNjTzusY6l4EhRYPmt1hFtsOlxHziDu2FKpUppMIN-AdsCm1acWFDS9lrJ9bHBcKR9vP04lUx1JpInSTVPa1cd5GeJ_U_mLjcjEwX4nqAsK3g0"/>
+<div class="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-[10px] font-label-sm backdrop-blur-sm">
+                    2 MINS AGO
+                </div>
+</div>
+<p class="font-body-md text-[14px] text-on-surface font-semibold">Mixing Crimson Pigment</p>
+<p class="text-[12px] text-on-surface-variant">Batch YM-2024-8842-CP</p>
+</div>
+<!-- Feed Item 2 -->
+<div class="group">
+<div class="relative aspect-video rounded-lg overflow-hidden mb-3 border border-outline-variant/20">
+<img alt="Curing Row 14" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn9nswXTJzJgux5SBRGaFIhbF3qQD1Cge0EVfUdLkNPA4fbUHU6F1G8Yz7vTFz9GSGsmPBuP-ZK260fKTouBaUXPRoDXITkgnbvLAt2hlHwa9d0pFqyiKPHT3PErZdaNDmyuoHHu80xwg2qVGm5PLH3F7r1_udIIm7YK-SkjQSt_ZExeSB-SuL1DMWbjp6pyGI-4pURFUkICohr5jXiqTgiILLXWCvQAjU9iW8FCtGsT8vcgeYKt3cbO7hyjbU8DYhqo4Kw6-Ocno"/>
+<div class="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-[10px] font-label-sm backdrop-blur-sm">
+                    15 MINS AGO
+                </div>
+</div>
+<p class="font-body-md text-[14px] text-on-surface font-semibold">Curing Row 14 - Geometric Star</p>
+<p class="text-[12px] text-on-surface-variant">Studio Floor A-3</p>
+</div>
+</div>
+<button class="w-full mt-6 py-2 border border-outline-variant/40 rounded-lg font-label-sm text-[12px] uppercase tracking-widest hover:bg-surface-cream transition-colors">
+        View All Photos
+    </button>
+</div>
 <!-- Artisan Profile Card -->
 <div class="bg-architectural-blue text-white p-8 rounded-xl shadow-lg relative overflow-hidden">
 <!-- Subtle background decoration -->
@@ -299,7 +336,7 @@
 <h3 class="font-label-sm text-label-sm uppercase tracking-widest opacity-70 mb-6">Assigned Lead Artisan</h3>
 <div class="flex items-center gap-4 mb-6">
 <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-heritage-crimson">
-<img class="w-full h-full object-cover" data-alt="A portrait of a master tile artisan, a man in his 50s with weathered hands and a kind, focused expression. He is wearing a traditional workshop apron in a warmly lit workshop filled with tile molds and pigments. The background is softly blurred to focus on his expertise and craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsYsfVCY508lJZ2Sx3gj1lsL-d8DErRO3jW4ghrYWLKz7KJsCDgVdbFJoPLCXpWlWkpRcDOHZ1Udb8vNM7OVbvKQa_ugxsM6s9891gnGTHTTdFvSccl3c7ooAC1wsODUek8tUfW9_KFdLvDOjwsJJey2tlVW9X7_OZdGLIucZxw9WDkcyR80XijIHJyz8DZnJ9s_tzwOMmYCt85Xm232lYg2oi6ieCN2LwjhOC3tJxRk0KYq_n0pmtiMWPnvkT-B1IH1lqhFKjAMo">
+<img class="w-full h-full object-cover" data-alt="A portrait of a master tile artisan, a man in his 50s with weathered hands and a kind, focused expression. He is wearing a traditional workshop apron in a warmly lit workshop filled with tile molds and pigments. The background is softly blurred to focus on his expertise and craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsYsfVCY508lJZ2Sx3gj1lsL-d8DErRO3jW4ghrYWLKz7KJsCDgVdbFJoPLCXpWlWkpRcDOHZ1Udb8vNM7OVbvKQa_ugxsM6s9891gnGTHTTdFvSccl3c7ooAC1wsODUek8tUfW9_KFdLvDOjwsJJey2tlVW9X7_OZdGLIucZxw9WDkcyR80XijIHJyz8DZnJ9s_tzwOMmYCt85Xm232lYg2oi6ieCN2LwjhOC3tJxRk0KYq_n0pmtiMWPnvkT-B1IH1lqhFKjAMo"/>
 </div>
 <div>
 <p class="font-headline-md text-[20px]">Rajesh Varma</p>
@@ -407,6 +444,4 @@
             });
         });
     </script>
-
-
 </body></html>

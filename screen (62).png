@@ -1,407 +1,357 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Care &amp; Maintenance Guide | YirehMex Athangudi</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#8e706d",
+                    "surface-tint": "#b52424",
+                    "primary-container": "#b22222",
+                    "terracotta-warmth": "#D2691E",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#fff0ef",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#f8dcd9",
+                    "tertiary-fixed-dim": "#8fcdff",
+                    "on-background": "#261816",
+                    "on-primary-container": "#ffc8c2",
+                    "secondary": "#465f88",
+                    "tertiary": "#00496e",
+                    "on-secondary-container": "#3f5881",
+                    "on-surface-variant": "#5a403e",
+                    "surface-container-highest": "#f8dcd9",
+                    "surface-container": "#ffe9e6",
+                    "surface-container-high": "#fee2df",
+                    "inverse-surface": "#3d2c2b",
+                    "surface-cream": "#F9F7F2",
+                    "surface": "#fff8f7",
+                    "surface-container-lowest": "#ffffff",
+                    "architectural-blue": "#1B365D",
+                    "on-tertiary-container": "#b1daff",
+                    "on-surface": "#261816",
+                    "on-secondary-fixed": "#001b3d",
+                    "inverse-on-surface": "#ffedea",
+                    "on-primary-fixed": "#410003",
+                    "surface-bright": "#fff8f7",
+                    "background": "#fff8f7",
+                    "tertiary-container": "#006292",
+                    "secondary-fixed-dim": "#aec7f7",
+                    "primary-fixed-dim": "#ffb4ac",
+                    "primary": "#8f000d",
+                    "on-tertiary-fixed-variant": "#004b71",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#efd4d1",
+                    "on-secondary-fixed-variant": "#2e476f",
+                    "on-tertiary-fixed": "#001e30",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb4ac",
+                    "secondary-fixed": "#d6e3ff",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffdad6",
+                    "outline-variant": "#e2beba",
+                    "secondary-container": "#b6d0ff",
+                    "heritage-crimson": "#B22222",
+                    "tertiary-fixed": "#cbe6ff",
+                    "on-primary-fixed-variant": "#92030f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "max-width": "1440px",
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-md": ["Manrope"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "body-lg": ["Manrope"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "label-sm": ["Manrope"],
+                    "headline-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             display: inline-block;
-            line-height: 1;
+            vertical-align: middle;
         }
         .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(249, 247, 242, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(178, 34, 34, 0.1);
         }
-        .active-tab-indicator {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .bento-item {
+            grid-column: span 12;
+        }
+        @media (min-width: 768px) {
+            .bento-item-6 { grid-column: span 6; }
+            .bento-item-4 { grid-column: span 4; }
+            .bento-item-8 { grid-column: span 8; }
         }
     </style>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary-fixed": "#001b3d",
-                        "on-surface": "#261816",
-                        "surface-bright": "#fff8f7",
-                        "background": "#fff8f7",
-                        "on-primary-fixed": "#410003",
-                        "inverse-on-surface": "#ffedea",
-                        "on-secondary-fixed-variant": "#2e476f",
-                        "surface-dim": "#efd4d1",
-                        "secondary-fixed-dim": "#aec7f7",
-                        "primary-fixed-dim": "#ffb4ac",
-                        "primary": "#8f000d",
-                        "on-tertiary-fixed-variant": "#004b71",
-                        "on-secondary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "tertiary-container": "#006292",
-                        "on-primary": "#ffffff",
-                        "inverse-primary": "#ffb4ac",
-                        "on-tertiary-fixed": "#001e30",
-                        "on-error-container": "#93000a",
-                        "secondary-fixed": "#d6e3ff",
-                        "on-tertiary": "#ffffff",
-                        "secondary-container": "#b6d0ff",
-                        "primary-fixed": "#ffdad6",
-                        "outline-variant": "#e2beba",
-                        "on-primary-fixed-variant": "#92030f",
-                        "heritage-crimson": "#B22222",
-                        "tertiary-fixed": "#cbe6ff",
-                        "surface-container-low": "#fff0ef",
-                        "primary-container": "#b22222",
-                        "terracotta-warmth": "#D2691E",
-                        "error": "#ba1a1a",
-                        "surface-tint": "#b52424",
-                        "outline": "#8e706d",
-                        "surface-variant": "#f8dcd9",
-                        "tertiary-fixed-dim": "#8fcdff",
-                        "on-error": "#ffffff",
-                        "on-background": "#261816",
-                        "on-primary-container": "#ffc8c2",
-                        "on-secondary-container": "#3f5881",
-                        "secondary": "#465f88",
-                        "tertiary": "#00496e",
-                        "surface-container-highest": "#f8dcd9",
-                        "surface-container": "#ffe9e6",
-                        "on-surface-variant": "#5a403e",
-                        "surface-cream": "#F9F7F2",
-                        "surface-container-high": "#fee2df",
-                        "inverse-surface": "#3d2c2b",
-                        "on-tertiary-container": "#b1daff",
-                        "surface-container-lowest": "#ffffff",
-                        "architectural-blue": "#1B365D",
-                        "surface": "#fff8f7"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "base": "8px",
-                        "margin-mobile": "16px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "max-width": "1440px"
-                    },
-                    "fontFamily": {
-                        "body-md": ["Manrope"],
-                        "headline-md": ["Libre Caslon Text"],
-                        "display-lg": ["Libre Caslon Text"],
-                        "headline-lg-mobile": ["Libre Caslon Text"],
-                        "body-lg": ["Manrope"],
-                        "label-sm": ["Manrope"],
-                        "headline-lg": ["Libre Caslon Text"]
-                    },
-                    "fontSize": {
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
-                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}]
-                    }
-                },
-            },
-        }
-    </script>
 </head>
-<body class="bg-surface-bright text-on-surface font-body-md overflow-x-hidden">
-<!-- Top Navigation Bar -->
-<header class="bg-surface-bright dark:bg-on-surface border-b border-outline-variant/20 dark:border-outline/10 sticky top-0 z-50">
-<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-max-width mx-auto">
-<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
-                YirehMex Athangudi
-            </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Heritage</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Patterns</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Visualizer</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">Services</a>
+<body class="bg-surface-cream text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-surface-cream border-b border-outline-variant/10 flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-heritage-crimson tracking-tight">YirehMex</div>
+<div class="hidden md:flex gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors duration-300" href="#">Heritage</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors duration-300" href="#">Patterns</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors duration-300" href="#">Visualizer</a>
+<a class="font-body-md text-body-md text-heritage-crimson border-b-2 border-heritage-crimson pb-1" href="#">Services</a>
 </div>
-<div class="flex items-center gap-6">
-<button class="bg-heritage-crimson text-white px-6 py-2 rounded-lg font-label-sm uppercase tracking-wider scale-95 active:opacity-80 transition-all">Trade Program</button>
-<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer">shopping_bag</span>
-</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-body-md font-semibold hover:bg-primary transition-all active:opacity-70">Enquire Now</button>
 </nav>
-</header>
-<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-24">
 <!-- Hero Section -->
-<div class="mb-20 text-center md:text-left max-w-3xl">
-<h1 class="font-headline-lg text-headline-lg text-architectural-blue mb-4">Care &amp; Maintenance Guide</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                Protecting the timeless beauty of Athangudi tiles requires precision and artisanal care. Our comprehensive guide ensures your cement tiles age gracefully, developing a rich patina over generations.
+<section class="relative overflow-hidden rounded-xl bg-surface-container py-20 px-8 md:px-16 flex flex-col items-center text-center">
+<div class="absolute top-0 right-0 w-64 h-64 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[12rem]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg text-heritage-crimson mb-6">Preserving Your Heritage Floors</h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+                Athangudi tiles are not just flooring; they are a living craft. With proper care, their colors deepen and their natural patina evolves, making your space more beautiful with every passing decade.
             </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
-<!-- Left Navigation (Vertical) -->
-<aside class="md:col-span-3 sticky top-32 space-y-2">
-<p class="font-label-sm text-label-sm uppercase text-on-surface-variant mb-6 border-b border-outline-variant pb-2">Technical Portal</p>
-<button class="w-full text-left p-4 rounded-lg flex items-center gap-3 group transition-all hover:bg-surface-container active:bg-surface-variant" id="btn-daily" onclick="scrollToSection('daily-care')">
-<span class="material-symbols-outlined text-architectural-blue">cleaning_services</span>
-<span class="font-body-md font-semibold">Daily Care</span>
-</button>
-<button class="w-full text-left p-4 rounded-lg flex items-center gap-3 group transition-all hover:bg-surface-container" id="btn-deep" onclick="scrollToSection('deep-cleaning')">
-<span class="material-symbols-outlined text-architectural-blue">mop</span>
-<span class="font-body-md">Deep Cleaning</span>
-</button>
-<button class="w-full text-left p-4 rounded-lg flex items-center gap-3 group transition-all hover:bg-surface-container" id="btn-stain" onclick="scrollToSection('stain-removal')">
-<span class="material-symbols-outlined text-architectural-blue">format_color_reset</span>
-<span class="font-body-md">Stain Removal</span>
-</button>
-<button class="w-full text-left p-4 rounded-lg flex items-center gap-3 group transition-all hover:bg-surface-container" id="btn-seal" onclick="scrollToSection('sealing')">
-<span class="material-symbols-outlined text-architectural-blue">verified_user</span>
-<span class="font-body-md">Sealing Schedule</span>
-</button>
-</aside>
-<!-- Main Content Area -->
-<div class="md:col-span-6 space-y-24">
-<!-- Daily Care Section -->
-<section class="scroll-mt-32" id="daily-care">
-<div class="flex items-center gap-4 mb-8">
-<div class="h-12 w-1 bg-heritage-crimson"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Daily Care</h2>
-</div>
-<div class="grid gap-6">
-<div class="bg-white border border-outline-variant/30 p-8 rounded-xl hover:border-heritage-crimson/20 transition-all duration-300">
-<h3 class="font-label-sm text-label-sm uppercase text-heritage-crimson mb-2">Preservation</h3>
-<p class="font-body-md text-on-surface mb-4">Athangudi tiles are cured with natural oils. For daily cleaning, use a soft-bristled broom or a micro-fiber dust mop to prevent abrasive grit from scratching the polished surface.</p>
-<div class="bg-surface-cream p-4 rounded-lg flex gap-3 italic text-on-surface-variant font-body-md text-sm border-l-4 border-architectural-blue">
-<span class="material-symbols-outlined">lightbulb</span>
-<span>Always dry-mop before any wet cleaning to remove loose particles that act like sandpaper.</span>
-</div>
-</div>
-</div>
 </section>
-<!-- Deep Cleaning Section -->
-<section class="scroll-mt-32" id="deep-cleaning">
+<!-- Daily & Deep Cleaning Bento Grid -->
+<section class="bento-grid">
+<!-- Daily Cleaning -->
+<div class="bento-item bento-item-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl border border-outline-variant/20">
 <div class="flex items-center gap-4 mb-8">
-<div class="h-12 w-1 bg-heritage-crimson"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Deep Cleaning</h2>
+<span class="material-symbols-outlined text-terracotta-warmth text-4xl" data-icon="mop">mop</span>
+<h2 class="font-headline-md text-headline-md text-architectural-blue">Daily Maintenance</h2>
 </div>
-<div class="bg-white border border-outline-variant/30 overflow-hidden rounded-xl">
-<div class="p-8">
-<p class="font-body-md text-on-surface-variant mb-6">When tiles lose their luster or require a more thorough wash (bi-weekly), follow the pH-neutral protocol.</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="p-6 bg-surface-container-lowest border border-outline-variant/10 rounded-lg">
-<span class="material-symbols-outlined text-architectural-blue mb-2">water_drop</span>
-<h4 class="font-semibold text-on-surface mb-2">Neutral Cleansers</h4>
-<p class="text-sm text-on-surface-variant">Use only pH-neutral soaps. Avoid acidic cleaners (lemon, vinegar) which eat into the cement.</p>
-</div>
-<div class="p-6 bg-surface-container-lowest border border-outline-variant/10 rounded-lg">
-<span class="material-symbols-outlined text-architectural-blue mb-2">opacity</span>
-<h4 class="font-semibold text-on-surface mb-2">Drying Protocol</h4>
-<p class="text-sm text-on-surface-variant">Never allow water to air-dry. Wipe excess moisture immediately with a clean, dry cotton cloth.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Stain Removal (Bento Grid Style) -->
-<section class="scroll-mt-32" id="stain-removal">
-<div class="flex items-center gap-4 mb-8">
-<div class="h-12 w-1 bg-heritage-crimson"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Artisanal Stain Remedies</h2>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="bg-surface-cream p-8 rounded-xl border border-heritage-crimson/10 col-span-2">
-<h3 class="font-label-sm text-label-sm uppercase text-heritage-crimson mb-4">Oil &amp; Grease Stains</h3>
-<div class="flex flex-col md:flex-row gap-6 items-start">
-<div class="flex-1">
-<p class="font-body-md mb-4 text-on-surface-variant">Because Athangudi tiles are porous, oil can penetrate deep. Use the traditional 24-hour Baking Soda Poultice for best results.</p>
-<ol class="space-y-2 text-sm text-on-surface-variant">
-<li class="flex gap-2"><span class="font-bold text-heritage-crimson">01.</span> Mix baking soda with water to a toothpaste consistency.</li>
-<li class="flex gap-2"><span class="font-bold text-heritage-crimson">02.</span> Apply a 1cm thick layer over the stain.</li>
-<li class="flex gap-2"><span class="font-bold text-heritage-crimson">03.</span> Cover with plastic wrap and let sit for 24 hours.</li>
-</ol>
-</div>
-<div class="w-full md:w-32 h-32 bg-white rounded-lg border border-outline-variant flex items-center justify-center">
-<span class="material-symbols-outlined text-4xl text-outline-variant">science</span>
-</div>
-</div>
-</div>
-<div class="bg-white p-6 border border-outline-variant/30 rounded-xl">
-<h4 class="font-semibold text-architectural-blue mb-2">Red Wine/Coffee</h4>
-<p class="text-sm text-on-surface-variant">Blot immediately. Do not rub. Clean with a solution of water and a few drops of hydrogen peroxide.</p>
-</div>
-<div class="bg-white p-6 border border-outline-variant/30 rounded-xl">
-<h4 class="font-semibold text-architectural-blue mb-2">Ink &amp; Dyes</h4>
-<p class="text-sm text-on-surface-variant">Use a cotton ball soaked in rubbing alcohol. Tap gently until the ink is lifted into the cotton.</p>
-</div>
-</div>
-</section>
-<!-- Sealing Schedule -->
-<section class="scroll-mt-32" id="sealing">
-<div class="flex items-center gap-4 mb-8">
-<div class="h-12 w-1 bg-heritage-crimson"></div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Professional Sealing</h2>
-</div>
-<div class="relative overflow-hidden p-8 bg-architectural-blue text-white rounded-xl">
-<div class="relative z-10">
-<h3 class="font-headline-md text-white mb-4">Maintaining the Barrier</h3>
-<p class="mb-8 opacity-90">Athangudi tiles require periodic resealing to maintain water and stain resistance. Use a high-quality penetrating sealer that allows the cement to breathe.</p>
-<div class="flex flex-col sm:flex-row gap-8">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-heritage-crimson mt-1" data-icon="cleaning_services">cleaning_services</span>
 <div>
-<p class="font-label-sm text-secondary-fixed mb-1">Residential</p>
-<p class="text-2xl font-display-lg">Every 3-5 Years</p>
+<h3 class="font-semibold text-on-surface">Soft Sweeping</h3>
+<p class="text-sm text-on-surface-variant">Use a soft-bristled broom daily to remove dust and grit that may cause micro-scratches.</p>
 </div>
-<div class="h-12 w-px bg-white/20 hidden sm:block"></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-heritage-crimson mt-1" data-icon="humidity_mid">humidity_mid</span>
 <div>
-<p class="font-label-sm text-secondary-fixed mb-1">Commercial</p>
-<p class="text-2xl font-display-lg">Every 12-18 Months</p>
+<h3 class="font-semibold text-on-surface">Damp Mopping</h3>
+<p class="text-sm text-on-surface-variant">Mop with a slightly damp microfiber cloth. Avoid soaking the tiles with excessive water.</p>
 </div>
 </div>
 </div>
-<div class="absolute -right-12 -bottom-12 opacity-10">
-<span class="material-symbols-outlined" style="font-size: 240px;">verified_user</span>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-heritage-crimson mt-1" data-icon="science">science</span>
+<div>
+<h3 class="font-semibold text-on-surface">pH-Neutral Cleaners</h3>
+<p class="text-sm text-on-surface-variant">Only use gentle, pH-balanced soaps. Harsh acidic or alkaline cleaners will dull the finish.</p>
 </div>
 </div>
-</section>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-heritage-crimson mt-1" data-icon="block">block</span>
+<div>
+<h3 class="font-semibold text-on-surface">Avoid Abrasives</h3>
+<p class="text-sm text-on-surface-variant">Never use steel wool or harsh scouring pads which can permanently scar the cement surface.</p>
 </div>
-<!-- Right Sidebar (Checklist & Downloads) -->
-<aside class="md:col-span-3 space-y-8 sticky top-32">
-<!-- Maintenance Checklist -->
-<div class="bg-surface-cream p-6 rounded-xl border border-outline-variant/50">
-<h3 class="font-label-sm text-label-sm uppercase text-architectural-blue mb-6 tracking-widest border-b border-outline-variant pb-2">Maintenance Checklist</h3>
-<ul class="space-y-4">
-<li class="flex gap-3">
-<input class="mt-1 rounded text-heritage-crimson focus:ring-heritage-crimson" type="checkbox"/>
-<span class="text-sm font-body-md text-on-surface-variant">Daily dust mopping</span>
-</li>
-<li class="flex gap-3">
-<input class="mt-1 rounded text-heritage-crimson focus:ring-heritage-crimson" type="checkbox"/>
-<span class="text-sm font-body-md text-on-surface-variant">Check furniture pads</span>
-</li>
-<li class="flex gap-3">
-<input class="mt-1 rounded text-heritage-crimson focus:ring-heritage-crimson" type="checkbox"/>
-<span class="text-sm font-body-md text-on-surface-variant">Clean spillages immediately</span>
-</li>
-<li class="flex gap-3">
-<input class="mt-1 rounded text-heritage-crimson focus:ring-heritage-crimson" type="checkbox"/>
-<span class="text-sm font-body-md text-on-surface-variant">Bi-weekly neutral wash</span>
-</li>
+</div>
+</div>
+</div>
+</div>
+<!-- Image Callout -->
+<div class="bento-item bento-item-4 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-angle architectural shot of a stunning sun-drenched room featuring intricate red and white geometric Athangudi tiles. A person's hand is visible using a soft artisanal brush to gently clean the surface. The aesthetic is bright and airy, with warm terracotta tones and a sense of peaceful heritage maintenance. The sunlight creates soft shadows across the patterned floor, emphasizing its handmade texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD35g7MVhKCoTgpGDRDHFS4UsMrXbQhC7LakFHv3XvR-MKOaiiiVheV0jD2I443uA1dYVquEfShwKe1LBuPdi_lH3QHhBB92PT4FBViAlFdhsr3lgEL_yb0-WJgOyIL_hvG17YjPsTTbhIoD8utBihg0v9luEsDNil3Udh14UIiiXZnuLkYM_eZQdxKqbVXA8dG7EsegZxKRIpVu2KiXvBx5bill15m_EgBfl89B33WPTVIC7N7G5ww28g2CCZxBvh2Hop2KG8Elm0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white font-body-md text-sm italic">"The more you walk on these tiles, the better they shine."</p>
+</div>
+</div>
+<!-- Deep Cleaning -->
+<div class="bento-item bento-item-12 bg-surface-container-high p-8 md:p-12 rounded-xl border border-outline-variant/20 flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-architectural-blue text-4xl" data-icon="flare">flare</span>
+<h2 class="font-headline-md text-headline-md text-architectural-blue">Periodic Deep Care</h2>
+</div>
+<p class="text-on-surface-variant">Every 6 to 12 months, your floors benefit from a restorative deep clean to remove embedded grime and revitalize the natural pigments of the cement and mineral oxides.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-terracotta-warmth" data-icon="check_circle">check_circle</span> Use specialized tile soaps enriched with natural oils.</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-terracotta-warmth" data-icon="check_circle">check_circle</span> Soft scrubbing with a medium-soft nylon brush.</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-terracotta-warmth" data-icon="check_circle">check_circle</span> Thoroughly rinse and dry immediately after scrubbing.</li>
 </ul>
-<button class="mt-8 w-full py-3 border border-architectural-blue text-architectural-blue rounded-lg text-sm font-semibold hover:bg-architectural-blue hover:text-white transition-all">Print Checklist</button>
 </div>
-<!-- Download Card -->
-<div class="group relative overflow-hidden rounded-xl bg-on-surface text-white">
-<img class="w-full h-48 object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbkB-JyKRDHmEnidRllVclOziScjItq0YReVm3Jj-Z08C8lXfAKaZk2nuPW8Oakha83Uef_aDPAu_OizPKRbGCGusoTDvuHUh8t24p07936oBJayFasF-pyZRBwfx8bB2Z6XwkmKwq5vLy0s7cIXQcyLiPkliSwCFV50oK09ps5MYVuV97CYCnpEjxU5QQFPc-fvaFbrCS4e0PowMUVIBEkEsNsbAUvZqjRh90hfX4nwLGtmesPqGxF7TWXOp_8CRVKJxY7GddZ88"/>
-<div class="p-6 absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
-<p class="font-label-sm text-xs mb-1 uppercase tracking-widest text-primary-fixed-dim">Resource Library</p>
-<h4 class="font-headline-md text-xl mb-4 leading-tight">Master Care Guide PDF</h4>
-<a class="inline-flex items-center gap-2 bg-heritage-crimson px-4 py-2 rounded-lg font-label-sm text-xs hover:bg-red-800 transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">download</span>
-                            DOWNLOAD NOW
-                        </a>
+<div class="w-full md:w-1/3 aspect-square bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-center items-center text-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-heritage-crimson text-6xl mb-4" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline-md text-lg text-heritage-crimson mb-2">Artisanal Touch</h3>
+<p class="text-sm text-on-surface-variant">Traditional cleaners often use coconut husk for a gentle, natural polish during deep cleaning cycles.</p>
 </div>
 </div>
-<!-- Contact Support -->
-<div class="p-6 border border-outline-variant/30 rounded-xl">
-<p class="text-xs text-on-surface-variant uppercase font-bold mb-2">Need Help?</p>
-<p class="text-sm text-on-surface-variant mb-4">Our restoration experts are available for technical consultations.</p>
-<a class="text-heritage-crimson font-semibold text-sm flex items-center gap-2 hover:underline" href="mailto:support@yirehmex.com">
-                        Contact Tech Support
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
+</section>
+<!-- Stain Removal Section -->
+<section class="space-y-12">
+<div class="text-center">
+<h2 class="font-headline-lg text-headline-lg text-architectural-blue mb-4">Artisanal Remedies for Stains</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Accidents happen. Act quickly with these non-invasive, heritage-approved methods to protect your floor's integrity.</p>
 </div>
-</aside>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant/10">
+<thead class="bg-architectural-blue text-white">
+<tr>
+<th class="p-6 font-semibold">Stain Type</th>
+<th class="p-6 font-semibold">The Remedy</th>
+<th class="p-6 font-semibold">Instructions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-terracotta-warmth" data-icon="oil_barrel">oil_barrel</span>
+<span class="font-bold">Grease &amp; Oil</span>
+</td>
+<td class="p-6">Baking Soda Paste</td>
+<td class="p-6 text-on-surface-variant italic">Apply a thick paste, let sit for 2 hours to draw out oils, then wipe clean.</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-heritage-crimson" data-icon="coffee">coffee</span>
+<span class="font-bold">Coffee or Wine</span>
+</td>
+<td class="p-6">Diluted Vinegar</td>
+<td class="p-6 text-on-surface-variant italic">1 part white vinegar to 4 parts water. Blot—don't rub—the affected area.</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="water_drop">water_drop</span>
+<span class="font-bold">Hard Water Spots</span>
+</td>
+<td class="p-6">Lemon Juice &amp; Salt</td>
+<td class="p-6 text-on-surface-variant italic">A light rub with a lemon slice and fine salt can lift calcium deposits gently.</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-on-background" data-icon="terrain">terrain</span>
+<span class="font-bold">Mud &amp; Soil</span>
+</td>
+<td class="p-6">Warm Soapy Water</td>
+<td class="p-6 text-on-surface-variant italic">Allow mud to dry first, vacuum, then clean with warm water and neutral soap.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</section>
+<!-- Pro Tips Callout -->
+<section class="bg-architectural-blue text-white rounded-xl p-8 md:p-16 relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="space-y-6 md:w-2/3">
+<div class="inline-block px-4 py-1 bg-heritage-crimson text-white text-xs font-bold uppercase tracking-widest rounded-full mb-4">Professional Guidance</div>
+<h2 class="font-headline-lg text-headline-lg">Expert Sealing &amp; Polishing</h2>
+<p class="text-blue-100/80 text-lg">To ensure the lifetime durability of your Athangudi floor, we recommend a professional sealant application every 3-5 years. Our specialized 'Heritage Seal' provides a breathable barrier that prevents liquid penetration while allowing the cement to age naturally.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-white text-architectural-blue px-8 py-3 rounded-lg font-bold hover:bg-surface-cream transition-colors">Book Maintenance</button>
+<button class="border border-white/30 text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors">Download PDF Guide</button>
+</div>
+</div>
+<div class="md:w-1/3 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/10 space-y-4">
+<h3 class="text-xl font-headline-md border-b border-white/20 pb-2">Maintenance Checklist</h3>
+<div class="space-y-3 text-sm">
+<div class="flex justify-between items-center">
+<span>Daily Dusting</span>
+<span class="material-symbols-outlined text-green-400" data-icon="done">done</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Weekly Damp Mop</span>
+<span class="material-symbols-outlined text-green-400" data-icon="done">done</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Monthly Deep Scour</span>
+<span class="material-symbols-outlined text-yellow-400" data-icon="sync">sync</span>
+</div>
+<div class="flex justify-between items-center">
+<span>5-Year Re-Sealing</span>
+<span class="material-symbols-outlined text-blue-400" data-icon="calendar_month">calendar_month</span>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container dark:bg-on-secondary-fixed mt-24">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-16 max-w-max-width mx-auto">
-<div class="md:col-span-1">
-<div class="font-headline-md text-headline-md text-architectural-blue dark:text-secondary-fixed-dim mb-6">YirehMex</div>
-<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant pr-8">
-                    Hand-crafted heritage from Chettinad, delivered to global architectural standards.
-                </p>
+<footer class="w-full mt-24 bg-surface-container py-16">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md text-heritage-crimson">YirehMex</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 YirehMex Athangudi Tiles. Handcrafted Heritage.</p>
 </div>
-<div>
-<h5 class="font-label-sm font-bold mb-6 text-on-surface uppercase tracking-widest">Resources</h5>
-<ul class="space-y-4">
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Care Guide</a></li>
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Trade Program</a></li>
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Gallery</a></li>
-</ul>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-architectural-blue">Explore</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Heritage Collection</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Pattern Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Visualizer PRO</a>
 </div>
-<div>
-<h5 class="font-label-sm font-bold mb-6 text-on-surface uppercase tracking-widest">Company</h5>
-<ul class="space-y-4">
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Sustainability</a></li>
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Contact</a></li>
-<li><a class="font-label-sm text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-heritage-crimson transition-colors" href="#">Terms</a></li>
-</ul>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-architectural-blue">Resources</h4>
+<a class="font-body-md text-body-md text-architectural-blue underline" href="#">Installation Guide</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Maintenance</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Contact Us</a>
 </div>
-<div>
-<h5 class="font-label-sm font-bold mb-6 text-on-surface uppercase tracking-widest">Newsletter</h5>
-<p class="font-label-sm text-on-surface-variant mb-4">Updates on pattern releases and heritage projects.</p>
-<div class="flex">
-<input class="bg-surface-cream border-outline-variant focus:ring-heritage-crimson focus:border-heritage-crimson rounded-l-lg w-full text-sm" placeholder="Email address" type="email"/>
-<button class="bg-architectural-blue text-white px-4 rounded-r-lg">
-<span class="material-symbols-outlined">send</span>
-</button>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-architectural-blue">Follow Our Craft</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-heritage-crimson" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-heritage-crimson" data-icon="share">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-heritage-crimson" data-icon="mail">mail</span>
 </div>
 </div>
-</div>
-<div class="px-margin-desktop py-8 border-t border-outline-variant/20 max-w-max-width mx-auto">
-<p class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-left">
-                © 2024 YirehMex Athangudi Tiles. Artisanal Heritage, Architectural Precision.
-            </p>
 </div>
 </footer>
 <script>
-        function scrollToSection(id) {
-            const element = document.getElementById(id);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-                
-                // Update active state in sidebar
-                const buttons = document.querySelectorAll('aside button');
-                buttons.forEach(btn => {
-                    btn.classList.remove('bg-surface-container', 'font-semibold');
-                });
-                
-                const activeBtn = document.getElementById(`btn-${id.split('-')[0]}`);
-                if (activeBtn) {
-                    activeBtn.classList.add('bg-surface-container', 'font-semibold');
-                }
-            }
-        }
-
-        // Simple Intersection Observer to highlight sidebar as we scroll
-        const sections = document.querySelectorAll('section[id]');
-        const observerOptions = {
-            root: null,
-            threshold: 0.5
-        };
-
+        // Simple intersection observer for subtle fade-in effects
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    const buttons = document.querySelectorAll('aside button');
-                    buttons.forEach(btn => {
-                        btn.classList.remove('bg-surface-container', 'font-semibold');
-                    });
-                    const activeBtn = document.getElementById(`btn-${id.split('-')[0]}`);
-                    if (activeBtn) {
-                        activeBtn.classList.add('bg-surface-container', 'font-semibold');
-                    }
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        sections.forEach(section => observer.observe(section));
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
     </script>
 </body></html>

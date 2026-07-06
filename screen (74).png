@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Custom Design Services | YIREHMEX Athangudi Tiles</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
+<title>YirehMex | Our Collections</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav-border {
+            border-bottom: 2px solid #8f000d;
+        }
+        .glass-overlay {
+            background: rgba(255, 248, 247, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .tile-card-transition {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+<!-- Tailwind Config Injection -->
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "primary-container": "#b22222",
-                        "secondary": "#465f88",
-                        "on-tertiary-fixed-variant": "#004b71",
-                        "surface": "#fff8f7",
-                        "inverse-primary": "#ffb4ac",
-                        "heritage-crimson": "#B22222",
-                        "surface-bright": "#fff8f7",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-container": "#3f5881",
-                        "on-primary": "#ffffff",
-                        "background": "#fff8f7",
                         "terracotta-warmth": "#D2691E",
-                        "on-tertiary-container": "#b1daff",
-                        "tertiary-fixed-dim": "#8fcdff",
-                        "primary-fixed-dim": "#ffb4ac",
-                        "surface-tint": "#b52424",
-                        "surface-container-lowest": "#ffffff",
-                        "on-surface": "#261816",
-                        "on-error": "#ffffff",
-                        "on-secondary-fixed-variant": "#2e476f",
-                        "tertiary-fixed": "#cbe6ff",
-                        "on-secondary-fixed": "#001b3d",
-                        "inverse-on-surface": "#ffedea",
-                        "primary-fixed": "#ffdad6",
-                        "surface-container-highest": "#f8dcd9",
-                        "outline-variant": "#e2beba",
-                        "surface-container-high": "#fee2df",
-                        "secondary-fixed-dim": "#aec7f7",
-                        "tertiary-container": "#006292",
-                        "secondary-container": "#b6d0ff",
-                        "tertiary": "#00496e",
-                        "error-container": "#ffdad6",
-                        "inverse-surface": "#3d2c2b",
-                        "on-primary-fixed": "#410003",
-                        "surface-container": "#ffe9e6",
+                        "secondary": "#465f88",
                         "on-tertiary-fixed": "#001e30",
-                        "architectural-blue": "#1B365D",
-                        "on-background": "#261816",
-                        "primary": "#8f000d",
-                        "error": "#ba1a1a",
-                        "surface-container-low": "#fff0ef",
-                        "secondary-fixed": "#d6e3ff",
-                        "on-surface-variant": "#5a403e",
                         "on-secondary": "#ffffff",
-                        "on-primary-fixed-variant": "#92030f",
-                        "outline": "#8e706d",
-                        "surface-dim": "#efd4d1",
-                        "surface-cream": "#F9F7F2",
-                        "on-primary-container": "#ffc8c2",
                         "on-error-container": "#93000a",
-                        "surface-variant": "#f8dcd9"
+                        "on-tertiary-container": "#b1daff",
+                        "primary-fixed": "#ffdad6",
+                        "inverse-surface": "#3d2c2b",
+                        "inverse-on-surface": "#ffedea",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#ffe9e6",
+                        "on-primary-fixed-variant": "#92030f",
+                        "surface-bright": "#fff8f7",
+                        "surface-container-low": "#fff0ef",
+                        "on-secondary-fixed-variant": "#2e476f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "on-background": "#261816",
+                        "outline-variant": "#e2beba",
+                        "error": "#ba1a1a",
+                        "primary": "#8f000d",
+                        "tertiary-fixed": "#cbe6ff",
+                        "heritage-crimson": "#B22222",
+                        "on-secondary-fixed": "#001b3d",
+                        "primary-container": "#b22222",
+                        "surface-variant": "#f8dcd9",
+                        "on-primary-fixed": "#410003",
+                        "secondary-fixed-dim": "#aec7f7",
+                        "tertiary-fixed-dim": "#8fcdff",
+                        "on-surface": "#261816",
+                        "on-secondary-container": "#3f5881",
+                        "surface-container-high": "#fee2df",
+                        "tertiary-container": "#006292",
+                        "on-primary-container": "#ffc8c2",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#efd4d1",
+                        "secondary-container": "#b6d0ff",
+                        "surface": "#fff8f7",
+                        "secondary-fixed": "#d6e3ff",
+                        "architectural-blue": "#1B365D",
+                        "inverse-primary": "#ffb4ac",
+                        "surface-cream": "#F9F7F2",
+                        "on-surface-variant": "#5a403e",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "on-error": "#ffffff",
+                        "outline": "#8e706d",
+                        "tertiary": "#00496e",
+                        "surface-tint": "#b52424",
+                        "background": "#fff8f7",
+                        "surface-container-highest": "#f8dcd9"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -76,281 +90,213 @@
                         "full": "0.75rem"
                     },
                     "spacing": {
-                        "gutter": "24px",
-                        "base": "8px",
-                        "margin-mobile": "16px",
                         "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
                         "max-width": "1440px"
                     },
                     "fontFamily": {
-                        "label-sm": ["Manrope"],
-                        "display-lg": ["Libre Caslon Text"],
-                        "body-md": ["Manrope"],
-                        "body-lg": ["Manrope"],
                         "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
                         "headline-lg-mobile": ["Libre Caslon Text"],
-                        "headline-md": ["Libre Caslon Text"]
+                        "headline-md": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"]
                     },
                     "fontSize": {
-                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
                         "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
                         "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}]
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
                     }
                 }
             }
         }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        .pattern-bg {
-            background-image: radial-gradient(#B22222 0.5px, transparent 0.5px);
-            background-size: 24px 24px;
-            opacity: 0.05;
-        }
-        .glass-panel {
-            background: rgba(255, 248, 247, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(178, 34, 34, 0.1);
-        }
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-bottom-color: #B22222 !important;
-            background-color: #F9F7F2 !important;
-        }
-    </style>
-</head>
-<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- TopNavBar Component -->
-<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-on-surface/90 border-b border-outline-variant/30 dark:border-outline/20 h-20">
-<nav class="max-w-max-width mx-auto px-margin-desktop flex items-center justify-between h-full">
-<div class="font-headline-md text-headline-md font-bold tracking-tight text-heritage-crimson dark:text-primary-fixed-dim">
-                YIREHMEX
-            </div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">About</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Products</a>
-<a class="text-primary dark:text-inverse-primary font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Services</a>
-<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Visualizer</a>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-heritage-crimson/10">
+<div class="flex justify-between items-center px-margin-mobile py-4 max-w-max-width mx-auto md:px-margin-desktop">
+<span class="font-display-lg text-headline-md text-heritage-crimson tracking-tight">YirehMex</span>
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm" href="#">Collections</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm" href="#">Patterns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm" href="#">Visualizer</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm" href="#">Heritage</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm" href="#">Contact</a>
 </div>
-<div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-on-surface-variant">search</button>
-<button class="bg-heritage-crimson text-white px-6 py-2.5 rounded-lg font-label-sm text-label-sm uppercase hover:opacity-80 scale-[0.99] transition-all duration-300">
-                    Enquire Now
-                </button>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all duration-300">shopping_cart</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all duration-300">person</button>
+<button class="md:hidden material-symbols-outlined text-primary" onclick="toggleFilter()">filter_list</button>
+</div>
 </div>
 </nav>
+<main class="pt-24 pb-20">
+<!-- Header Section -->
+<header class="px-margin-mobile mb-12 max-w-max-width mx-auto md:px-margin-desktop">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-heritage-crimson uppercase tracking-widest">The 2024 Series</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Our Collections</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-4">Explore our curated gallery of hand-crafted Athangudi patterns, where traditional Chettinad artistry meets contemporary architectural precision.</p>
+</div>
 </header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative py-24 md:py-32 overflow-hidden bg-surface-container-low">
-<div class="absolute inset-0 pattern-bg"></div>
-<div class="max-w-max-width mx-auto px-margin-desktop relative z-10 text-center">
-<span class="font-label-sm text-label-sm text-heritage-crimson uppercase tracking-[0.2em] mb-4 block">Bespoke Artisanship</span>
-<h1 class="font-display-lg text-display-lg text-on-surface mb-8 max-w-4xl mx-auto">Custom Design Services</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                    Our master artisans collaborate with architects and homeowners to create bespoke patterns, custom color mixes, and heritage-inspired designs tailored to your unique architectural vision.
-                </p>
+<!-- Collections Gallery: Single Column List -->
+<section class="flex flex-col gap-12 px-margin-mobile max-w-max-width mx-auto md:px-margin-desktop">
+<!-- Card 1: Lotus -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-lg bg-surface-cream border border-heritage-crimson/10 tile-card-transition group-hover:shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A high-fidelity close-up of a Lotus pattern Athangudi tile featuring intricate symmetrical petals in deep heritage crimson and soft cream colors. The lighting is soft and architectural, highlighting the slight tactile variations in the cement texture. The aesthetic is clean, professional, and minimalist, emphasizing the artisanal craftsmanship of the tile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq4BXuY-eVE0CqaKNPn3dsZkjimuOp6nw3j6uTPI8xCtM19H5E3YCbQz0epJmvot7oEb1nhLv7NKRckKs6jMETO079BRAugF6E2YfBbC4X4ZKEPj1DGameJyyNGwtwLOb9MNbu9bDw9p6YaGkd4TUqTh--xFVAKadlSPmBrjq6jBZvHIWE4UpVa3m0jzzXab1cQ26VlRXLldEJwX_ye8Xuz41RuVk3K17GkF1LmfAUtAoGbdPNmypXa6B2KMxgnEYuo2Ro2IZCVMs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 </div>
-</section>
-<!-- Form Section -->
-<section class="py-24 max-w-4xl mx-auto px-margin-mobile md:px-0">
-<div class="glass-panel p-8 md:p-16 rounded-lg shadow-sm border border-outline-variant/30">
-<div class="mb-12 border-l-4 border-heritage-crimson pl-6">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Project Brief</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Tell us about your space and the atmosphere you wish to evoke.</p>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-on-surface">Lotus Pattern</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant py-1 px-3 bg-surface-container rounded-full">FLORAL SERIES</span>
 </div>
-<form class="space-y-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-<!-- Name Field -->
-<div class="flex flex-col gap-2">
-<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Full Name</label>
-<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-3 px-0 font-body-md text-body-md transition-all focus:ring-0" placeholder="e.g. Julianne Varma" type="text"/>
-</div>
-<!-- Email Field -->
-<div class="flex flex-col gap-2">
-<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Email Address</label>
-<input class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-3 px-0 font-body-md text-body-md transition-all focus:ring-0" placeholder="julianne@architectural.com" type="email"/>
+<p class="font-body-md text-on-surface-variant mt-2">A timeless masterpiece inspired by the sacred lotus, featuring radiating petals that create a continuous flow when laid in sequence.</p>
+<div class="flex gap-4 mt-4">
+<button class="bg-heritage-crimson text-white px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-all active:scale-95">VIEW DETAILS</button>
+<button class="border border-architectural-blue text-architectural-blue px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-architectural-blue/5 transition-all">VISUALIZE</button>
 </div>
 </div>
-<!-- Project Type -->
-<div class="flex flex-col gap-2">
-<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Project Type</label>
-<select class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-3 px-0 font-body-md text-body-md transition-all focus:ring-0 appearance-none">
-<option value="">Select an option</option>
-<option value="residential">Private Residential</option>
-<option value="commercial">Commercial Space</option>
-<option value="restoration">Heritage Restoration</option>
-<option value="hospitality">Boutique Hospitality</option>
-</select>
 </div>
-<!-- Project Vision -->
-<div class="flex flex-col gap-2">
-<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Project Vision</label>
-<textarea class="bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant py-3 px-0 font-body-md text-body-md transition-all focus:ring-0 resize-none" placeholder="Describe the patterns, colors, or historical references you have in mind..." rows="4"></textarea>
+<!-- Card 2: Flower Star -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-lg bg-surface-cream border border-heritage-crimson/10 tile-card-transition group-hover:shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A detailed overhead shot of the Flower Star Athangudi tile pattern. The design features a geometric star-shaped flower with architectural blue and terracotta-warmth accents on a neutral cream base. The surface has a subtle, sophisticated sheen reflecting soft studio lighting. Minimalist composition with high-contrast sharp edges typical of premium manufacturing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPFEKR3MSU7Bww7K2uNBjTmdf7ci9Ehx9mcHbaKaPIhUcoqv0o1hT_QfkRd1ApmNbFVNAN8sqiVzwJFl_RpwgAQD76ow-weaZc4_xOKo9os8ve4HeHh9d9ifDif7fOQ0Qvu_NBXP7HSX82kKIL7QQ4027B25XoAZ9vor1rURZP4gNwY48kMLLu0WEyDIs1RjW2lkkGCcnf9VVK0FRkXiySbDGIL865c-M7Jrfbn8j1QJTSBbPKklEmfZ1DyGsLD8rNZPRuOMFKy8o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 </div>
-<!-- Upload Section -->
-<div class="flex flex-col gap-4">
-<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Upload Inspiration</label>
-<div class="border-2 border-dashed border-outline-variant/50 rounded-lg p-12 text-center group hover:border-heritage-crimson/50 transition-colors cursor-pointer" id="drop-zone">
-<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-heritage-crimson transition-colors mb-4" style="font-variation-settings: 'FILL' 0;">upload_file</span>
-<p class="font-body-md text-body-md text-on-surface">Drag and drop images or sketches here</p>
-<p class="font-label-sm text-label-sm text-on-surface-variant mt-2">PNG, JPG, or PDF (Max 10MB)</p>
-<input class="hidden" id="file-upload" multiple="" type="file"/>
-<button class="mt-6 font-label-sm text-label-sm text-heritage-crimson border border-heritage-crimson px-6 py-2 rounded-lg hover:bg-heritage-crimson hover:text-white transition-all" onclick="document.getElementById('file-upload').click()" type="button">Select Files</button>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-on-surface">Flower Star</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant py-1 px-3 bg-surface-container rounded-full">CHETTINAD CLASSIC</span>
 </div>
-<div class="flex flex-wrap gap-2" id="file-list"></div>
-</div>
-<div class="pt-8">
-<button class="w-full md:w-auto bg-architectural-blue text-white px-12 py-4 rounded-lg font-label-sm text-label-sm uppercase tracking-widest hover:bg-heritage-crimson transition-all duration-500 shadow-lg shadow-architectural-blue/10" type="submit">
-                            Submit Consultation Request
-                        </button>
-</div>
-</form>
-</div>
-</section>
-<!-- Image Gallery Hint Section -->
-<section class="py-24 bg-surface-cream overflow-hidden">
-<div class="max-w-max-width mx-auto px-margin-desktop">
-<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Crafting the Extraordinary</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">View some of our recent collaborations where tradition meets bespoke imagination.</p>
-</div>
-<a class="font-label-sm text-label-sm text-heritage-crimson underline underline-offset-8 uppercase tracking-widest flex items-center gap-2" href="#">
-                        View Portfolio <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="group relative overflow-hidden aspect-square bg-surface-container">
-<img class="object-cover w-full h-full scale-100 group-hover:scale-110 transition-transform duration-700" data-alt="A high-angle architectural shot of a luxury residential sunroom featuring bespoke Athangudi tiles in a deep heritage crimson and architectural blue floral pattern. The lighting is bright and airy, catching the subtle tactile texture of the cement tiles. Minimalist furniture surrounds the patterned floor in a light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCTonJJnAJI6Q_4s4ts-tWW3XwROg2PlFcBqDuB7dWPQLwd8CmCaUX4SsUAOLzmDTF_gZn_Q4cW0Q5zFIVhoGC28w8EAvTsEjQfQwqq2l_ZupUQbz5xeqHkVRqIuytAQYX4BpQt2d0zIuIEbv0IjEp16oKulaouXjBGniPqWldpzKeX5h3tizxKWkVHf_tjefc1rWcEs--Rf6DwX0EdnmsqR9DyUzp8Tfm0d4AUqyrvbn8iBDikUCGKN8-Og-h2t3B4pTlbChSzes"/>
-<div class="absolute inset-0 bg-architectural-blue/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-<span class="text-white font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 border border-white">The Villa Resto</span>
+<p class="font-body-md text-on-surface-variant mt-2">A geometric harmony of celestial stars and floral motifs, representing the balance between precision and natural beauty.</p>
+<div class="flex gap-4 mt-4">
+<button class="bg-heritage-crimson text-white px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-all active:scale-95">VIEW DETAILS</button>
+<button class="border border-architectural-blue text-architectural-blue px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-architectural-blue/5 transition-all">VISUALIZE</button>
 </div>
 </div>
-<div class="group relative overflow-hidden aspect-square bg-surface-container">
-<img class="object-cover w-full h-full scale-100 group-hover:scale-110 transition-transform duration-700" data-alt="Close-up detail of custom-made Athangudi tiles with a contemporary geometric pattern in muted earth tones and deep charcoal. The tiles are laid perfectly with mathematical precision. The scene is illuminated by soft, side-lit professional studio lighting, highlighting the artisan hand-crafted quality and clean minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiKmFT1Tc-ksmIBlWcfBt5c5VfFBu4yZXrkMkp-D_CPtH-Wb2xV---Ife77gNlJTP6nfd_CYEYxyUSvIh-Ju2cr0Svtd7cJ9Iilcj3Vg5BwfYwictMgw-x1B-fBnXrH3XMrOw8v5yQ0FdWtk8x-V1p0cK5tJahEiLkulB3Z9Hh0vRoYt4B06GTHd8c0OqGtrozVjOHbnn_sybU1nlBg0HqlZZklrVAMzftfEHwzbpr60VhlDaZv3uhuaydLnl8cwcMUtjbyz3Otmc"/>
-<div class="absolute inset-0 bg-architectural-blue/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-<span class="text-white font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 border border-white">Lobby Project</span>
 </div>
+<!-- Card 3: Butterfly Suite -->
+<div class="group flex flex-col gap-4">
+<div class="relative aspect-square w-full overflow-hidden rounded-lg bg-surface-cream border border-heritage-crimson/10 tile-card-transition group-hover:shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A modern interpretation of the Butterfly Suite Athangudi tile pattern. Stylized butterfly wings create a delicate, rhythmic pattern across the tile surface using a palette of muted secondary blues and soft terracotta. The image is clean and bright, captured with high-end architectural photography techniques in a light-filled modern interior showroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBsDBNdO5SwVpKzWyCBojNvHUs0f6omft0g3qBnrJNmhH9E5M-a0Gg1PqbEwlBEy6VR8AliYQChoYFHtUp5c9jfxghWBY9ssI2RIehkGsNYXBrMIyuSRQAojw4p0bgaODcUX418gIU7wgVRaZcwdMrzagKasuvzHH89foHsL9vrGMWdeVdo5dKlDmN7xUQFP7MLI0BsSf_ullztIjdO9EsgmbBxgI_iCYPiWIc6iLSlRb5iOWlOgk_QWsSfpRTfWZvBKhS1jj3ZHo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 </div>
-<div class="group relative overflow-hidden aspect-square bg-surface-container">
-<img class="object-cover w-full h-full scale-100 group-hover:scale-110 transition-transform duration-700" data-alt="A wide-angle interior of a boutique hotel lobby featuring an expansive custom-designed Athangudi tile rug. The design is heritage-inspired with intricate borders and vibrant ochre and crimson hues. High ceilings and large windows create a bright, professional gallery-like mood, emphasizing the premium digital gallery experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwHnF1pDwD16CK1RwMutlzRVZKsLfbqmnKgjSmSGlrGDn_Z5eFJHLWYgExxf7xmHe5u1JZ4Poj6augFClR5Tf5eOszB7kBtQcVxtQb9Fh_TyrheaA8ilU28GzhZRCGFk25ijLHOTftyq-YB_Zw99esAH1b0ua--ap_IttyqZXUtRn-879SnCakpUAmVKL39-bxSC3IyB7aRLLo0-APLR7sZXj2hhVqrZnLO_XC1zyMJQ-oXIfYQGmZt5DvEIbR8t03HJyVovFzWu4"/>
-<div class="absolute inset-0 bg-architectural-blue/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-<span class="text-white font-label-sm text-label-sm uppercase tracking-widest px-4 py-2 border border-white">Boutique Hotel</span>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-on-surface">Butterfly Suite</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant py-1 px-3 bg-surface-container rounded-full">CONTEMPORARY</span>
 </div>
+<p class="font-body-md text-on-surface-variant mt-2">Delicate wing-like patterns that dance across the floor, offering a light and airy ambiance to modern residential spaces.</p>
+<div class="flex gap-4 mt-4">
+<button class="bg-heritage-crimson text-white px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-all active:scale-95">VIEW DETAILS</button>
+<button class="border border-architectural-blue text-architectural-blue px-6 py-2 rounded-lg font-label-sm text-label-sm hover:bg-architectural-blue/5 transition-all">VISUALIZE</button>
 </div>
 </div>
 </div>
 </section>
 </main>
-<!-- Footer Component -->
-<footer class="w-full pt-16 pb-8 bg-architectural-blue dark:bg-surface-container-lowest text-surface-bright dark:text-on-surface">
-<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<!-- Brand Info -->
-<div class="col-span-1 md:col-span-1">
-<div class="font-headline-md text-headline-md font-bold text-surface-bright dark:text-primary mb-6">
-                    YIREHMEX
-                </div>
-<p class="font-body-md text-body-md text-surface-variant/80 max-w-xs leading-relaxed">
-                    Preserving the soul of Chettinad through artisanal excellence and contemporary architectural precision.
-                </p>
+<!-- Floating Filter Button (Mobile Only) -->
+<button class="md:hidden fixed bottom-6 right-6 z-40 bg-heritage-crimson text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl active:scale-90 transition-transform" onclick="toggleFilter()">
+<span class="material-symbols-outlined">filter_alt</span>
+</button>
+<!-- Full Screen Filter Overlay -->
+<div class="fixed inset-0 z-[60] glass-overlay translate-y-full transition-transform duration-500 flex flex-col" id="filterOverlay">
+<div class="flex justify-between items-center px-margin-mobile py-6 border-b border-heritage-crimson/10">
+<h2 class="font-headline-md text-on-surface">Filter Collections</h2>
+<button class="material-symbols-outlined text-on-surface text-3xl" onclick="toggleFilter()">close</button>
 </div>
-<!-- Links -->
-<div>
-<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 opacity-60">Services</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Custom Design</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Visualizer PRO</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Consultation</a></li>
-</ul>
+<div class="flex-1 overflow-y-auto px-margin-mobile py-8 space-y-12">
+<!-- Series Filter -->
+<section>
+<h3 class="font-label-sm text-label-sm text-heritage-crimson uppercase tracking-widest mb-6">By Series</h3>
+<div class="grid grid-cols-2 gap-3">
+<button class="py-3 px-4 border border-heritage-crimson/20 rounded-lg text-left font-body-md bg-white hover:bg-surface-container transition-colors">Floral</button>
+<button class="py-3 px-4 border border-heritage-crimson/20 rounded-lg text-left font-body-md bg-white hover:bg-surface-container transition-colors">Geometric</button>
+<button class="py-3 px-4 border border-heritage-crimson/20 rounded-lg text-left font-body-md bg-white hover:bg-surface-container transition-colors">Traditional</button>
+<button class="py-3 px-4 border border-heritage-crimson/20 rounded-lg text-left font-body-md bg-white hover:bg-surface-container transition-colors">Monochrome</button>
 </div>
-<div>
-<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 opacity-60">Resources</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Installation Guide</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Maintenance</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Heritage History</a></li>
-</ul>
+</section>
+<!-- Color Filter -->
+<section>
+<h3 class="font-label-sm text-label-sm text-heritage-crimson uppercase tracking-widest mb-6">By Color Palette</h3>
+<div class="flex flex-wrap gap-4">
+<button class="w-12 h-12 rounded-full border-2 border-transparent bg-heritage-crimson ring-offset-2 hover:ring-2 ring-heritage-crimson transition-all"></button>
+<button class="w-12 h-12 rounded-full border-2 border-transparent bg-architectural-blue ring-offset-2 hover:ring-2 ring-architectural-blue transition-all"></button>
+<button class="w-12 h-12 rounded-full border-2 border-transparent bg-terracotta-warmth ring-offset-2 hover:ring-2 ring-terracotta-warmth transition-all"></button>
+<button class="w-12 h-12 rounded-full border-2 border-transparent bg-secondary ring-offset-2 hover:ring-2 ring-secondary transition-all"></button>
+<button class="w-12 h-12 rounded-full border-2 border-transparent bg-white shadow-sm ring-offset-2 hover:ring-2 ring-on-surface-variant transition-all"></button>
 </div>
-<div>
-<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 opacity-60">Legal</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Terms of Service</a></li>
-<li><a class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Contact Us</a></li>
-</ul>
+</section>
+</div>
+<div class="p-margin-mobile bg-white border-t border-heritage-crimson/10 flex gap-4">
+<button class="flex-1 py-4 bg-heritage-crimson text-white font-label-sm text-label-sm rounded-lg" onclick="toggleFilter()">APPLY FILTERS</button>
+<button class="px-6 py-4 border border-on-surface-variant text-on-surface-variant font-label-sm text-label-sm rounded-lg">RESET</button>
 </div>
 </div>
-<div class="max-w-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-label-sm text-label-sm text-surface-variant/60">
-                © 2024 YirehMex Athangudi Tiles. Handcrafted Heritage, Modern Precision.
-            </p>
-<div class="flex gap-6">
-<a class="text-surface-variant/80 hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
-<a class="text-surface-variant/80 hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-<a class="text-surface-variant/80 hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<!-- Footer Shell -->
+<footer class="bg-surface-container border-t border-heritage-crimson/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile py-12 w-full max-w-max-width mx-auto md:px-margin-desktop gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary">YirehMex</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">© 2024 YirehMex Athangudi Tiles. Artisanal Excellence Since 1992.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Sustainability</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Terms of Service</a>
 </div>
 </div>
 </footer>
 <script>
-        // Simple micro-interaction for file upload visualization
-        const fileUpload = document.getElementById('file-upload');
-        const fileList = document.getElementById('file-list');
-        const dropZone = document.getElementById('drop-zone');
-
-        fileUpload.addEventListener('change', (e) => {
-            handleFiles(e.target.files);
-        });
-
-        dropZone.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            dropZone.classList.add('border-heritage-crimson');
-        });
-
-        dropZone.addEventListener('dragleave', () => {
-            dropZone.classList.remove('border-heritage-crimson');
-        });
-
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('border-heritage-crimson');
-            handleFiles(e.dataTransfer.files);
-        });
-
-        function handleFiles(files) {
-            fileList.innerHTML = '';
-            Array.from(files).forEach(file => {
-                const chip = document.createElement('div');
-                chip.className = 'flex items-center gap-2 bg-surface-container text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm border border-outline-variant';
-                chip.innerHTML = `
-                    <span class="material-symbols-outlined text-[16px]">attachment</span>
-                    ${file.name.substring(0, 20)}${file.name.length > 20 ? '...' : ''}
-                    <span class="material-symbols-outlined text-[16px] cursor-pointer hover:text-error" onclick="this.parentElement.remove()">close</span>
-                `;
-                fileList.appendChild(chip);
-            });
+        function toggleFilter() {
+            const overlay = document.getElementById('filterOverlay');
+            if (overlay.classList.contains('translate-y-full')) {
+                overlay.classList.remove('translate-y-full');
+                overlay.classList.add('translate-y-0');
+                document.body.style.overflow = 'hidden';
+            } else {
+                overlay.classList.remove('translate-y-0');
+                overlay.classList.add('translate-y-full');
+                document.body.style.overflow = '';
+            }
         }
 
-        // Smooth scroll for nav links (standard UX)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
+        // Simple scroll reveal for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
         });
     </script>
 </body></html>

@@ -1,315 +1,388 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>YirehMex | Visualizer PRO</title>
+<title>Visualizer PRO | YIREHMEX Athangudi Tiles</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "terracotta-warmth": "#D2691E",
-                    "secondary": "#465f88",
-                    "on-tertiary-fixed": "#001e30",
-                    "on-secondary": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "on-tertiary-container": "#b1daff",
-                    "primary-fixed": "#ffdad6",
-                    "inverse-surface": "#3d2c2b",
-                    "inverse-on-surface": "#ffedea",
-                    "on-tertiary": "#ffffff",
-                    "surface-container": "#ffe9e6",
-                    "on-primary-fixed-variant": "#92030f",
-                    "surface-bright": "#fff8f7",
-                    "surface-container-low": "#fff0ef",
-                    "on-secondary-fixed-variant": "#2e476f",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-fixed-variant": "#004b71",
-                    "on-background": "#261816",
-                    "outline-variant": "#e2beba",
-                    "error": "#ba1a1a",
-                    "primary": "#8f000d",
-                    "tertiary-fixed": "#cbe6ff",
-                    "heritage-crimson": "#B22222",
-                    "on-secondary-fixed": "#001b3d",
-                    "primary-container": "#b22222",
-                    "surface-variant": "#f8dcd9",
-                    "on-primary-fixed": "#410003",
-                    "secondary-fixed-dim": "#aec7f7",
-                    "tertiary-fixed-dim": "#8fcdff",
-                    "on-surface": "#261816",
-                    "on-secondary-container": "#3f5881",
-                    "surface-container-high": "#fee2df",
-                    "tertiary-container": "#006292",
-                    "on-primary-container": "#ffc8c2",
-                    "on-primary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "surface-dim": "#efd4d1",
-                    "secondary-container": "#b6d0ff",
-                    "surface": "#fff8f7",
-                    "secondary-fixed": "#d6e3ff",
-                    "architectural-blue": "#1B365D",
-                    "inverse-primary": "#ffb4ac",
-                    "surface-cream": "#F9F7F2",
-                    "on-surface-variant": "#5a403e",
-                    "primary-fixed-dim": "#ffb4ac",
-                    "on-error": "#ffffff",
-                    "outline": "#8e706d",
-                    "tertiary": "#00496e",
-                    "surface-tint": "#b52424",
-                    "background": "#fff8f7",
-                    "surface-container-highest": "#f8dcd9"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ffc8c2",
+                        "on-surface": "#261816",
+                        "terracotta-warmth": "#D2691E",
+                        "tertiary-fixed": "#cbe6ff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#ffb4ac",
+                        "inverse-on-surface": "#ffedea",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "on-surface-variant": "#5a403e",
+                        "on-secondary-fixed": "#001b3d",
+                        "architectural-blue": "#1B365D",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#006292",
+                        "surface-container-highest": "#f8dcd9",
+                        "on-background": "#261816",
+                        "surface-variant": "#f8dcd9",
+                        "surface-container-high": "#fee2df",
+                        "surface-bright": "#fff8f7",
+                        "secondary": "#465f88",
+                        "secondary-fixed": "#d6e3ff",
+                        "tertiary-fixed-dim": "#8fcdff",
+                        "outline-variant": "#e2beba",
+                        "on-error": "#ffffff",
+                        "tertiary": "#00496e",
+                        "on-primary": "#ffffff",
+                        "surface-cream": "#F9F7F2",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#3f5881",
+                        "on-primary-fixed": "#410003",
+                        "on-tertiary-container": "#b1daff",
+                        "primary-fixed": "#ffdad6",
+                        "secondary-fixed-dim": "#aec7f7",
+                        "primary-container": "#b22222",
+                        "on-error-container": "#93000a",
+                        "surface": "#fff8f7",
+                        "surface-tint": "#b52424",
+                        "outline": "#8e706d",
+                        "heritage-crimson": "#B22222",
+                        "on-secondary-fixed-variant": "#2e476f",
+                        "surface-dim": "#efd4d1",
+                        "surface-container-low": "#fff0ef",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#3d2c2b",
+                        "primary": "#8f000d",
+                        "on-tertiary-fixed": "#001e30",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#ffe9e6",
+                        "background": "#fff8f7",
+                        "on-primary-fixed-variant": "#92030f",
+                        "secondary-container": "#b6d0ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "max-width": "1440px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "margin-desktop": "64px",
-                    "gutter": "24px",
-                    "margin-mobile": "16px",
-                    "base": "8px",
-                    "max-width": "1440px"
-            },
-            "fontFamily": {
-                    "headline-lg": ["Libre Caslon Text"],
-                    "body-lg": ["Manrope"],
-                    "body-md": ["Manrope"],
-                    "label-sm": ["Manrope"],
-                    "headline-lg-mobile": ["Libre Caslon Text"],
-                    "headline-md": ["Libre Caslon Text"],
-                    "display-lg": ["Libre Caslon Text"]
-            },
-            "fontSize": {
-                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
-                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(178, 34, 34, 0.1);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#B222221A 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-        }
-
-        .bottom-sheet {
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: translateY(calc(100% - 60px));
-        }
-        .bottom-sheet.open {
-            transform: translateY(0);
-        }
-
-        .tile-grid-container {
-            perspective: 1200px;
-        }
-        .tile-canvas {
-            transform: rotateX(25deg);
-            transform-origin: center bottom;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #B2222233;
-            border-radius: 10px;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-surface-cream text-on-surface min-h-screen overflow-hidden flex flex-col">
-<!-- TopNavBar (Shared Component Context) -->
-<header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-heritage-crimson/10">
-<div class="flex justify-between items-center px-4 md:px-margin-desktop py-4 w-full max-w-max-width mx-auto">
+</head>
+<body class="bg-surface-cream text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-16 py-4 bg-surface-cream/80 backdrop-blur-md transition-all duration-300 ease-in-out">
 <div class="flex items-center gap-4">
-<button class="md:hidden text-heritage-crimson">
+<img alt="YIREHMEX Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtxamDrxfG4ZxWGy4wX6hagx_q9qEHMuF4WJ-pzqc_rgvXJt5BGsqS6AwZ2pDVuXD-VEaVvL3Yl41oFlantGtwNblpdVjPo63rt5GXm1cKOr--regLY9hhlgz2n0TpS8RcprCWY4COCOK-bnERVqgBEuw4HNreOsq-U3E5nkE-e_ZAoyvTV183iUE1zhtMCO_llaB-hwfql-T1cEeTH0deap0BCGEaBq6jZyz2nLqox8TTMKKoPyGS2qIY"/>
+<span class="font-headline-md text-headline-md font-bold text-heritage-crimson tracking-tight">YIREHMEX</span>
+</div>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Heritage</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Patterns</a>
+<a class="font-body-md text-body-md text-heritage-crimson font-bold border-b-2 border-heritage-crimson pb-1" href="#">Visualizer</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-heritage-crimson transition-colors" href="#">Sustainability</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-heritage-crimson text-white px-6 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity">Launch PRO</button>
+<button class="lg:hidden text-heritage-crimson">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<div class="flex flex-col">
-<h1 class="font-display-lg text-headline-md text-heritage-crimson leading-tight">YirehMex</h1>
-<span class="font-label-sm text-[10px] tracking-widest text-architectural-blue uppercase">Visualizer PRO</span>
 </div>
-</div>
-<nav class="hidden md:flex gap-8">
-<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Collections</a>
-<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Patterns</a>
-<a class="font-label-sm text-primary font-bold border-b-2 border-primary pb-1" href="#">Visualizer</a>
-<a class="font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Heritage</a>
 </nav>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-architectural-blue cursor-pointer">shopping_cart</span>
-<span class="material-symbols-outlined text-architectural-blue cursor-pointer">person</span>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 hero-pattern pointer-events-none"></div>
+<div class="max-w-max-width mx-auto px-6 md:px-16 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container/10 text-heritage-crimson font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] mr-2" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                    Introducing Visualizer PRO
+                </div>
+<h1 class="font-display-lg text-display-lg leading-tight text-architectural-blue">
+                    Visualize Tradition in Your <span class="italic text-heritage-crimson">Modern Space</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Bridge centuries of Chettinad heritage with cutting-edge AR. Our most advanced tool yet for architects and design enthusiasts.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-heritage-crimson text-white px-8 py-4 rounded-lg font-label-sm text-label-sm shadow-xl hover:translate-y-[-2px] transition-all">Start Visualizing</button>
+<button class="border border-architectural-blue text-architectural-blue px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-architectural-blue/5 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">play_circle</span>
+                        How it Works
+                    </button>
 </div>
 </div>
-</header>
-<!-- Main Visualizer Canvas -->
-<main class="flex-1 relative flex flex-col pt-20">
-<div class="flex-1 w-full bg-surface-cream relative overflow-hidden flex items-center justify-center">
-<!-- Background Atmospheric Room Scene -->
-<div class="absolute inset-0 opacity-40 mix-blend-multiply pointer-events-none" data-alt="A high-end, minimalist architectural interior with warm terracotta-washed walls and soft sunlight streaming through a large window. The space is uncluttered, featuring a single light-wood bench and a minimalist desk lamp, creating a professional gallery atmosphere in the signature YirehMex light-mode aesthetic. Soft shadows dance on the clean floor surface, preparing the viewer for a premium tile visualization experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaX9JJL6MNJ8wO0wt7POieB77nkrcHGjgq5q_wM7NAbU8Xvm80sABhz6eHPlM3765bwRs-sNeB12aNGQXWMv-VP4xEf1hPxK8cYGnWgew5lctOmaLZPlL-p511T5PAXRtR6V0xA0kQHNxjEE55aVZGHUQs_Pf9mz62qw-jqNP1ygbyLj472VEyQO80Jzz3Yl16GYQ6q-dDwGqY4GY7cSxlMTivbvjwDO-d2tQPabMi-i4UmKEzdOjg69oTc1HY2YPoSGh5dg9Vu2w')">
+<div class="lg:col-span-7 relative">
+<!-- Visualizer Mockup Interface -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl bg-white border border-outline-variant/30">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A high-end modern minimalist living room with a large floor-to-ceiling window looking out to a serene garden. The room features a soft cream wall and luxury furniture, but the floor is currently unfinished. An augmented reality grid is overlaid on the floor, showing a digital projection of intricate red and gold Athangudi patterns being applied in real-time. The lighting is soft morning sunlight, creating a professional and premium architectural visualization atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuDOwYTHlgNpw4YZwLeuCgn186R7LGgFPidbyq4kLb0MFpGKS4XehqvKaMnMOqhGAl-DW1tQcj39EG8K2J2l1i-BnhNCFcdYcTDYkHIW_KzXWoUL_krlA2hL7PAEKhlMMGuFG8vMShsBqdetlMsg2piIrwAMHY_oP4FfVFVPGP9wVXNA9oKC5ZwP8xjw2n00ZxCiMfh-F0MHOu2B8Bv6NPYCN90nSjWYJsI2D7jVZcBvyK_QoguWJEW8cDuytYCgzVrm2ejQ7hKYw')"></div>
+<!-- AR UI Overlay -->
+<div class="absolute inset-0 flex flex-col justify-between p-6 pointer-events-none">
+<div class="flex justify-between items-start">
+<div class="glass-panel p-3 rounded-xl pointer-events-auto flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="text-white font-label-sm text-[11px] tracking-widest uppercase">Live Room Mapping</span>
 </div>
-<!-- The Tile Grid Visualizer -->
-<div class="tile-grid-container w-full max-w-md px-4 z-10">
-<div class="tile-canvas grid grid-cols-3 gap-1 p-2 bg-white/20 backdrop-blur-sm rounded-lg shadow-2xl border border-white/30">
-<!-- Dynamic Grid Items -->
-<div class="aspect-square bg-cover bg-center" data-alt="A high-resolution, perfectly square Athangudi tile featuring an intricate mandala pattern in terracotta warmth, architectural blue, and cream. The design shows meticulous artisanal craftsmanship with subtle cement textures and hand-painted imperfections typical of heritage tiles." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZTzdQw-1K6E7wsnJy55HisUHlY29jOHDfIqjl_pr2_yFTA7HvP_30djF9fi4QzRuIQRAyTz56DhKQWtZT2HEXqT--vJX28pG6wkUYfIxbq1dmrIWhYxlJlx9CvPLARpEckGqT41_otSMVspb2C6060lCMyz2wZKNzXhaFTGX4aXlFkaV4mzUNCdchtwdP3n97C4f_LMylP7GMGxa2MVNiskJ7RsH-ceTYKFQaJAa40GhQrNhhYon8hI4M1V62Ccwhu7c2j0Y8JfY')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A hand-crafted tile displaying a geometric floral motif with heritage crimson borders and deep architectural blue centers. The light-mode lighting highlights the matte finish and the organic richness of the traditional tile pigment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZlR1v8TR_xVwwhLjBK3g35RfmTdXw5kqCtRiUovqevTBf-Q8tkoBbZXJgYPSg-zDD8kj9DKiO_5e-4sf2xaZlGtmx_DdwWgf0lt_xs3gqB7VFeVlsBhbdjSgUcFiSHHaeJTOLzreFKRr_dV-3a4foVjlJ_-e2-hFrISuikTIQYb6-Cc-vZCaVoPlnMgXsdJr2hIg_Yk47P1OZUbs9mNy699wdAtsWrq9EuJD1IVRtBmHHeKazRI6VBfuVycyHjZV_fUKJj38bvVI')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A traditional Chettinad tile pattern with bold circular symmetry and lotus-inspired shapes. The color palette is a sophisticated blend of terracotta, cream, and deep navy, presenting a modern interpretation of artisanal history." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW5A5rZzTSdCHA23YC1M7ONNKM1bgAVmEp_OfyR3r7H6eA7cYP7fNX3B3loae7FiDwFPxbXyngktOyiltSbGNQyH9OVI9-SQlo0ofkVWr95BTXp-OhtNwLYwnlnqZ-J7ThBPBH7vNO0RPGexr3eNv0zaiO0cGN8IC64Imd2Ublns1Dk7cXpq_NZHrpLMRT9RN-VKPhdv81OW5shXLQjg8v_EtSfch9l8-mpNCJFcefblvJBUFsFgBAlaZpNaAOqppxn5ISkrvk3Sw')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="An ornate ceramic tile with a repeating star and vine pattern, using muted tones of terracotta and white. The surface has a soft, tactile sheen that reflects the light-filled architectural setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVRRVnOTUuYeIcGvPbqx9VQKJpCysIUwqb1Zf5WKkwQIc0-Ozn8r55wT5dQcyq86AiER00lW0W7gAKR5l71XMFw4caTanum7_82BXucctIOEqhEJPns0ONyg88uv2jdpUnYpyPIxraxubNNQ2JLrRmY0dOrWM39pVcpPIv2ujttT-iZlcxLqNtgRC3n59dGNw9MZSK3T2Kvxoy-R2diQPBAyqAGlseMaw2mH1Ui5k0-VRqBrbXgC5YR6rK8qdbgA71H40BwPIyH3o')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A centered lotus motif on a square cement tile, surrounded by a double border of architectural blue and crimson. The crisp lines represent the precision of modern manufacturing mixed with heritage art." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYYDwBCkL9B6thJLW9d4guMPyDFODS2u29DbuvlQ2preiTbMn7dD-V--CtxlqSXUtY-fjm5vZTpkxB-QYBf4cdbBlWeMuJQ5Zhv_Z8re5qERHEghSk6LikYhAUcD2lX6phUR4MVPa1TIHS5mk5aYGgzEzCnO12A-JShZ5QYPzgPe_E2xvmJykU8B8RunHiYIztVH4ELbWSaUotwK2r3Ln_7E-Aq9H4_AiyARIwy_Ydf_ti1Y_tAtdNo4AFA0kPeytpN-IHVarLbFM')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A vibrant floral tile with alternating red and blue petals, centered on a creamy white base. The design is framed by a thin terracotta line, emphasizing the mathematical precision of the layout." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC3VJRRV0d0hw8jR7B57-L2-EIRJy9eoD3r3QQchWEoWn-Kne3OsVG1UZ7o3bfMrMYSlhWW4W8hUIgdp8DXOCpbwK2DW2Dfjmpv-uDFbYmcD2yXRpvRVp7mYuyIAEMZdhv55I3qXfOhimisc7lcKuzQyAz89oZUG3mrb5CNSSrsDraBtu7RsnVJAs3GNFQHA_KFGfUHQrikAt9THl5ACRgybiATwjhbJUVzP8mcH0g32MvAgVCR7Gw_otUmG1EYWc4ITYuF3X_wQE')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A monochromatic geometric pattern with high-contrast lines in architectural blue, creating a sense of depth and modern structural elegance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn3BgNf4wCiGRYMaxGa_z7s-ItZM0cNkXFHc2dVkkz0mEZmOF_ZcBG6zlAaYwEZD4V7qlagNXxUDkXJ3SxAfe6VlGQC5dYarrk79DtJ66qXOcBwonu90sDup8Diji0AEwy2WhOcwj9nq4-gNSsq9DgK86PDyKo1_nlsjrwNjZ55Iy_wSr0MpNTrcotGbM0-J0APYg70R8vynpwfU4FLoeTvxdqthhqJ4CJu4Gp2Psx-eGVjQqC7enMqZuGzE1YD9AWKTndze4-GXc')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A four-petal blossom design in the center of a hand-made tile, featuring traditional earthy pigments and a soft matte finish." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzCaNxAwWI6U3UVmu0urgnJw1NRzCkHM5K1QVmnQl2gQ7yVYVf6DXtG4acxsZG_sZmPdVzgiyOW3skU7A8ef13aW4dR_7CaiAcjPC4t7tNDKhY8ZQRqPGM6uq1aj4cAhsHV97d7gXXzNCWadrC7QiYtbW2bb3JW2VP_KcRDxXyaPvAD5kMcrPcVsNwqXMdrlJEgJfWm-iuIxS5QP6STjge6sBhiK9udb7H88PGKi5kxZtIh3E7sLguBmCegpzudai-R1s8TkcAQak')"></div>
-<div class="aspect-square bg-cover bg-center" data-alt="A detailed border tile design with interlocking scrolls in crimson and terracotta, showcasing the artisanal excellence of Athangudi craftsmen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhb_GXPvmIuFd_SldcuWTbCGZPRexZukKq49FBpicw0VfitWS-1P69GdC1iZ4Tovpv0X9XDFAEb7hMSyPfab_1in-p9mebzGSsQ0DUoEXv_JiGqpOwJGug5qhHL5gIr5wo5EF-n_KQ9ReoXF_EfdoQqiHX-VRwLNxgbVhKXhqBJw721_az2UnjtwKiEpHuBAQIGOmfC2zUP94JIW0ezfwim5hIv8nT4OG1hJLW4sQZY1lgsvEEcXNh61PDjgU0ghcuHXAj3BOdL78')"></div>
+<div class="glass-panel p-3 rounded-xl pointer-events-auto">
+<span class="material-symbols-outlined text-white">close</span>
 </div>
 </div>
-</div>
-<!-- Floating Action Buttons Layer -->
-<div class="absolute bottom-[100px] left-0 w-full px-6 flex justify-between items-center z-20 pointer-events-none">
-<div class="flex gap-4 pointer-events-auto">
-<div class="flex flex-col items-center gap-1 group">
-<button class="w-12 h-12 rounded-full bg-white shadow-lg border border-heritage-crimson/10 flex items-center justify-center text-heritage-crimson active:scale-95 transition-all">
-<span class="material-symbols-outlined">refresh</span>
-</button>
-<span class="font-label-sm text-[10px] text-on-surface-variant group-hover:text-primary">Rotate</span>
-</div>
-<div class="flex flex-col items-center gap-1 group">
-<button class="w-12 h-12 rounded-full bg-white shadow-lg border border-heritage-crimson/10 flex items-center justify-center text-heritage-crimson active:scale-95 transition-all">
-<span class="material-symbols-outlined">flip</span>
-</button>
-<span class="font-label-sm text-[10px] text-on-surface-variant group-hover:text-primary">Mirror</span>
-</div>
-</div>
-<div class="pointer-events-auto">
-<button class="w-14 h-14 rounded-full bg-heritage-crimson shadow-xl border-4 border-white flex items-center justify-center text-white active:scale-90 transition-all">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">save</span>
-</button>
-</div>
-</div>
-</main>
-<!-- Draggable Bottom Sheet: Material Library -->
-<div class="bottom-sheet fixed bottom-0 left-0 w-full h-[618px] bg-white rounded-t-[2rem] shadow-[0_-20px_50px_rgba(0,0,0,0.1)] z-40 flex flex-col border-t border-heritage-crimson/10" id="bottomSheet">
-<!-- Handle -->
-<div class="w-full py-4 flex flex-col items-center cursor-pointer" onclick="toggleSheet()">
-<div class="w-12 h-1.5 bg-surface-variant rounded-full mb-4"></div>
-<h2 class="font-headline-md text-base uppercase tracking-widest text-heritage-crimson">Material Library</h2>
-</div>
-<!-- Library Content -->
-<div class="flex-1 overflow-y-auto px-6 pb-20 custom-scrollbar">
-<!-- Filter Chips -->
-<div class="flex gap-2 mb-6 overflow-x-auto pb-2 no-scrollbar">
-<span class="px-4 py-1.5 bg-heritage-crimson text-white rounded-full font-label-sm whitespace-nowrap">All Tiles</span>
-<span class="px-4 py-1.5 bg-surface-cream text-on-surface-variant border border-heritage-crimson/10 rounded-full font-label-sm whitespace-nowrap">Floral</span>
-<span class="px-4 py-1.5 bg-surface-cream text-on-surface-variant border border-heritage-crimson/10 rounded-full font-label-sm whitespace-nowrap">Geometric</span>
-<span class="px-4 py-1.5 bg-surface-cream text-on-surface-variant border border-heritage-crimson/10 rounded-full font-label-sm whitespace-nowrap">Chettinad</span>
-<span class="px-4 py-1.5 bg-surface-cream text-on-surface-variant border border-heritage-crimson/10 rounded-full font-label-sm whitespace-nowrap">Borders</span>
-</div>
-<!-- Tile Catalog Grid -->
-<div class="grid grid-cols-4 gap-3">
-<!-- Repeatable Tile Card -->
-<div class="aspect-square rounded-lg border border-heritage-crimson/20 p-0.5 bg-white ring-2 ring-primary ring-offset-2">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A detailed view of a premium Athangudi tile with a traditional lotus design in warm terracotta and cream." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9sZXP76P0DgzdiSB6eoc0BUmWOlNoRekDHnM4IlaWibCMnhxIe7JsRFCnBele0v3u-4K6MvVo4AdzZm5wUhluvXF40bNBoTwPZQSVXas3qs7tte_4Kw_sNza-xnXh7e2JdtUV8oNM0DI5KvXY-TbsKnWlWzQqQU09165TG7ASd-hikzUpJQ-lhhatZjjNq1xV-zeCY8nVEHWr1f4KUv8eVHgiC11BPxv1yUSCJzy1on_gzQ6OMjnD8OBvQgDcwJvIGkKwHWp_iU0')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A high-contrast geometric tile pattern with sharp architectural blue lines and cream accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClrFKGkV-PC_1cOZiKShC_h6rPHgGTsO1_RprDGyLvnKaagA2tUa0P3DW_RtwKRF--WHE6fRx8b3zl5Joe7LBIaB_7TAp_kZ8Brqkk8gEg9R7DMq61sfZwDAbKgyoLXDO68bX80uap5yG6tPVOkd9Uv2I-nNU32Ow2c2PdZ4lkDgVhIYp8UQx5dSOEk38Z-AIITpzaoOp5Io73LcXi5yoCDicB9JvIAGnK6kLncx9b1YgL7s2jXMQhUnxdw0r7C7Ai1DhMYww0jiU')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="An ornate floral pattern featuring heritage crimson and muted gold tones on a classic cement tile." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAu47WYv5l1JXIWIxKIwc2_VeW1MubpYuxIyMBOX4_1Zxw6jhWJVi6ZL1HIiyR66GPmb5rTBPfsgKis9AzJKnWm8dQRwhVOyv3lfM_uAxHh3U_dbtKXbnOI-ct4SWJ6dFDf_m2HBMmm_i7IObOK1jIAa1rC8GE441mw0TbtQlszcgCLk_0xQnwSeqcCirMNEFMsRc2GdRgg9xclBs2fLQi1pA7HFJvyItpecWiz4t3olJODvoviqXMPoyToLsc-Gfs4r42cISjXMyE')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A minimal tile design with a central circular motif and thin terracotta borders." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-WgoEY7DWjnFCNW8AL6eYHChHkii2qDL3vT56FvBf-0UNiKcMTe-bUYvwVddsVe1wSGIeqqzPIDYkq3Jz5l6V882jBUh22U-ptJnUA-i_2XfVKVWAbmufi2YiWbl89s3OvwwDMXybB9Nvdj8P3dkrfISZ0GawKJenR6vgAbR-iMiJXtFLbYUkiEwip9gqGpM5ENbVbzp83Usa3uU5J6D5C4d64gZv0-Z5Y0yDNAc8jCBcc9gNPyA29L2XtpcHh-oQLuhrWAi0XDQ')"></div>
-</div>
-<!-- Row 2 -->
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A complex interlocking geometric design in architectural blue and white." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMpH63bM8IgVkKkjXCxjruX5eRdTtlSjsSywebaYYRjWA7wGDnYS7wklYGeYZ7c54hZicm2WFmDpkpAaAgImMjpdBD16-ILXKWAgv-q4wakEF1bpsjaV1fQ6me7aZitcYMKE0xLTfzImY9SgEC7dkzuW6QCLK2LhMkee6HA85xrPQdHnsJg-vlhDhWqQUI4DcEw3Amntxyd3j7CRgxh4CBH80n3A7YMA2HLOGr_iplzFJYimpZXZ5M_wISztwSwTBDET0Tlxnz2Q4')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A traditional mandala pattern with intricate linework in earthy terracotta tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOgwjw_hGd2HUvQYN6GUdNrkOko2IyJT-hmkFT1YRF4GezEFbzWHOb_qlO8_xCjaQCYXcCW8OLHGAEghZyWYLrZCtnIlYhIR8m0sbPqoh1ZAkhovxtAyLA5EgUdiwCOfMPHDQTWmP7QEePYscILk1Ov0MPqefHCvzYITps_5Vb9ojN10AP7HzZIN45Djj55fzHr6rniVcwPA1mSzfaFG4fqI7G9iBT71ggKF0x-iOw8-1VnW_D6pT6XCn11XUXJOVkzWY70RhNqUg')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A stylized leaf motif in deep crimson and moss green on a light cream background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_BmTBLNTkIixgEd2HU-TXBM1Z2artwy2gSL-qmWF03jgnQkedn0-JoVj3EelahxKsYbxzAIdF1XykvfLRLZp_emRHpqhYpOkJMlpHQh2lW0tTndajayl5bmvAfBg1u5w0kv430CBSobKKdL-JWjqojMpIwRQ49SkvLJnjYioNjbbr3KwZjcz3cdpxxbNUVqkpwMhKoQIhvP_MNNP9hyGIphhvGY3MOF3YrD8uBq_GTgbb7IBUHvdHjik3A5ousP510poCub9zHuc')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A classic checkerboard pattern with subtle hand-painted textures and soft edges." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwpv9jEukR3TxTzrmdijcBDhZyZeUde2iPHvgKBLedBy4J3JZIofNlYXwZKzhBTzl0mEPtJxN0QNgQKx99DkBjjbsrkEq5WgmKwAdAF_5Hz6MYW8p8kDWaYELeTk-pvhbNLdXzB-JqT-L2t4wSj4gzekdHIA3489Q3-d4b5CsFsnuChtLhc-rDturEBTtbTllSIZKo-5iDjd1TA3ncPDHXS3jy7toHiLz7ODEsrZXNBQycet6ZjqAC-KP6zAdj9kXdCxPbdrZv6WA')"></div>
-</div>
-<!-- Row 3 -->
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A vibrant sunburst design centered on a hand-pressed cement tile." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA78cs8CuO9FdlBMs0lw4u1FGC-oMU6GsezP9J-lemogKZRLBFW7qre-a22mgDHhW7HKjm4qEKyKWpwEiao88fEjWZBN2nRKTnQvrCQn-FmPU-DcDmsA73GELCRyUTw-KYpQinel71Kw0N6yb9zNfxHkyngqeTSFrDgWRCwRbSoCy4JXPFJL-uQfGlB1pex0GEd_Lx3j0-54wNOpiMO6o2kZGQlRr7z0lBebw70w_fIqeuX5H6vfg5p92-FRHBho1NTdB5ac29PHO8')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A sophisticated border pattern with continuous scrolling vines in heritage colors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP2LBhdteZT2jnW92enFmDhyOq6g0eJx5dVRVSK2EqGjE4RVZZ7suKWLyr8nGrRAj7rnhyu0j0djzsaWg7qMG_smfajDbIPSXAFHSVS8_TNE_vdo-TpKKlaMR07B9b2-m53x5WGN-_LFqQL6cwHA695Z5qv5vfCbauZ8txS2I8_ffq33hL9vAn1s6k4mhiri7E-uneeye4aDz-W6OaDbkuxFWOKA0nn7xaeGeKNLWTKoAJ-uoHU-g_tXw61mTZxENoU41KwKM6f4A')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A modern abstract design inspired by traditional weaving patterns in terracotta and blue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCe_8RoCqgSInOFj3HszO1dqbl5XC7gA-lDGFDmSGxadQqeg31CMBYM-oUeaNSCncVsjBk0yivYp9yxPbdkD3UPMi4XngWhdC3VWiwRAhUvla7yMuaKuEVkxMcCnHSZEVg4y5yyRxMOQo6YWNA9Gtx1qqMz1ZCYCaY4AYaNohwh8welQ_qSeaF6k_PXUNS_nzWfAuTrSyicQZLrN2uAc80YS2_dF2XgpOtRJO9ujw9LObKC4ou_cob1XcDrJ0N4YDQSxlM5VUKS19M')"></div>
-</div>
-<div class="aspect-square rounded-lg border border-heritage-crimson/5 bg-white hover:border-heritage-crimson/30 transition-all cursor-pointer">
-<div class="w-full h-full bg-cover bg-center rounded-sm" data-alt="A bold 8-pointed star pattern with high-gloss finish highlights and deep matte backgrounds." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdMyC62e99sVkAKapwAxQ8gNXeC3AiOIiWVgnKSuupxvkBxol2i2guWsYBUi4Ase0Hy8gLWWNQwE-GnsF59LIA6v2EVfQYXTbl5KgnFzXc3mE9bqqu7KJNmdU_E7y3QKNVcjDZSiIuQPcaxnBWCZ0Xo_fKjlmfKL1i-ACfl7Tqz25eD-c3ZgTaWpiKsEuAoUoFjFVSCGSzzmkOBzCoIlwmlL89PdzmV4dN5F1mV6Eo2yQdvj6T1-CBEkbCt0mGhNdotuQlN69W7vc')"></div>
+<div class="flex justify-center mb-8">
+<div class="glass-panel p-2 rounded-2xl pointer-events-auto flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center border-2 border-white" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLuVdSXNpE3BYyP94cMkl0kgcrlNBs1YChhg6FbhAZfYxyr94xcyZXIVkQqbS-AnyHokgmWszKFupZhE6-Ch-riM_AqFT9MKqKInxIlmLJCRDMiDLYAV3kePKOb_y8RjUvC8X9tu34BDjZKUADLLTkXMYOmpgap_7DRL9V3NnUD39nksw2PVwOjc7otalI6NSaW1xATdst0w24B2XzV1lzDLajTpUApKzfvFWBnld9-pu3Yixn2B_bQL9ys')"></div>
+<div class="w-16 h-16 rounded-lg bg-cover bg-center opacity-60 hover:opacity-100 transition-opacity" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLu2ze_f5UcWb9KryONV49JYAkfQjTx6CAB5z6AK8FjE1zZVsG_H0Rfgt-f2w0mX1VYY35HC_hkOyl-ZJsKqfDCHrTX3GRGOrpa4t1PVfemKMqVkBnRsNCZr2Da4ZTzrmS14gG3ENofaMUp1jdCd9ctty-IhVMBKYRWyD-Uz1LVLDflaYLfHrS-YxyoesYTwF8Q2L5Q5YfiBWAzUZflDNIDUraii3oKrXQ8dCzS56pOIDYc_voKjrANep24')"></div>
+<div class="w-16 h-16 rounded-lg bg-cover bg-center opacity-60 hover:opacity-100 transition-opacity flex items-center justify-center bg-black/20">
+<span class="material-symbols-outlined text-white">add</span>
 </div>
 </div>
 </div>
 </div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-heritage-crimson/5 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-architectural-blue/5 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-32 bg-white">
+<div class="max-w-max-width mx-auto px-6 md:px-16">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-architectural-blue mb-4">Precision Tools for Design Perfection</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Our PRO suite empowers you to explore traditional craftsmanship through a digital lens of unparalleled accuracy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="p-10 rounded-2xl bg-surface-cream border border-outline-variant/10 group hover:border-heritage-crimson/20 transition-all">
+<div class="w-14 h-14 rounded-lg bg-architectural-blue flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-white text-3xl">add_a_photo</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-4">Instant AR Overlay</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Simply upload a photo of your room. Our AI detects perspective and light to map tiles perfectly onto your floor.</p>
+</div>
+<!-- Feature 2 -->
+<div class="p-10 rounded-2xl bg-surface-cream border border-outline-variant/10 group hover:border-heritage-crimson/20 transition-all">
+<div class="w-14 h-14 rounded-lg bg-heritage-crimson flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-white text-3xl">palette</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-4">Custom Color Mixing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Swap authentic mineral pigments in real-time. Match your tile palette to your upholstery or wall paint with ease.</p>
+</div>
+<!-- Feature 3 -->
+<div class="p-10 rounded-2xl bg-surface-cream border border-outline-variant/10 group hover:border-heritage-crimson/20 transition-all">
+<div class="w-14 h-14 rounded-lg bg-architectural-blue flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-white text-3xl">view_in_ar</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-4">Photorealistic Render</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">See the subtle texture of the cement and the soft sheen of heritage patterns in stunning 4K clarity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Step by Step Guide -->
+<section class="py-32 bg-surface-cream relative overflow-hidden">
+<div class="max-w-max-width mx-auto px-6 md:px-16">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div>
+<span class="font-label-sm text-label-sm text-heritage-crimson uppercase tracking-widest block mb-2">Process</span>
+<h2 class="font-headline-lg text-headline-lg text-architectural-blue">How to Visualize</h2>
+</div>
+<button class="bg-architectural-blue text-white px-8 py-3 rounded-lg font-label-sm text-label-sm">Launch Tool Now</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Step 1 -->
+<div class="relative">
+<div class="text-[120px] font-headline-lg leading-none text-outline-variant/30 absolute -top-12 -left-4 select-none">01</div>
+<div class="relative z-10 pt-12">
+<h4 class="font-headline-md text-headline-md text-architectural-blue mb-4">Upload Space</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Snap a photo of your existing space or upload a blueprint render to begin the digital transformation.</p>
+<div class="aspect-square bg-white p-4 rounded-xl shadow-sm border border-outline-variant/10">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center rounded-lg border-2 border-dashed border-outline">
+<span class="material-symbols-outlined text-4xl text-outline">upload_file</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="text-[120px] font-headline-lg leading-none text-outline-variant/30 absolute -top-12 -left-4 select-none">02</div>
+<div class="relative z-10 pt-12">
+<h4 class="font-headline-md text-headline-md text-architectural-blue mb-4">Select Pattern</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Browse our curated heritage collection. Select patterns that resonate with your architectural vision.</p>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Pattern A" class="w-full aspect-square object-cover rounded-lg shadow-md hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AP1WRLuVdSXNpE3BYyP94cMkl0kgcrlNBs1YChhg6FbhAZfYxyr94xcyZXIVkQqbS-AnyHokgmWszKFupZhE6-Ch-riM_AqFT9MKqKInxIlmLJCRDMiDLYAV3kePKOb_y8RjUvC8X9tu34BDjZKUADLLTkXMYOmpgap_7DRL9V3NnUD39nksw2PVwOjc7otalI6NSaW1xATdst0w24B2XzV1lzDLajTpUApKzfvFWBnld9-pu3Yixn2B_bQL9ys"/>
+<img alt="Pattern B" class="w-full aspect-square object-cover rounded-lg shadow-md hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AP1WRLu2ze_f5UcWb9KryONV49JYAkfQjTx6CAB5z6AK8FjE1zZVsG_H0Rfgt-f2w0mX1VYY35HC_hkOyl-ZJsKqfDCHrTX3GRGOrpa4t1PVfemKMqVkBnRsNCZr2Da4ZTzrmS14gG3ENofaMUp1jdCd9ctty-IhVMBKYRWyD-Uz1LVLDflaYLfHrS-YxyoesYTwF8Q2L5Q5YfiBWAzUZflDNIDUraii3oKrXQ8dCzS56pOIDYc_voKjrANep24"/>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="text-[120px] font-headline-lg leading-none text-outline-variant/30 absolute -top-12 -left-4 select-none">03</div>
+<div class="relative z-10 pt-12">
+<h4 class="font-headline-md text-headline-md text-architectural-blue mb-4">Render &amp; Share</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Generate a high-resolution visualization and share it with your architect or clients instantly.</p>
+<div class="aspect-[4/3] relative rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A professional 4K interior architectural rendering showing a completed room design with Athangudi tiles. The floor is a vibrant display of traditional green, red, and gold patterns that perfectly complement the modern Scandinavian furniture. A UI overlay shows a 'Download PDF Report' and 'Share to WhatsApp' button, illustrating the professional export features of the tool. The lighting is cinematic and high-fidelity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-i5xQoASpbFz--tl5PtPW4b5adhj_8-DItmSA5vKF45ZUnxifDLaX35DXKi9tqpWbiY06wjxxmOgS40Gj7NoI7hpvbxoycqeK5K52uNbTNzz86UUhvFnRFmAz0IpMyaquvQvepkxox91Z1hJoNJwEe7UvrXtkTJ0iJCLIsqlttng8TYrug4lF2-xeHNQ94bCvPHO8-VyWBQ1dlLmM7WjAk920e0BOgytuR1qJ0e57FVQ8GLSRG1NevgwbUlLwy0lPucl1P7y-NBE')"></div>
+<div class="absolute inset-0 bg-architectural-blue/20 flex items-center justify-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center animate-bounce shadow-xl">
+<span class="material-symbols-outlined text-architectural-blue">check</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By Section -->
+<section class="py-24 bg-architectural-blue text-white overflow-hidden">
+<div class="max-w-max-width mx-auto px-6 md:px-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 items-center">
+<div class="md:col-span-1">
+<h2 class="font-headline-md text-headline-md leading-tight mb-2">Trusted by Architects</h2>
+<p class="font-label-sm text-label-sm opacity-60 uppercase tracking-widest">Global Industry Leaders</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap justify-between items-center gap-12 grayscale opacity-40">
+<div class="text-3xl font-bold tracking-tighter italic">Studio A+D</div>
+<div class="text-3xl font-bold tracking-widest uppercase">HeritageGroup</div>
+<div class="text-3xl font-headline-md">VastuDesigns</div>
+<div class="text-3xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl">architecture</span>
+                        ModernArch
+                    </div>
+</div>
+</div>
+<div class="mt-24 grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="border-l border-white/20 pl-6">
+<div class="text-4xl font-bold mb-2">5,000+</div>
+<div class="font-label-sm text-label-sm opacity-70 uppercase">Spaces Visualized</div>
+</div>
+<div class="border-l border-white/20 pl-6">
+<div class="text-4xl font-bold mb-2">120+</div>
+<div class="font-label-sm text-label-sm opacity-70 uppercase">Pattern Combinations</div>
+</div>
+<div class="border-l border-white/20 pl-6">
+<div class="text-4xl font-bold mb-2">100%</div>
+<div class="font-label-sm text-label-sm opacity-70 uppercase">Color Accuracy</div>
+</div>
+<div class="border-l border-white/20 pl-6">
+<div class="text-4xl font-bold mb-2">2s</div>
+<div class="font-label-sm text-label-sm opacity-70 uppercase">Rendering Speed</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-white relative">
+<div class="max-w-max-width mx-auto px-6 md:px-16 text-center">
+<div class="bg-surface-cream py-20 px-8 rounded-[40px] relative overflow-hidden border border-outline-variant/10">
+<div class="absolute top-0 right-0 p-8">
+<img alt="YIREHMEX Watermark" class="w-16 h-16 opacity-10" src="https://lh3.googleusercontent.com/aida/AP1WRLtxamDrxfG4ZxWGy4wX6hagx_q9qEHMuF4WJ-pzqc_rgvXJt5BGsqS6AwZ2pDVuXD-VEaVvL3Yl41oFlantGtwNblpdVjPo63rt5GXm1cKOr--regLY9hhlgz2n0TpS8RcprCWY4COCOK-bnERVqgBEuw4HNreOsq-U3E5nkE-e_ZAoyvTV183iUE1zhtMCO_llaB-hwfql-T1cEeTH0deap0BCGEaBq6jZyz2nLqox8TTMKKoPyGS2qIY"/>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-architectural-blue mb-6">Ready to see the future of your floors?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">Start your design journey today with our Visualizer PRO. It's free to try and built for professionals.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-heritage-crimson text-white px-10 py-5 rounded-lg font-label-sm text-label-sm hover:translate-y-[-2px] transition-all">Launch PRO Interface</button>
+<button class="bg-white text-architectural-blue border border-architectural-blue px-10 py-5 rounded-lg font-label-sm text-label-sm hover:bg-architectural-blue/5 transition-all">Contact Specialist</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-architectural-blue border-t border-outline-variant/10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3">
+<img alt="Footer Logo" class="h-8 w-auto invert brightness-0 grayscale opacity-100" src="https://lh3.googleusercontent.com/aida/AP1WRLtxamDrxfG4ZxWGy4wX6hagx_q9qEHMuF4WJ-pzqc_rgvXJt5BGsqS6AwZ2pDVuXD-VEaVvL3Yl41oFlantGtwNblpdVjPo63rt5GXm1cKOr--regLY9hhlgz2n0TpS8RcprCWY4COCOK-bnERVqgBEuw4HNreOsq-U3E5nkE-e_ZAoyvTV183iUE1zhtMCO_llaB-hwfql-T1cEeTH0deap0BCGEaBq6jZyz2nLqox8TTMKKoPyGS2qIY"/>
+<span class="font-headline-md text-headline-md text-surface-cream">YIREHMEX</span>
+</div>
+<p class="font-label-sm text-label-sm text-surface-cream/70">© 2024 YirehMex Athangudi Tiles. Handcrafted Excellence.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-sm text-label-sm text-surface-cream/70 hover:text-surface-cream hover:underline transition-all" href="#">Design Tools</a>
+<a class="font-label-sm text-label-sm text-surface-cream/70 hover:text-surface-cream hover:underline transition-all" href="#">Care Guide</a>
+<a class="font-label-sm text-label-sm text-surface-cream/70 hover:text-surface-cream hover:underline transition-all" href="#">Trade Program</a>
+<a class="font-label-sm text-label-sm text-surface-cream/70 hover:text-surface-cream hover:underline transition-all" href="#">Contact Us</a>
+<a class="font-label-sm text-label-sm text-surface-cream/70 hover:text-surface-cream hover:underline transition-all" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-surface-cream/20 flex items-center justify-center text-surface-cream hover:bg-surface-cream/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-surface-cream/20 flex items-center justify-center text-surface-cream hover:bg-surface-cream/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+</footer>
 <script>
-        function toggleSheet() {
-            const sheet = document.getElementById('bottomSheet');
-            sheet.classList.toggle('open');
-        }
-
-        // Lightweight micro-interaction for tile selection
-        document.querySelectorAll('.grid > div').forEach(item => {
-            item.addEventListener('click', function() {
-                // In a real app, this would update the main visualizer grid
-                console.log('Tile Selected');
-                // Pulse animation
-                this.classList.add('scale-95');
-                setTimeout(() => this.classList.remove('scale-95'), 100);
-            });
-        });
-
-        // Simple touch/drag handling for mobile
-        let startY;
-        const sheet = document.getElementById('bottomSheet');
-        
-        sheet.addEventListener('touchstart', e => {
-            startY = e.touches[0].clientY;
-        });
-
-        sheet.addEventListener('touchmove', e => {
-            const moveY = e.touches[0].clientY;
-            const diff = startY - moveY;
-            if (diff > 50 && !sheet.classList.contains('open')) {
-                sheet.classList.add('open');
-            } else if (diff < -50 && sheet.classList.contains('open')) {
-                sheet.classList.remove('open');
+        // Simple scroll interaction for Header
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-sm');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2', 'shadow-sm');
             }
+        });
+
+        // Hover effect for pattern images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mouseenter', function() {
+                this.style.filter = 'brightness(1.1)';
+            });
+            img.addEventListener('mouseleave', function() {
+                this.style.filter = 'brightness(1)';
+            });
         });
     </script>
 </body></html>

@@ -1,362 +1,377 @@
-<!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Request Confirmed | YirehMex</title>
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Heritage Tile Dossier | The Azure Coastal Villa</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
 <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "outline": "#8e706d",
-            "surface-dim": "#efd4d1",
-            "surface-cream": "#F9F7F2",
-            "on-primary-container": "#ffc8c2",
-            "surface-variant": "#f8dcd9",
-            "on-error-container": "#93000a",
-            "on-secondary": "#ffffff",
-            "on-primary-fixed-variant": "#92030f",
-            "on-background": "#261816",
-            "primary": "#8f000d",
-            "error": "#ba1a1a",
-            "secondary-fixed": "#d6e3ff",
-            "surface-container-low": "#fff0ef",
-            "surface-container": "#ffe9e6",
-            "architectural-blue": "#1B365D",
-            "on-tertiary-fixed": "#001e30",
-            "error-container": "#ffdad6",
-            "inverse-surface": "#3d2c2b",
-            "on-primary-fixed": "#410003",
-            "tertiary-container": "#006292",
-            "secondary-container": "#b6d0ff",
-            "tertiary": "#00496e",
-            "surface-container-high": "#fee2df",
-            "secondary-fixed-dim": "#aec7f7",
-            "surface-container-highest": "#f8dcd9",
-            "primary-fixed": "#ffdad6",
-            "outline-variant": "#e2beba",
-            "inverse-on-surface": "#ffedea",
-            "tertiary-fixed-dim": "#8fcdff",
-            "primary-fixed-dim": "#ffb4ac",
-            "on-secondary-fixed-variant": "#2e476f",
-            "surface-tint": "#b52424",
-            "surface-container-lowest": "#ffffff",
-            "on-surface": "#261816",
-            "on-error": "#ffffff",
-            "on-secondary-fixed": "#001b3d",
-            "tertiary-fixed": "#cbe6ff",
-            "on-secondary-container": "#3f5881",
-            "on-primary": "#ffffff",
-            "background": "#fff8f7",
-            "terracotta-warmth": "#D2691E",
-            "on-tertiary-container": "#b1daff",
-            "heritage-crimson": "#B22222",
-            "surface-bright": "#fff8f7",
-            "on-tertiary": "#ffffff",
-            "on-tertiary-fixed-variant": "#004b71",
-            "surface": "#fff8f7",
-            "inverse-primary": "#ffb4ac",
-            "primary-container": "#b22222",
-            "secondary": "#465f88"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "margin-mobile": "16px",
-            "gutter": "24px",
-            "base": "8px",
-            "max-width": "1440px",
-            "margin-desktop": "64px"
-          },
-          "fontFamily": {
-            "headline-lg": ["Libre Caslon Text"],
-            "display-lg": ["Libre Caslon Text"],
-            "body-md": ["Manrope"],
-            "body-lg": ["Manrope"],
-            "label-sm": ["Manrope"],
-            "headline-md": ["Libre Caslon Text"],
-            "headline-lg-mobile": ["Libre Caslon Text"]
-          },
-          "fontSize": {
-            "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
-            "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-            "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-            "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-            "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-            "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
-            "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
-          }
-        },
-      },
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5a403e",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#3f5881",
+                        "surface": "#fff8f7",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "secondary": "#465f88",
+                        "primary-container": "#b22222",
+                        "primary": "#8f000d",
+                        "on-tertiary-fixed": "#001e30",
+                        "terracotta-warmth": "#D2691E",
+                        "outline": "#8e706d",
+                        "on-secondary-fixed": "#001b3d",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "on-error": "#ffffff",
+                        "surface-cream": "#F9F7F2",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#cbe6ff",
+                        "surface-variant": "#f8dcd9",
+                        "surface-container-highest": "#f8dcd9",
+                        "on-primary-container": "#ffc8c2",
+                        "on-primary-fixed": "#410003",
+                        "on-background": "#261816",
+                        "architectural-blue": "#1B365D",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#b6d0ff",
+                        "surface-dim": "#efd4d1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#92030f",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#261816",
+                        "tertiary": "#00496e",
+                        "inverse-on-surface": "#ffedea",
+                        "surface-tint": "#b52424",
+                        "tertiary-container": "#006292",
+                        "inverse-primary": "#ffb4ac",
+                        "secondary-fixed-dim": "#aec7f7",
+                        "on-secondary-fixed-variant": "#2e476f",
+                        "on-tertiary-container": "#b1daff",
+                        "surface-container-low": "#fff0ef",
+                        "surface-container": "#ffe9e6",
+                        "surface-container-high": "#fee2df",
+                        "inverse-surface": "#3d2c2b",
+                        "error": "#ba1a1a",
+                        "background": "#fff8f7",
+                        "surface-bright": "#fff8f7",
+                        "outline-variant": "#e2beba",
+                        "heritage-crimson": "#B22222",
+                        "tertiary-fixed-dim": "#8fcdff",
+                        "secondary-fixed": "#d6e3ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "max-width": "1440px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
 <style>
-    body {
-      background-color: theme('colors.background');
-      color: theme('colors.on-background');
-      -webkit-font-smoothing: antialiased;
-    }
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-    }
-    .glass-effect {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-    }
-    .checkmark-animate {
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      animation: dash 1.5s ease-in-out forwards;
-    }
-    @keyframes dash {
-      to { stroke-dashoffset: 0; }
-    }
-  </style>
+        body {
+            background-color: #F9F7F2; /* surface-cream */
+            color: #261816; /* on-surface */
+            font-family: 'Manrope', sans-serif;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .pdf-page {
+            width: 100%;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+            min-height: 1400px;
+            position: relative;
+            padding: 80px 64px;
+            overflow: hidden;
+        }
+
+        .watermark {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            opacity: 0.3;
+            transform: rotate(-15deg);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .crimson-line {
+            height: 4px;
+            width: 80px;
+            background-color: #B22222;
+        }
+
+        @media (max-width: 768px) {
+            .pdf-page {
+                padding: 40px 24px;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
 </head>
-<body class="flex flex-col min-h-screen">
-<!-- TopNavBar Navigation Shell Suppression Applied for Transactional/Success Page -->
-<header class="bg-surface dark:bg-background border-b border-heritage-crimson/10 docked full-width top-0 z-50">
-<nav class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-max-width mx-auto">
-<div class="font-display-lg text-headline-md text-heritage-crimson dark:text-primary-fixed">
-        YirehMex
-      </div>
-<!-- Minimalist Navigation for Focused Screens -->
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Collections</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Patterns</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Heritage</a>
-<button class="bg-primary text-on-primary px-6 py-2 font-label-sm text-label-sm rounded-lg hover:bg-heritage-crimson transition-all duration-300 active:scale-95">Visualizer PRO</button>
+<body class="bg-surface-cream">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant h-20 flex items-center print:hidden">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md text-heritage-crimson">Heritage Tile Dossier</div>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="text-primary border-b-2 border-primary pb-1 font-body-md hover:text-primary transition-colors" href="#cover">Executive Summary</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="#studio">Studio Feed</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="#specs">Technical Specs</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors" href="#materials">Materials</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex gap-4 mr-4 text-on-surface-variant">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">print</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">share</span>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-body-md hover:opacity-80 transition-all">Download PDF</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- SECTION 1: COVER PAGE -->
+<section class="pdf-page flex flex-col justify-center items-center text-center" id="cover">
+<div class="mb-12">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-architectural-blue mb-4">Confidential Architectural Division</p>
+<h1 class="font-display-lg text-display-lg text-architectural-blue mb-2">Project Dossier</h1>
+<h2 class="font-headline-lg text-headline-lg text-heritage-crimson">The Azure Coastal Villa</h2>
+<div class="crimson-line mx-auto mt-6"></div>
+</div>
+<div class="w-full h-[600px] relative mb-12 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="A sprawling coastal villa interior showcasing a masterpiece installation of custom Cerulean blue Athangudi tiles. The tiles feature intricate geometric patterns and are reflecting soft, warm sunlight streaming through large glass doors. The setting is luxurious, modern, and highlights the architectural precision and artisanal warmth of the floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNfetfLqx7kR1G8zh_sPHUwpX5w85oeozs5h92_FkKRpF-y1ENfKRH7NvjHqyH9XVH6rmjgekZ8bHsoFqCwVg_4un6l90rT7VnNsl6iHSfF97OGLgWRkB73dWvP2HNe454KTGC_wsESxyvq2irn66IUpb4Twd4CcbWJ94I4GrplxlJiglPft2x7WshhcnYq_e-WXRaCJ9_Jb9GGRcRsHCkwRFM_0ZB3Vb6QrNfyX7x4E1AmP3eDgYCTSI2OAXLzWxSuBUoCc7RfnE">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white text-left">
+<p class="font-label-sm text-label-sm opacity-80">Phase: Final Installation</p>
+<p class="font-body-lg text-body-lg font-bold">Site: Amalfi Cliffs, Site #YM-2024-8842</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12 text-left w-full max-w-2xl">
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-2">Lead Architect</h4>
+<p class="font-body-md text-body-md font-bold">YirehMex Architectural Division</p>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-2">Project ID</h4>
+<p class="font-body-md text-body-md font-bold">#YM-2024-8842</p>
+</div>
+</div>
+<div class="page-number font-label-sm text-on-surface-variant">Page 01</div>
+<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
+</section>
+<!-- SECTION 2: EXECUTIVE SUMMARY & STUDIO LOGS -->
+<section class="pdf-page" id="studio">
+<div class="flex justify-between items-start mb-16">
+<div>
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-4">Executive Summary</h3>
+<p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant leading-relaxed">
+                        The Azure Coastal Villa project represents a synthesis of modern Mediterranean architecture and ancient Chettinad craft. Our artisanal scope focused on the fabrication of over 4,500 square feet of bespoke cement tiles, utilizing a unique pigment calibration to match the varying gradients of the Tyrrhenian Sea. Every tile was hand-cast by master artisans using traditional brass frames and locally sourced mineral pigments.
+                    </p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-heritage-crimson mb-1">ARCHITECTURAL DOSSIER</p>
+<p class="font-body-md text-body-md opacity-60">August 2024 Release</p>
+</div>
+</div>
+<div class="mb-12">
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-8 border-b border-outline-variant pb-2">Artisanal Journey (Studio Logs)</h3>
+<div class="space-y-12">
+<!-- Milestone 1 -->
+<div class="flex gap-12 items-start">
+<div class="w-1/3">
+<div class="aspect-square bg-surface-cream rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up shot of a master artisan's hands meticulously mixing cerulean blue mineral pigments in a traditional ceramic bowl. The scene is set in an airy studio with multiple shades of blue powders on a wooden workbench, illustrating the precise 'Cerulean Blue Gradient' calibration mentioned in the dossier." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEfJk9vw54pPd6FkLv8nQPMnn9N5cByAECDTRjjGA3NOUGQHko0FbWC_0i6DOav_LtvEluwyaRwQeUBpEoLyb45hR7rn6bR8R4VsQZ4a5Nvq7x8Os6FBSurxxrQ7W-PC0PmFDyAuOYM2Ft3F1e-30xb6STeFJnxcvpN1ZgtTQrnZZXVZW_F7l9uRBWHA0kXOwBfVnqVikJle0WJSQotVr_K9nuIO-JjdV1oUo2cjCGCyiGkn9wlR_PsjVXs-WnlWop_bRtaGjcp7g">
+</div>
+</div>
+<div class="w-2/3">
+<h5 class="font-body-lg text-body-lg font-bold text-heritage-crimson mb-2">Milestone 01: Pigment Calibration</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                Achieving the 'Cerulean Blue Gradient' required 14 iterations of mineral pigment mixing. We utilized cobalt oxide and natural lime to ensure UV stability against coastal sun exposure.
+                            </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant bg-surface-cream px-3 py-1 rounded w-fit">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                                LOGGED: JUNE 12, 2024
+                            </div>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="flex gap-12 items-start">
+<div class="w-1/3">
+<div class="aspect-square bg-surface-cream rounded overflow-hidden">
+<img alt="Curing process" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuYxLWJYDExj2StQksqQuRPjC4nyZm7DLU1QBxAbJejuQud65_rxqgOxs4iMop3-7izwDaVLmCc-l7_2pMNDQlMgLfhmYu3oNZzB9bEs6u97bVVFU7ux30lV2KVVwJzVnJN7Yje30cHMkA78S3BvAAyRof1FqLOVkfjDYHne5B8eDj2EOmXZvaeUIL5loWv2MalWc4G84pmlijEPuwjZ0-DtxZm2sK7zyBR_1QWNSZwXMM9cApjx1Tg7sE">
+</div>
+</div>
+<div class="w-2/3">
+<h5 class="font-body-lg text-body-lg font-bold text-heritage-crimson mb-2">Milestone 02: Curing Cycle #3</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                The atmospheric curing phase is critical. Tiles are kept on stone surfaces for 21 days to achieve maximum hardness. Monitoring of humidity levels (65-70%) ensures structural integrity.
+                            </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant bg-surface-cream px-3 py-1 rounded w-fit">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                                LOGGED: JULY 05, 2024
+                            </div>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="flex gap-12 items-start">
+<div class="w-1/3 flex items-center justify-center bg-surface-cream aspect-square rounded border border-dashed border-outline">
+<div class="text-center p-4">
+<span class="material-symbols-outlined text-architectural-blue text-4xl mb-2">straighten</span>
+<p class="font-label-sm text-label-sm">Quality Control Lab</p>
+</div>
+</div>
+<div class="w-2/3">
+<h5 class="font-body-lg text-body-lg font-bold text-heritage-crimson mb-2">Milestone 03: Dimensional Stability</h5>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                Final pass on dimensional tolerance. Each tile was measured for squareness and edge crispness. Variation restricted to &lt;0.5mm across the 20x20 batch.
+                            </p>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant bg-surface-cream px-3 py-1 rounded w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                                STATUS: PASS
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<div class="page-number font-label-sm text-on-surface-variant">Page 02</div>
+<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
+</section>
+<!-- SECTION 3: TECHNICAL SPECIFICATIONS -->
+<section class="pdf-page" id="specs">
+<h3 class="font-headline-md text-headline-md text-architectural-blue mb-12 border-b border-outline-variant pb-2">Technical Specifications</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+<!-- Specifications Table -->
+<div class="overflow-hidden border border-outline-variant rounded-lg">
+<table class="w-full font-body-md text-body-md"><thead><tr class="bg-surface-cream text-architectural-blue border-b border-outline-variant"><th class="text-left p-4 font-bold uppercase tracking-wider text-label-sm">Parameter</th><th class="text-left p-4 font-bold uppercase tracking-wider text-label-sm">Architectural Specification</th></tr></thead><tbody class="divide-y divide-outline-variant"><tr><td class="p-4 bg-surface-cream/30 font-bold w-1/3">Dimensions</td><td class="p-4">200mm x 200mm (Tolerance: ±0.5mm)</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Thickness</td><td class="p-4">12mm - 14mm (Wear layer: 4mm)</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Composition</td><td class="p-4">Portland Cement, Marble Dust, Mineral Oxides, Graded Sand</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Water Absorption</td><td class="p-4">&lt; 8.5% (Natural state), &lt; 1% (Sealed)</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Compression Strength</td><td class="p-4">250 - 300 kg/cm²</td></tr><tr class="bg-surface-container-lowest"><td class="p-4 bg-surface-cream/30 font-bold">Surface Finish</td><td class="p-4">Hand-polished Natural Matte-Sheen</td></tr><tr><td class="p-4 bg-surface-cream/30 font-bold">Slip Resistance</td><td class="p-4">P3 (Dry) / P1 (Wet) - AS 4586 standards</td></tr></tbody></table>
+</div>
+<!-- Material Palette -->
+<div id="materials" class="pt-2">
+<h4 class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-6">Material Breakdown</h4>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-architectural-blue rounded"></div>
+<div>
+<p class="font-body-md font-bold">Azure Deep (MC-022)</p>
+<p class="font-label-sm opacity-60">Primary Floor Base</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">shopping_cart</span>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">person</span>
-</div>
-</nav>
-</header>
-<main class="flex-grow">
-<!-- Hero Success Section -->
-<section class="relative min-h-[85vh] flex items-center overflow-hidden py-24">
-<div class="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-multiply">
-<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-surface-container-high via-transparent to-transparent"></div>
-</div>
-<div class="container mx-auto px-margin-desktop relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<!-- Content Panel -->
-<div class="lg:col-span-5 flex flex-col space-y-8 animate-fade-in">
-<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-surface-container text-heritage-crimson mb-2">
-<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'wght' 300;">check_circle</span>
-</div>
-<div class="space-y-4">
-<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">Request Received</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                Thank you for choosing YirehMex. Our master artisans have received your inquiry. We will contact you within 48 hours to discuss your project vision.
-              </p>
-</div>
-<div class="pt-6 flex flex-wrap gap-4">
-<button class="bg-architectural-blue text-white px-8 py-4 font-label-sm text-label-sm rounded-lg transition-all duration-300 hover:shadow-lg active:scale-95 flex items-center gap-2">
-                Back to Gallery
-                <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-<button class="border border-outline text-on-surface-variant px-8 py-4 font-label-sm text-label-sm rounded-lg transition-all duration-300 hover:bg-surface-cream active:scale-95">
-                Download Brochure
-              </button>
+<div class="w-12 h-12 bg-heritage-crimson rounded"></div>
+<div>
+<p class="font-body-md font-bold">Oxide Red (MC-004)</p>
+<p class="font-label-sm opacity-60">Accent Detailing</p>
 </div>
 </div>
-<!-- 3D Scene Panel -->
-<div class="lg:col-span-7 flex justify-center items-center relative">
-<div class="w-full max-w-[600px] aspect-square glass-effect rounded-full border border-heritage-crimson/5 p-8 flex items-center justify-center relative">
-<!-- STITCH_THREEJS_START:ANIMATION_33 class="w-full h-[400px] bg-transparent" -->
-<div class="w-full h-[400px] bg-transparent" style="display:block;">
-<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
-<div id="threejs-container-ANIMATION_33" style="width:100%;height:100%"></div>
-<script>
-(function() {
-  const container = document.getElementById('threejs-container-ANIMATION_33');
-  const devicePixelRatio = window.devicePixelRatio || 1;
-  <threejs-scene>
-// Three.js Consultation Confirmation Animation
-// Concept: A floating, slowly rotating 3D tile slab that catches the light, 
-// showcasing the texture and material quality of an Athangudi tile.
-
-const scene = new THREE.Scene();
-const containerWidth = container.clientWidth || window.innerWidth;
-const containerHeight = container.clientHeight || window.innerHeight;
-const camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-
-renderer.setSize(containerWidth, containerHeight);
-renderer.setPixelRatio(window.devicePixelRatio);
-container.appendChild(renderer.domElement);
-
-// Lighting
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-scene.add(ambientLight);
-
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(5, 5, 5);
-scene.add(directionalLight);
-
-const pointLight = new THREE.PointLight(0xb22222, 1); // Heritage Crimson accent
-pointLight.position.set(-5, -5, 2);
-scene.add(pointLight);
-
-// Geometry: A square tile slab
-const geometry = new THREE.BoxGeometry(3, 3, 0.2);
-
-// Material: Using MeshPhongMaterial for a nice sheen
-// Color inspired by the Heritage Crimson accent in the design system
-const material = new THREE.MeshPhongMaterial({
-    color: 0xb22222,
-    shininess: 80,
-    specular: 0x444444
-});
-
-const tile = new THREE.Mesh(geometry, material);
-scene.add(tile);
-
-camera.position.z = 5;
-
-// Animation loop
-function animate() {
-    requestAnimationFrame(animate);
-    
-    // Subtle floating and rotation
-    tile.rotation.y += 0.005;
-    tile.rotation.x += 0.002;
-    tile.position.y = Math.sin(Date.now() * 0.001) * 0.1;
-    
-    renderer.render(scene, camera);
-}
-
-// Handle Resize
-window.addEventListener('resize', () => {
-    const width = container.clientWidth || window.innerWidth;
-    const height = container.clientHeight || window.innerHeight;
-    
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-    renderer.setSize(width, height);
-});
-
-animate();
-</threejs-scene>
-})();
-</script>
-</div>
-<!-- STITCH_THREEJS_END:ANIMATION_33 -->
-<!-- Subtle Floating Info Chips -->
-<div class="absolute top-10 right-10 p-4 glass-effect border border-outline-variant rounded-lg hidden md:block">
-<span class="font-label-sm text-label-sm text-on-surface-variant block">PROJECT NO.</span>
-<span class="font-body-md text-body-md font-bold text-architectural-blue">#YM-2024-819</span>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-[#F5F5F0] border border-outline-variant rounded"></div>
+<div>
+<p class="font-body-md font-bold">Bone White (MC-001)</p>
+<p class="font-label-sm opacity-60">Grid &amp; Bordering</p>
 </div>
 </div>
 </div>
+<div class="mt-12 p-6 bg-surface-cream rounded-lg border border-outline-variant italic font-body-md text-on-surface-variant">
+                        "The mineral pigments used in this project are guaranteed for 50 years of color stability when treated with the recommended pH-neutral sealants."
+                    </div>
 </div>
 </div>
-</section>
-<!-- Context Image Section -->
-<section class="w-full h-[600px] bg-surface-container relative">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover grayscale-[0.2] brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWXo4B2jRd0s91-pgjSbBfj7VRz-y1N2krjdj6OacwHTy7kkD3jmCfUs2YUPmhc55u39aiINX3qC93lxbRdnJl4tjPs-0wM5pNJVToTICwwLPUimRZ_whBZVgwpmu9DLnvnDra3oT7fCBJ5FJQSkhgrmgzAqvHkIyPQ0LUmIWYlIFF0Po4r9SefpPlEDGToVVlfeOxJgiYGuekQn61EZnV-ZyJe7cb2gjfSoFSr4rlxFVNHXINmZQs-1mIiAWOCE39clvgQSw39gM"/>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
-<div class="relative z-10 container mx-auto px-margin-desktop h-full flex flex-col justify-end pb-24">
-<div class="max-w-2xl bg-white/90 backdrop-blur-md p-12 border-l-4 border-heritage-crimson shadow-xl">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 italic">Preserving the Art of Athangudi</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
-            Every tile we produce is a testament to the legacy of Chettinad craftsmanship. Your project now joins a long tradition of architectural excellence that spans generations. While our artisans prepare your consultation, explore how we integrate these centuries-old patterns into contemporary luxury spaces.
-          </p>
-<a class="font-label-sm text-label-sm text-heritage-crimson font-bold uppercase tracking-widest flex items-center gap-2 hover:translate-x-2 transition-transform duration-300" href="#">
-            View Recent Installations
-            <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
-</a>
+<div class="flex justify-center mt-20">
+<div class="p-12 bg-surface text-center rounded-xl border-2 border-outline-variant w-full max-w-xl">
+<span class="material-symbols-outlined text-heritage-crimson text-5xl mb-4">gavel</span>
+<h5 class="font-headline-md text-headline-md mb-2">Architectural Warranty</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        This dossier serves as a certificate of authenticity. Each tile batch produced for the Azure Coastal Villa has been inspected for artisanal excellence and structural conformity.
+                    </p>
 </div>
 </div>
-</section>
-<!-- Post-Inquiry Bento Grid Information -->
-<section class="py-24 bg-background">
-<div class="container mx-auto px-margin-desktop">
-<h3 class="font-headline-md text-headline-md text-center mb-16">Next Steps for Your Project</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="p-8 bg-surface-cream border border-heritage-crimson/10 rounded-lg flex flex-col gap-4">
-<span class="material-symbols-outlined text-architectural-blue text-4xl">calendar_today</span>
-<h4 class="font-label-sm text-label-sm font-bold uppercase text-on-surface">Initial Review</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Our design lead reviews your project dimensions and initial pattern preferences for feasibility.</p>
-</div>
-<div class="p-8 bg-surface-cream border border-heritage-crimson/10 rounded-lg flex flex-col gap-4">
-<span class="material-symbols-outlined text-architectural-blue text-4xl">call</span>
-<h4 class="font-label-sm text-label-sm font-bold uppercase text-on-surface">Artisan Call</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">A 15-minute introductory call to clarify custom pigment mixes and site-specific installation needs.</p>
-</div>
-<div class="p-8 bg-surface-cream border border-heritage-crimson/10 rounded-lg flex flex-col gap-4">
-<span class="material-symbols-outlined text-architectural-blue text-4xl">palette</span>
-<h4 class="font-label-sm text-label-sm font-bold uppercase text-on-surface">Design Proposal</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Receive a curated digital moodboard and a preliminary quote for your custom tile production.</p>
-</div>
-</div>
-</div>
+<div class="page-number font-label-sm text-on-surface-variant">Page 03</div>
+<div class="watermark font-headline-md text-outline-variant select-none">CONFIDENTIAL: YIREHMEX</div>
 </section>
 </main>
-<!-- Footer Navigation Shell -->
-<footer class="bg-surface-container dark:bg-inverse-surface border-t border-heritage-crimson/10">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-gutter w-full max-w-max-width mx-auto gap-8">
-<div class="flex flex-col items-center md:items-start gap-4">
-<div class="font-headline-md text-headline-md text-primary">YirehMex</div>
-<p class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-left max-w-xs">
-          © 2024 YirehMex Athangudi Tiles. Artisanal Excellence Since 1992.
-        </p>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Sustainability</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Shipping &amp; Returns</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#">Terms of Service</a>
-</div>
-<div class="flex gap-4">
-<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer">
-<span class="material-symbols-outlined text-lg">public</span>
-</div>
-<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer">
-<span class="material-symbols-outlined text-lg">mail</span>
-</div>
-</div>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base bg-surface-cream border-t border-outline-variant print:hidden">
+<div class="font-headline-sm text-headline-sm text-architectural-blue">Athangudi Artisanal Ceramics</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Athangudi Artisanal Ceramics. High-End Architectural Division.</p>
+<div class="flex gap-8">
+<a class="font-body-md text-on-surface-variant hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:underline transition-all" href="#">Technical Standards</a>
+<a class="font-body-md text-on-surface-variant hover:underline transition-all" href="#">Contact Architect</a>
 </div>
 </footer>
 <script>
-    // Lightweight atmospheric micro-interactions
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth) * 10;
-      const y = (e.clientY / window.innerHeight) * 10;
-      const heroBg = document.querySelector('.animate-fade-in');
-      if(heroBg) {
-        heroBg.style.transform = `translate(${x}px, ${y}px)`;
-      }
-    });
+        // Simple scroll behavior for top nav highlighting
+        window.addEventListener('scroll', () => {
+            const sections = ['cover', 'studio', 'specs'];
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = "";
+            sections.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 150) {
+                        current = id;
+                    }
+                }
+            });
 
-    // Intersection observer for entrance animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('opacity-100', 'translate-y-0');
-          entry.target.classList.remove('opacity-0', 'translate-y-10');
-        }
-      });
-    }, { threshold: 0.1 });
+            navLinks.forEach(a => {
+                a.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                a.classList.add('text-on-surface-variant');
+                if (a.getAttribute('href').includes(current)) {
+                    a.classList.remove('text-on-surface-variant');
+                    a.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                }
+            });
+        });
+    </script>
 
-    document.querySelectorAll('section').forEach(section => {
-      section.classList.add('transition-all', 'duration-1000', 'ease-out');
-      observer.observe(section);
-    });
-  </script>
+
 </body></html>

@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Us | YIREHMEX - Handcrafted Heritage Athangudi Tiles</title>
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"><meta name="description" content="Explore our meticulously curated portfolio of handcrafted Athangudi tiles. From vibrant floral patterns to geometric classics, discover the perfect heritage flooring for your project.">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"><meta name="keywords" content="tile collections, floral tiles, geometric tiles, Chettinad patterns, handmade flooring">
+<title>Our Collections | YirehMex Athangudi Tiles</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -83,323 +81,265 @@
                         "headline-lg": ["Libre Caslon Text"],
                         "body-md": ["Manrope"],
                         "headline-md": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
                         "display-lg": ["Libre Caslon Text"],
                         "body-lg": ["Manrope"],
                         "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
                     }
                 }
             }
         }
     </script>
 <style>
-        body {
-            background-color: #fff8f7;
-            color: #261816;
-            font-family: 'Manrope', sans-serif;
-            overflow-x: hidden;
-        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .tile-pattern-bg {
-            background-image: radial-gradient(#B2222222 1px, transparent 1px);
-            background-size: 40px 40px;
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(178, 34, 34, 0.1);
+        .tile-card-hover {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .tile-card-hover:hover {
+            transform: translateY(-8px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
         }
     </style>
 </head>
-<body class="selection:bg-heritage-crimson/20">
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-on-surface/90 border-b border-outline-variant/30 dark:border-outline/20">
 <div class="max-w-max-width mx-auto px-margin-desktop flex items-center justify-between h-20">
-<div class="font-headline-md text-headline-md font-bold tracking-tight text-heritage-crimson">
-                YIREHMEX
-            </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
-<a class="font-body-md text-body-md text-primary font-semibold border-b-2 border-primary pb-1" href="#">About</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Products</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Visualizer</a>
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-heritage-crimson dark:text-primary-fixed-dim" href="#">YIREHMEX</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">About</a>
+<a class="text-primary dark:text-inverse-primary font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#">Visualizer</a>
 </div>
-<div class="flex items-center gap-6">
-<button class="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined">search</span>
-</button>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-body-md text-body-md font-semibold hover:opacity-80 transition-all scale-[0.99] active:scale-[0.97]">
-                    Enquire Now
-                </button>
+<div class="flex items-center space-x-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32" placeholder="Search designs..." type="text">
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all scale-[1] active:scale-[0.98]">ENQUIRE NOW</button>
 </div>
 </div>
 </nav>
-<!-- Hero Section -->
-<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-
-<div class="max-w-max-width mx-auto px-margin-desktop grid lg:grid-cols-2 gap-gutter items-center">
-<div class="z-10">
-<span class="inline-block font-label-sm text-label-sm tracking-widest text-primary uppercase mb-4">Established Heritage</span>
-<h1 class="font-display-lg text-display-lg text-on-surface mb-8 leading-[1.1]">Where Tradition Meets <span class="text-heritage-crimson">Innovation.</span></h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
-                    Discover the timeless elegance of Athangudi tiles—a heritage craft from the heart of Chettinad, reimagined with modern architectural precision.
-                </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-architectural-blue text-white px-8 py-4 rounded-lg font-semibold flex items-center gap-2 transition-transform hover:translate-y-[-2px]">
-                        Our Story
-                        <span class="material-symbols-outlined">arrow_downward</span>
-</button>
+<main class="pt-32 pb-24">
+<!-- Header Section -->
+<header class="max-w-max-width mx-auto px-margin-desktop mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-heritage-crimson font-label-sm tracking-widest uppercase mb-4 block">Handcrafted Heritage</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Authentic Athangudi Collections</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant opacity-80 leading-relaxed">
+                        Where tradition meets innovation. Explore our meticulously curated portfolio of Chettinad's finest handmade tiles, renowned for vibrant colors and intricate geometric precision.
+                    </p>
 </div>
+<div class="flex gap-4">
+<div class="flex flex-wrap gap-3">
+    <div class="relative group">
+        <button class="flex items-center gap-2 border border-outline px-4 py-3 rounded-lg font-label-sm hover:bg-surface-container-low transition-all">
+            <span class="text-on-surface-variant/60">SERIES:</span>
+            <span class="">ALL</span>
+            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+        </button>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-outline-variant/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Floral Series</a>
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Geometric Series</a>
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Symmetric Series</a>
+        </div>
+    </div>
+    <div class="relative group">
+        <button class="flex items-center gap-2 border border-outline px-4 py-3 rounded-lg font-label-sm hover:bg-surface-container-low transition-all">
+            <span class="text-on-surface-variant/60">COLOR:</span>
+            <span class="">ALL</span>
+            <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+        </button>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-outline-variant/30 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Traditional Red</a>
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Terracotta</a>
+            <a href="#" class="block px-4 py-3 text-body-md hover:bg-surface-container-low transition-colors">Monochrome</a>
+        </div>
+    </div>
 </div>
-<div class="relative">
-<div class="aspect-square rounded-xl overflow-hidden shadow-2xl relative z-10 border-[12px] border-white">
-<img alt="YirehMex Artisan Tile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLu0Z9uXdmz_tmQ4qaoL8NJnuRWOdCj5JF3Qd_FApIAIgiEfhJJfEM4qu5apYMFLexat_9MuH1CuTZrH9KYnj83-KxU_H-J10GbsrlQ0ZT_8vu0UXudt0dvHfvebRcfHR_DGuk9Uj1VgOzHX0WGWbp0QPlIf5bKyWqa1VygLp2G8USp8RYTFUGEqGUQvAZo5x2qlLt6jiLfjcL1s1pDqwzJFZYfFhMVt3ZwEogvjBznLE5Ox8Nimjv-BfA"/>
-</div>
-<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-surface-container rounded-full blur-3xl opacity-60 -z-10"></div>
-<div class="absolute -top-10 -right-10 w-48 h-48 bg-tertiary-fixed rounded-full blur-3xl opacity-40 -z-10"></div>
+<button class="flex items-center gap-2 bg-architectural-blue text-white px-6 py-3 rounded-lg font-label-sm hover:opacity-90 transition-all">
+<span class="material-symbols-outlined">brush</span>
+                        VISUALIZER PRO
+                    </button>
 </div>
 </div>
 </header>
-<!-- The Heritage Canvas -->
-<section class="py-32 bg-white relative overflow-hidden">
-<div class="max-w-max-width mx-auto px-margin-desktop">
-<div class="grid lg:grid-cols-12 gap-gutter items-start">
-<div class="lg:col-span-5 mb-16 lg:mb-0">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Crafting the Soul of <span class="italic font-normal">Chettinad</span></h2>
-<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
-<p>
-                            YirehMex Athangudi tiles are traditional handmade decorative tiles originating from the Chettinad region of Tamil Nadu, India. These tiles are renowned for their vibrant colors, intricate patterns, and durability.
-                        </p>
-<p>
-                            Crafted using a unique blend of local materials—fine river sand, cement, and synthetic oxides—each tile is a testament to the artisan's touch. Also known as Chettinad tiles or Eco-friendly Heritage tiles, they breathe life into floors with a luster that only grows with time.
-                        </p>
+<!-- Product Gallery Bento Grid -->
+<section class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
+<!-- Large Feature Card: Lotus Tile -->
+<div class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant/30 tile-card-hover rounded-xl transition-all duration-700 opacity-100 translate-y-0">
+<div class="aspect-square md:aspect-video w-full overflow-hidden">
+<img alt="Lotus tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuVdSXNpE3BYyP94cMkl0kgcrlNBs1YChhg6FbhAZfYxyr94xcyZXIVkQqbS-AnyHokgmWszKFupZhE6-Ch-riM_AqFT9MKqKInxIlmLJCRDMiDLYAV3kePKOb_y8RjUvC8X9tu34BDjZKUADLLTkXMYOmpgap_7DRL9V3NnUD39nksw2PVwOjc7otalI6NSaW1xATdst0w24B2XzV1lzDLajTpUApKzfvFWBnld9-pu3Yixn2B_bQL9ys">
+</div>
+<div class="p-8 flex justify-between items-center bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 w-full border-t border-outline-variant/10">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Lotus Tile</h3>
+<p class="font-label-sm text-on-surface-variant opacity-70">FLORAL COLLECTION • TRADITIONAL RED</p>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
 </div>
 </div>
-<div class="lg:col-span-6 lg:col-start-7">
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-surface-cream p-8 rounded-lg border border-outline-variant/20 group hover:bg-white hover:shadow-xl transition-all duration-500">
-<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">eco</span>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Eco-Friendly</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Naturally cured without high-intensity kilns, reducing carbon footprint significantly.</p>
+<!-- Small Grid Card: Flower Star -->
+<div class="lg:col-span-4 group bg-white border border-outline-variant/30 tile-card-hover rounded-xl flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Flower star tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLu2ze_f5UcWb9KryONV49JYAkfQjTx6CAB5z6AK8FjE1zZVsG_H0Rfgt-f2w0mX1VYY35HC_hkOyl-ZJsKqfDCHrTX3GRGOrpa4t1PVfemKMqVkBnRsNCZr2Da4ZTzrmS14gG3ENofaMUp1jdCd9ctty-IhVMBKYRWyD-Uz1LVLDflaYLfHrS-YxyoesYTwF8Q2L5Q5YfiBWAzUZflDNIDUraii3oKrXQ8dCzS56pOIDYc_voKjrANep24">
 </div>
-<div class="bg-surface-cream p-8 rounded-lg border border-outline-variant/20 mt-8 group hover:bg-white hover:shadow-xl transition-all duration-500">
-<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">palette</span>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Vibrant</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Intricate patterns and deep pigments that stay luminous for generations.</p>
-</div>
-<div class="bg-surface-cream p-8 rounded-lg border border-outline-variant/20 group hover:bg-white hover:shadow-xl transition-all duration-500">
-<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">hand_gesture</span>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Handmade</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Each tile is individually poured and smoothed by master craftsmen.</p>
-</div>
-<div class="bg-surface-cream p-8 rounded-lg border border-outline-variant/20 mt-8 group hover:bg-white hover:shadow-xl transition-all duration-500">
-<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">verified</span>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Durable</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Built to withstand the passage of time, perfect for modern luxury interiors.</p>
+<div class="p-6">
+<h3 class="font-headline-md text-[24px] mb-1">Flower Star</h3>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Geometric Series</p>
 </div>
 </div>
+<!-- Small Grid Card: Butterfly Tiles -->
+<div class="lg:col-span-4 group bg-white border border-outline-variant/30 tile-card-hover rounded-xl flex flex-col transition-all duration-700 opacity-100 translate-y-0">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Butterfly tiles" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLtdQELe8Lac2RglSnDAyKrIVFG8Zhba0oYaD6hDeBDXRV2rSTe1-tOVUiQ4Ka7srlG3VIV2NoKBy3NL6cwG2iKZEDZOB5MicCbMuBtEenbhp37XYF23AUdX3GB3Uo-S8FIIx5ijIu2YQR39nH-5VFqCXIeAhVdvGc9GzN6ygrl5Jr9xs0NTOFZodApIqgeonq8IVIZVa4KLkEgeoXEoySFfkjflrPLFcqNyYPcb94Si3cztKVRfrbMxk_Q">
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-[24px] mb-1">Butterfly Suite</h3>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Artisanal Whimsy</p>
+</div>
+</div>
+<!-- Large Feature Card: Chockkatan Tile -->
+<div class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant/30 tile-card-hover rounded-xl transition-all duration-700 opacity-100 translate-y-0">
+<div class="aspect-square md:aspect-[21/9] w-full overflow-hidden">
+<img alt="Chockkatan tile" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLsqN4uGKrwEDRmWrpkY79jpZSc1CLBLlZHClBm8B_dWFaoLH8ZW7W0poLioXR8ifKFeAEUB-4NvFo38mQlFXP0dXQVj-oOVCJ_MRdLXMRAjhuOu9RL8Xejucqpbm6C1JzmvQ5I6MGL3MZUVTCMBsDmvKV1xkqZW5Am2j0EUB6fp6hX9kOKJwGdrobSG-imQzh7LX0DnMU7pkIGk5DBDMrMGrE7iy_zYZrkADiAYi-vN5fgJfrCQw46XNw">
+</div>
+<div class="p-8 flex justify-between items-center bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 w-full border-t border-outline-variant/10">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Chockkatan Classic</h3>
+<p class="font-label-sm text-on-surface-variant opacity-70">SYMMETRIC SERIES • TERRACOTTA WARMTH</p>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
 </div>
 </div>
 </div>
 </section>
-<!-- The Alchemist's Process (Bento) -->
-<section class="py-32 bg-surface-cream tile-pattern-bg">
-<div class="max-w-max-width mx-auto px-margin-desktop">
-<div class="text-center mb-20">
-<h2 class="font-display-lg text-display-lg text-on-surface mb-4">The Making of a Legacy</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">From the riverbed of Athangudi to the center stage of global architecture, our process remains pure.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-full md:h-[800px]">
-<!-- Step 1: Design -->
-<div class="md:col-span-2 md:row-span-1 glass-panel p-10 rounded-xl flex flex-col justify-end relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-8">
-<span class="font-headline-lg text-primary opacity-20">01</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Intricate Brass Stenciling</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Master artisans place custom-designed brass frames on a glass plate, ensuring the mathematical precision of every pattern.</p>
-</div>
-<!-- Step 2: Mixing -->
-<div class="md:col-span-1 md:row-span-1 bg-architectural-blue p-10 rounded-xl text-white flex flex-col justify-end group">
-<span class="font-headline-lg text-white opacity-20 block mb-auto">02</span>
-<h3 class="font-headline-md text-headline-md mb-4">Tonal Pigmentation</h3>
-<p class="font-body-md text-body-md opacity-80">Local river sand is mixed with premium oxides to create the signature earthy palette of YirehMex.</p>
-</div>
-<!-- Step 3: Puring -->
-<div class="md:col-span-1 md:row-span-2 relative rounded-xl overflow-hidden group">
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
-<div class="absolute bottom-0 left-0 p-10 z-20">
-<span class="font-headline-lg text-white opacity-40">03</span>
-<h3 class="font-headline-md text-headline-md text-white mt-4 mb-2">Artisan Pouring</h3>
-<p class="font-body-md text-body-md text-white/80">Every color layer is hand-poured into the stencil with absolute focus.</p>
-</div>
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A macro close-up of a skilled artisan hand-pouring vibrant terracotta and cream-colored liquid cement into an intricate brass tile stencil. The lighting is soft and focused, highlighting the texture of the materials. The overall aesthetic is one of master craftsmanship and artisanal heritage in a clean workshop setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwAhAxvZlKru0Dt2HRfhLcNOHI_Bsx2Ncchw59lPd7GEo8WlIVUiQoDoaZoXsEsWIbXoM57uBK8a-9thIUGd_YizlplTqbOXyjvJaBOjPFv6ihyn0d-6fPuHs4kLfsoANpq-O607qU2XNHmvVQYMHnNx9in-Y2MSkzIg8J_WHDX7ChdlgLUAxGAqbPRfeqgDhb2QGEEu_H6O8I4oVjqV_ZFNNXqHctGxtortJsNQuF76COfetLU7f2t-6VAxlrKpRd61xhjt6S05k')"></div>
-</div>
-<!-- Step 4: Curing -->
-<div class="md:col-span-2 md:row-span-1 bg-heritage-crimson p-10 rounded-xl text-white flex items-center gap-10 group overflow-hidden">
-<div class="flex-1">
-<span class="font-headline-lg text-white opacity-20 block mb-6">04</span>
-<h3 class="font-headline-md text-headline-md mb-4">Natural Drying &amp; Curing</h3>
-<p class="font-body-md text-body-md opacity-80">Tiles are sun-dried and water-cured for days, allowing the strength to build naturally without kiln-firing.</p>
-</div>
-<div class="hidden lg:block w-48 h-48 bg-white/10 rounded-full flex-shrink-0 animate-pulse"></div>
-</div>
-<!-- Step 5: Polishing -->
-<div class="md:col-span-1 md:row-span-1 bg-white p-10 rounded-xl border border-outline-variant/30 flex flex-col justify-end group">
-<span class="font-headline-lg text-on-surface-variant opacity-20 block mb-auto">05</span>
-<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">The Final Polish</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">The tiles are buffed with coconut husks, a traditional technique that creates a lifelong, gentle sheen.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Factory Location Section -->
-<section class="py-32 bg-on-surface text-white relative overflow-hidden">
-<div class="absolute inset-0 opacity-10">
-<div class="w-full h-full bg-cover bg-center" data-alt="An expansive, clean, and organized tile manufacturing workshop in Chockalingampudur. The space is filled with hundreds of colorful Athangudi tiles laid out for curing. Warm sunlight filters through large windows, creating a peaceful, productive industrial atmosphere. The style is professional and grounded in tradition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsWApgkgZyVV6h05b42HJMVaFxax1Re86rZCD9JbVvgoL-paxky7bKf2XCUbq_tS_aJ9H_ULtC2dUZlENN7ykM9e97qQkP_Ne3D9g9ENoKLxA6Dg3R_uCADTZ1zmNmInHwo9G2vfCG7sef_SxGj50DQ65nxWj3ivqJXcQsCXMKWu2ZIUe2d8O-crjnh8-DiFE8nBUNzhg4F_uF-mevB_6HoA_DInOCfrUBYIqRX9LFdWmVYdlcj3hsZifmtNYr7y0wtuElNO7FjWc')"></div>
-</div>
-<div class="max-w-max-width mx-auto px-margin-desktop relative z-10">
-<div class="grid lg:grid-cols-2 gap-20 items-center">
-<div>
-<h2 class="font-display-lg text-display-lg mb-8">Visit Our Ancestral <span class="text-tertiary-fixed">Roots.</span></h2>
-<div class="space-y-12">
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-4xl text-tertiary-fixed">location_on</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Our Factory Address</h4>
-<p class="font-body-lg text-body-lg opacity-80 leading-relaxed">
-                                    433, Mahalakshmi nagar, Athangudi via,<br/>
-                                    Karaikudi taluk, Chockalingampudur.<br/>
-                                    Tamil Nadu, India - Pin 630101
-                                </p>
-</div>
-</div>
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-4xl text-tertiary-fixed">call</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Direct Line</h4>
-<p class="font-body-lg text-body-lg opacity-80">
-                                    +91 9080581547<br/>
-                                    +91 9655983865
-                                </p>
-</div>
-</div>
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-4xl text-tertiary-fixed">mail</span>
-<div>
-<h4 class="font-headline-md text-headline-md mb-2">Email Correspondence</h4>
-<p class="font-body-lg text-body-lg opacity-80">
-                                    yirehmex@gmail.com
-                                </p>
-</div>
-</div>
-</div>
-</div>
-<div class="rounded-2xl overflow-hidden h-[500px] border border-white/10 relative shadow-2xl">
-<img class="w-full h-full object-cover grayscale opacity-60" data-location="Karaikudi, Tamil Nadu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDXO3_-cAxTpBxvNDEyG9sF-dNZ3vRKJMVCtsVfEclXIx5B1wp93Bz9_2REH315lgZzI83X3nh4sKpj5s9tmsk8aLQ5F-GwgjTJHSLkOzFdVtVj-qB2UYts40v71RWzClrlU7idX9TUCwRLNp4s725dQ5bbBIvie6gO5365A9GM7k_am8w9KO8VyjnlUxhqSxzLQnYnRfXV8rvTxZT8DLvN67MaaAUli6vwnhdewZQzQRyhfgxsMkTJjMFy4BYG8EcQ4pP-FUUjgk"/>
-<div class="absolute inset-0 bg-architectural-blue/40"></div>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="text-center">
-<button class="bg-white text-on-surface px-10 py-4 rounded-lg font-bold hover:bg-tertiary-fixed transition-colors flex items-center gap-3">
-<span class="material-symbols-outlined">directions</span>
-                                Get Directions
-                            </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Visualizer CTA -->
-<section class="py-24 bg-white">
-<div class="max-w-max-width mx-auto px-margin-desktop">
-<div class="bg-surface-cream rounded-2xl p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 border border-outline-variant/30">
-<div class="flex-1">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Experience the Tile Visualizer PRO</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
-                        See how our signature Athangudi designs transform your living spaces in real-time. Choose from over 200+ heritage patterns.
-                    </p>
-<a class="inline-flex items-center gap-3 bg-primary text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-architectural-blue transition-all duration-300 transform hover:translate-x-2" href="https://delightful-panda-201824.netlify.app/">
-                        Launch Visualizer
-                        <span class="material-symbols-outlined">auto_awesome</span>
-</a>
-</div>
-<div class="w-full md:w-1/3 aspect-[4/5] bg-cover bg-center rounded-xl shadow-lg" data-alt="A smartphone screen displaying a high-tech tile visualizer app showing a modern Chettinad-style living room. The app interface is clean and user-friendly, with small tile icons along the bottom. The background is a bright, upscale interior showroom with soft daylight. The design is minimal and luxury-oriented." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6gZMGg9kWYmJG280kNlGkcLyKpBIMXVKliMehpMamijvjL1fFVvk1r71iKyttPZ9tz64ldNDh7djeCBULlSYPFIOnyK3Yy4Qn8cgzRMjVqFMuYLmEp3aQeuZFjJVH-zpoBw6wiccAd-N-0bedGAergyEcWU1VeeTwebU_qlXitwG0FeArONnKogHIHkFU9Boh34gBUifeB6BFUblk44CHZpoBBjQnQ7wrQG6andYIR5Y8XU2PN1w2jmfXalAYApoYmjuZNlVhIMI')"></div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-architectural-blue text-surface-bright pt-16 pb-8 border-t border-white/10">
-<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
-<div class="space-y-6">
-<div class="font-headline-md text-headline-md font-bold text-surface-bright">
-                    YIREHMEX
-                </div>
-<p class="font-label-sm text-label-sm opacity-60 leading-relaxed">
-                    Preserving the artistic legacy of Chettinad since 2023. Handcrafted excellence in every single tile.
+<!-- Design Tools / Call to Action -->
+<section class="mt-32 max-w-max-width mx-auto px-margin-desktop">
+<div class="bg-architectural-blue rounded-2xl p-12 lg:p-24 relative overflow-hidden flex flex-col items-center text-center">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 40px 40px;"></div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-6 relative z-10">Bring Your Vision to Life</h2>
+<p class="text-body-lg font-body-lg text-white/80 max-w-2xl mb-12 relative z-10">
+                    Not sure how these vibrant patterns will look in your space? Use our Visualizer PRO to preview any Athangudi tile design in a realistic room setting.
                 </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined scale-75">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined scale-75">star</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
-<span class="material-symbols-outlined scale-75">share</span>
-</a>
+<div class="flex flex-wrap justify-center gap-6 relative z-10">
+<button class="bg-white text-architectural-blue px-8 py-4 rounded-lg font-label-sm hover:bg-surface-cream transition-all flex items-center gap-3">
+<span class="material-symbols-outlined">auto_awesome</span>
+                        START VISUALIZING
+                    </button>
+<button class="border border-white/30 text-white px-8 py-4 rounded-lg font-label-sm hover:bg-white/10 transition-all">
+                        REQUEST FREE SAMPLE
+                    </button>
 </div>
 </div>
+</section>
+<!-- Newsletter / Contact -->
+<section class="mt-32 border-t border-outline-variant/20 pt-24 bg-surface-cream">
+<div class="max-w-max-width mx-auto px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
 <div>
-<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-8 text-primary-fixed-dim">Quick Links</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Terms of Service</a></li>
-<li><a class="font-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Installation Guide</a></li>
-<li><a class="font-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Maintenance</a></li>
-<li><a class="font-body-md text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all inline-block" href="#">Contact Us</a></li>
-</ul>
+<h2 class="font-headline-lg text-headline-lg mb-4">Stay Inspired</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">Sign up to receive our seasonal lookbooks and architectural inspiration from the heart of Chettinad.</p>
 </div>
-<div class="md:col-span-2">
-<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-8 text-primary-fixed-dim">Join the Legacy</h4>
-<p class="font-body-md text-surface-variant/80 mb-6">Receive curated design inspiration and heritage stories.</p>
-<form class="flex gap-2">
-<input class="bg-white/5 border border-white/20 rounded-lg px-4 py-3 flex-1 text-white focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Email Address" type="email"/>
-<button class="bg-primary px-6 py-3 rounded-lg font-bold">Submit</button>
+<form class="flex gap-4">
+<input class="flex-grow bg-white border border-outline-variant px-6 py-4 rounded-lg focus:ring-primary focus:border-primary" placeholder="Your email address" type="email">
+<button class="bg-heritage-crimson text-white px-8 py-4 rounded-lg font-label-sm uppercase tracking-widest hover:opacity-95 transition-all">JOIN</button>
 </form>
 </div>
+<div class="h-32"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-architectural-blue dark:bg-surface-container-lowest w-full pt-16 pb-8 border-t border-white/10">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col space-y-6">
+<a class="font-headline-md text-headline-md font-bold text-surface-bright dark:text-primary" href="#">YIREHMEX</a>
+<p class="text-surface-variant/80 font-label-sm">433, Mahalakshmi nagar, Athangudi via, Karaikudi taluk, Tamil Nadu - 630101</p>
+<div class="flex space-x-4">
+<a class="text-surface-variant hover:text-surface-bright transition-all" href="#"><span class="material-symbols-outlined">call</span></a>
+<a class="text-surface-variant hover:text-surface-bright transition-all" href="#"><span class="material-symbols-outlined">mail</span></a>
 </div>
-<div class="max-w-max-width mx-auto px-margin-desktop border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-label-sm text-label-sm opacity-40">
-                © 2024 YIREHMEX Athangudi Tiles. Handcrafted Heritage, Modern Precision.
-            </p>
-<p class="font-label-sm text-label-sm opacity-40">
-                Powered and secured by YirehMex
-            </p>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-surface-bright font-headline-md text-[18px]">Collections</h4>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Floral Series</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Geometric Modern</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Heritage Classics</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Monochrome Elite</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-surface-bright font-headline-md text-[18px]">Support</h4>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Installation Guide</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Maintenance Tips</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Contact Us</a>
+<a class="text-surface-variant/80 hover:text-surface-bright hover:translate-x-1 transition-all font-label-sm" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-surface-bright font-headline-md text-[18px]">Follow Our Craft</h4>
+<div class="grid grid-cols-2 gap-4">
+<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Instagram</a>
+<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Pinterest</a>
+<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">LinkedIn</a>
+<a class="text-surface-variant/80 hover:text-surface-bright font-label-sm" href="#">Facebook</a>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-center gap-4">
+<p class="text-surface-variant/60 font-label-sm">© 2024 YirehMex Athangudi Tiles. Handcrafted Heritage, Modern Precision.</p>
+<div class="flex space-x-6">
+<a class="text-surface-variant/60 hover:text-surface-bright font-label-sm" href="#">Privacy Policy</a>
+<a class="text-surface-variant/60 hover:text-surface-bright font-label-sm" href="#">Terms</a>
+</div>
 </div>
 </footer>
 <script>
-        // Micro-interactions and atmospheric logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.querySelector('nav');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('shadow-lg', 'py-1');
-                } else {
-                    navbar.classList.remove('shadow-lg', 'py-1');
+        // Micro-interaction for smooth reveal on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
                 }
             });
+        }, observerOptions);
 
-            // Smooth parallax simple effect for Bento cards
-            const bentoCards = document.querySelectorAll('.glass-panel');
-            window.addEventListener('mousemove', (e) => {
-                const x = e.clientX / window.innerWidth;
-                const y = e.clientY / window.innerHeight;
-                bentoCards.forEach(card => {
-                    card.style.transform = `translate(${(x - 0.5) * 10}px, ${(y - 0.5) * 10}px)`;
-                });
-            });
+        document.querySelectorAll('.tile-card-hover').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
         });
     </script>
+
+
+
+
 </body></html>
