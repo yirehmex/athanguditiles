@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YIREHMEX | Handcrafted Athangudi Tiles</title>
+<meta name="description" content="YirehMex brings handcrafted Athangudi tiles from Chettinad, Tamil Nadu to modern homes — heritage patterns, made-to-order color, and a visualizer to preview them in your own space."/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "heritage-crimson": "#B22222",
+                    "primary": "#8f000d",
+                    "on-primary": "#ffffff",
+                    "terracotta-warmth": "#D2691E",
+                    "architectural-blue": "#1B365D",
+                    "surface-cream": "#F9F7F2",
+                    "surface": "#fff8f7",
+                    "surface-container-low": "#fff0ef",
+                    "surface-variant": "#f8dcd9",
+                    "on-surface": "#261816",
+                    "on-surface-variant": "#5a403e",
+                    "secondary": "#465f88",
+                    "outline": "#8e706d",
+                    "outline-variant": "#e2beba"
+                },
+                fontFamily: {
+                    display: ["'Libre Caslon Text'", "serif"],
+                    body: ["Manrope", "sans-serif"]
+                },
+                borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+                spacing: { "max-width": "1440px", gutter: "24px", "margin-desktop": "64px" }
+            }
+        }
+    };
+</script>
+<style>
+  .max-width { max-width: 1440px; }
+  .px-margin-desktop { padding-left: 24px; padding-right: 24px; }
+  @media (min-width: 768px) { .px-margin-desktop { padding-left: 64px; padding-right: 64px; } }
+  .tile-pattern-bg {
+    background-image:
+      linear-gradient(45deg, rgba(178,34,34,0.06) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(27,54,93,0.06) 25%, transparent 25%);
+    background-size: 60px 60px;
+  }
+</style>
+</head>
+<body class="bg-surface-cream text-on-surface font-body selection:bg-heritage-crimson/20">
+
+<header class="bg-surface fixed top-0 w-full z-50 border-b border-outline-variant/10">
+<nav class="flex justify-between items-center px-margin-desktop py-4 w-full max-width mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3" href="index.html">
+<img src="images/logo.png" alt="YirehMex logo" class="h-9 w-9 rounded-full object-cover"/>
+<span class="font-display text-xl tracking-tight font-bold text-heritage-crimson">YIREHMEX</span>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body text-sm text-heritage-crimson border-b-2 border-heritage-crimson font-bold pb-1" href="index.html">Home</a>
+<a class="font-body text-sm text-secondary hover:text-heritage-crimson transition-colors" href="index.html#heritage">Heritage</a>
+<a class="font-body text-sm text-secondary hover:text-heritage-crimson transition-colors" href="collections.html">Patterns</a>
+<a class="font-body text-sm text-secondary hover:text-heritage-crimson transition-colors" href="visualizer.html">Visualizer</a>
+<a class="font-body text-sm text-secondary hover:text-heritage-crimson transition-colors" href="index.html#services">Services</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a href="request-samples.html" class="bg-primary text-on-primary font-semibold text-sm px-6 py-2.5 rounded-lg hover:opacity-85 transition-opacity uppercase tracking-wider">
+    Request Samples
+</a>
+<button class="md:hidden text-secondary" aria-label="Menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+
+<main class="pt-24">
+
+<!-- Hero -->
+<section class="relative overflow-hidden">
+<div class="absolute inset-0 tile-pattern-bg opacity-60"></div>
+<div class="relative px-margin-desktop py-24 md:py-32 max-width mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="font-body text-sm uppercase tracking-[0.2em] text-architectural-blue mb-6 block">Chettinad, Tamil Nadu · Since 1920</span>
+<h1 class="font-display text-4xl md:text-6xl leading-tight mb-6 text-on-surface">Where tradition<br/>meets innovation.</h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-8 max-w-lg">
+    Every YirehMex tile is hand-poured in Athangudi using pigment, glass molds, and a century-old process — no two batches are ever quite the same.
+</p>
+<div class="flex flex-wrap gap-4">
+<a href="collections.html" class="bg-primary text-on-primary font-semibold text-sm px-8 py-3.5 rounded-lg hover:opacity-85 transition-opacity uppercase tracking-wider">Explore Patterns</a>
+<a href="visualizer.html" class="border border-architectural-blue text-architectural-blue font-semibold text-sm px-8 py-3.5 rounded-lg hover:bg-architectural-blue hover:text-white transition-colors uppercase tracking-wider">Try the Visualizer</a>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-2xl shadow-heritage-crimson/10">
+<img src="images/header.jpg" alt="Handcrafted Athangudi tile close-up" class="w-full h-full object-cover"/>
+</div>
+</div>
+</section>
+
+<!-- Heritage / brand story -->
+<section id="heritage" class="px-margin-desktop py-20 max-width mx-auto">
+<div class="grid md:grid-cols-3 gap-10">
+<div class="md:col-span-1">
+<span class="font-body text-sm uppercase tracking-[0.2em] text-architectural-blue mb-4 block">Our Craft</span>
+<h2 class="font-display text-3xl text-on-surface">A century of handwork, not machines</h2>
+</div>
+<div class="md:col-span-2 font-body text-on-surface-variant leading-relaxed space-y-4 text-lg">
+<p>Athangudi tiles take their name from the village in Chettinad where they're made — hand-poured, one at a time, using local sand, pigment, and glass-plate molds instead of kilns or presses. The technique has barely changed in a hundred years, which is exactly why the tiles still look the way they do: slightly uneven, richly colored, and warm underfoot.</p>
+<p>YirehMex works directly with Athangudi's artisan workshops to bring that same handmade character to modern homes — as flooring, feature walls, and custom color runs designed with architects and interior designers.</p>
+</div>
+</div>
+</section>
+
+<!-- Explore work grid -->
+<section id="services" class="px-margin-desktop py-20 max-width mx-auto">
+<h2 class="font-display text-3xl text-on-surface mb-10">Explore</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<a href="collections.html" class="group block bg-white border border-heritage-crimson/10 rounded-lg p-8 hover:shadow-xl hover:shadow-heritage-crimson/5 transition-all">
+<span class="material-symbols-outlined text-heritage-crimson text-3xl mb-4 block">grid_view</span>
+<h3 class="font-display text-xl mb-2 text-on-surface">Pattern Collections</h3>
+<p class="font-body text-on-surface-variant">Floral, geometric, and heritage classics — browse the full range of hand-poured designs.</p>
+</a>
+<a href="visualizer.html" class="group block bg-white border border-heritage-crimson/10 rounded-lg p-8 hover:shadow-xl hover:shadow-heritage-crimson/5 transition-all">
+<span class="material-symbols-outlined text-heritage-crimson text-3xl mb-4 block">view_in_ar</span>
+<h3 class="font-display text-xl mb-2 text-on-surface">Visualizer PRO</h3>
+<p class="font-body text-on-surface-variant">Preview a pattern in your own room before you commit to a single tile.</p>
+</a>
+<a href="request-samples.html" class="group block bg-white border border-heritage-crimson/10 rounded-lg p-8 hover:shadow-xl hover:shadow-heritage-crimson/5 transition-all">
+<span class="material-symbols-outlined text-heritage-crimson text-3xl mb-4 block">local_shipping</span>
+<h3 class="font-display text-xl mb-2 text-on-surface">Request Samples</h3>
+<p class="font-body text-on-surface-variant">Get physical tile samples shipped to your project or home before ordering.</p>
+</a>
+</div>
+</section>
+
+</main>
+
+<footer class="bg-architectural-blue w-full pt-16 pb-8 mt-12">
+<div class="max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="flex flex-col space-y-4">
+<span class="font-display text-xl font-bold text-white">YIREHMEX</span>
+<p class="text-white/70 text-sm">433, Mahalakshmi Nagar, Athangudi via, Karaikudi Taluk, Tamil Nadu - 630101</p>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-white font-display text-lg">Explore</h4>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="collections.html">Patterns</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="visualizer.html">Visualizer PRO</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="request-samples.html">Request Samples</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-white font-display text-lg">Support</h4>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="request-received.html">Order Status</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="catalog-download.html">Catalog Download</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="text-white font-display text-lg">Follow Our Craft</h4>
+<div class="grid grid-cols-2 gap-3">
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="https://www.instagram.com/yirehmex/">Instagram</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="https://www.facebook.com/profile.php?id=100094881621452">Facebook</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="https://www.linkedin.com/company/yirehmex/?viewAsMember=true">LinkedIn</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors" href="https://www.youtube.com/@yirehmex/">YouTube</a>
+</div>
+</div>
+</div>
+<div class="max-width mx-auto px-margin-desktop mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-white/50 text-xs">© 2026 YirehMex Athangudi Tiles. Handcrafted Heritage, Modern Precision.</p>
+</div>
+</footer>
+
+</body>
+</html>

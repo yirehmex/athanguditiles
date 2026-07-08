@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="description" content="Professional architectural dossier and project logs for YirehMex Athangudi tile installations. Technical specifications and artisanal journey documentation.">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Project Dossier | YirehMex Architectural Reports</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Font: Libre Caslon Text -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'heritage-blue': '#1B365D',
+            'heritage-crimson': '#B22222',
+            'surface-cream': '#F9F7F2',
+            'surface-bright': '#FFF8F7',
+            'off-white': '#FFFFFF',
+          },
+          fontFamily: {
+            caslon: ['"Libre Caslon Text"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="document-styling">
+    body {
+      background-color: #E5E5E5;
+      font-family: 'Inter', sans-serif;
+    }
+    .pdf-page {
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #FFFFFF;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+      min-height: 1414px; /* A4 Ratio approximation */
+    }
+    .watermark {
+      position: absolute;
+      bottom: 20px;
+      right: -50px;
+      transform: rotate(-15deg);
+      font-size: 4rem;
+      font-weight: 700;
+      color: rgba(27, 54, 93, 0.03);
+      pointer-events: none;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+    }
+    .heading-primary {
+      font-family: 'Libre Caslon Text', serif;
+      color: #1B365D;
+    }
+    .heading-accent {
+      font-family: 'Libre Caslon Text', serif;
+      font-style: italic;
+      color: #B22222;
+    }
+    .page-number {
+      font-family: 'Libre Caslon Text', serif;
+      font-size: 0.875rem;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body class="antialiased">
+<!-- BEGIN: Sticky Navigation -->
+<nav class="sticky top-0 z-50 bg-white/95 border-b border-gray-200 backdrop-blur-sm px-6 py-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<span class="text-heritage-crimson font-caslon text-xl font-bold">Heritage Tile Dossier</span>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+<a class="hover:text-heritage-crimson" href="#">Executive Summary</a>
+<a class="hover:text-heritage-crimson" href="#">Studio Feed</a>
+<a class="hover:text-heritage-crimson text-heritage-crimson border-b-2 border-heritage-crimson" href="#">Technical Specs</a>
+<a class="hover:text-heritage-crimson" href="#">Materials</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-gray-100 rounded-full" title="Print">
+<svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="p-2 hover:bg-gray-100 rounded-full" title="Share">
+<svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="bg-heritage-crimson text-white px-5 py-2 rounded-sm text-sm font-semibold hover:bg-red-800 transition-colors">Download PDF</button>
+</div>
+</nav>
+<!-- END: Sticky Navigation -->
+<!-- BEGIN: Page 01 - Cover Page -->
+<main class="flex flex-col gap-0" id="dossier-root">
+<section class="pdf-page px-16 py-20 flex flex-col justify-between">
+<div class="watermark">CONFIDENTIAL: YIREHMEX</div>
+<!-- Header Meta -->
+<div class="flex justify-between items-start border-b border-gray-100 pb-8">
+<div class="flex items-center gap-3" data-purpose="brand-logo">
+<div class="w-10 h-10 border-2 border-heritage-blue flex items-center justify-center font-caslon font-bold text-heritage-blue">A</div>
+<div class="flex flex-col">
+<span class="text-xs uppercase tracking-widest text-gray-500 font-medium">Athangudi Artisanal</span>
+<span class="font-caslon text-lg text-heritage-blue leading-none">YirehMex</span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Document Reference</p>
+<p class="font-bold text-heritage-blue">VER. 2024.08.A</p>
+</div>
+</div>
+<!-- Title Section -->
+<div class="mt-16 text-center">
+<p class="text-xs uppercase tracking-[0.3em] text-gray-500 mb-4 font-semibold">Confidential Architectural Division</p>
+<h1 class="heading-primary text-7xl mb-2">Project Dossier</h1>
+<h2 class="heading-accent text-4xl mt-4">The Azure Coastal Villa</h2>
+<div class="w-24 h-1 bg-heritage-crimson mx-auto mt-12"></div>
+</div>
+<!-- Hero Image -->
+<div class="mt-12 relative">
+<img alt="Masterpiece Installation" class="w-full h-[400px] object-cover grayscale-[0.2] brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKh-1Jirq5Ujhfp4jLbGiihJu-kpi7a_ESjaX0CqKGv4iT0azV1084blzQUD88k52WMBcvts-DaNfuRLFf7UgvCIrZlIw2_12qB8cM3mqU_bclENRNObuTHPaAxWlp2m-asSzE-rSJBEkyYBx6AiqCq9Tt-XMzbSh8vyLDx9FrAgZLqAN9vyBe06XGyXwHwJjm31hcqJPeCmVLrIMznL-JRc__IyBqITYPoDG3uDjqGT8Nn3jOgTmTyXVFjBQoGNnwZ1PF-I_9Fbc">
+<div class="absolute bottom-0 left-0 right-0 bg-heritage-blue/80 backdrop-blur-md p-8 text-white">
+<p class="text-[10px] uppercase tracking-widest opacity-80 mb-1">Phase: Completion &amp; Handover</p>
+<h3 class="font-caslon text-2xl">Masterpiece Installation: Amalfi Cliffs</h3>
+<p class="text-sm opacity-90 max-w-2xl mt-2 leading-relaxed">A specialized study on custom Cerulean blue Athangudi tiles and their structural integration within Mediterranean coastal environments.</p>
+</div>
+</div>
+<!-- Footer Meta -->
+<div class="grid grid-cols-3 gap-12 mt-16 text-xs border-t border-gray-100 pt-8">
+<div>
+<p class="uppercase text-gray-400 font-bold mb-2">Prepared For</p>
+<p class="font-bold text-heritage-blue">Sartori &amp; Associati</p>
+<p class="text-gray-500">Principal Interior Architects</p>
+</div>
+<div>
+<p class="uppercase text-gray-400 font-bold mb-2">Lead Architect</p>
+<p class="font-bold text-heritage-blue">YirehMex Architectural Division</p>
+<p class="text-gray-500">Artisanal Ceramics Specialist</p>
+</div>
+<div>
+<p class="uppercase text-gray-400 font-bold mb-2">Project ID</p>
+<p class="font-bold text-heritage-blue">#YM-2024-8842</p>
+<p class="text-gray-500">Issued: August 14, 2024</p>
+</div>
+</div>
+<div class="text-center mt-12">
+<span class="page-number">Page 01</span>
+</div>
+</section>
+<!-- END: Page 01 -->
+<!-- BEGIN: Page 02 - Executive Summary & Journey -->
+<section class="pdf-page px-16 py-20 flex flex-col">
+<div class="watermark">CONFIDENTIAL: YIREHMEX</div>
+<!-- Top Label -->
+<div class="flex justify-between items-start mb-16">
+<div class="w-1/2">
+<h2 class="heading-primary text-3xl mb-4">Executive Summary</h2>
+<p class="text-sm text-gray-600 leading-relaxed">
+            The Azure Coastal Villa project represents a synthesis of modern Mediterranean architecture and ancient Chettinad craft. Our artisanal scope focused on the fabrication of over 4,500 square feet of bespoke cement tiles, utilizing a unique pigment calibration to match the varying gradients of the Tyrrhenian Sea. Every tile was hand-cast by master artisans using traditional brass frames and locally sourced mineral pigments.
+          </p>
+</div>
+<div class="text-right">
+<p class="text-heritage-crimson font-bold text-[10px] uppercase tracking-widest">Architectural Dossier</p>
+<p class="text-gray-500 text-sm">August 2024 Release</p>
+</div>
+</div>
+<!-- Artisanal Journey Section -->
+<div>
+<h3 class="heading-primary text-2xl border-b border-gray-200 pb-4 mb-8">Artisanal Journey (Studio Logs)</h3>
+<div class="space-y-12">
+<!-- Milestone 01 -->
+<div class="flex gap-8">
+<div class="w-1/3 aspect-square overflow-hidden bg-gray-100">
+<img alt="Pigment Calibration" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCICkJMWMkK0jKwsi_SfS5_QBiw6b4Pr3EWi8lZWpNptaMy3PSWaiauMQD5Kz_q5gM9wxiyxlSBtg3D-JyT8ks7pHDfe837-i7v50JlLm6lUHU65QNYw36fruAdnC_30sX3p6MjivfTNpj1GP3ifYRL3M56PbLXUBjy201j4EFUdyjlmkkpPzMXnfOnHc0B88vgX-EQOlMTMHyB-0X6mJUqDeeYYRZUZcwpgDHGYPtyDo4lp0OJztuYTwFhcp6sAqA7Q5GibhaZ1_4">
+</div>
+<div class="w-2/3">
+<h4 class="text-heritage-crimson font-bold mb-2">Milestone 01: Pigment Calibration</h4>
+<p class="text-sm text-gray-600 leading-relaxed mb-4">Achieving the 'Cerulean Blue Gradient' required 14 iterations of mineral pigment mixing. We utilized cobalt oxide and natural lime to ensure UV stability against coastal sun exposure.</p>
+<div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+<svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                Logged: June 12, 2024
+              </div>
+</div>
+</div>
+<!-- Milestone 02 -->
+<div class="flex gap-8">
+<div class="w-1/3 aspect-square overflow-hidden bg-gray-100">
+<img alt="Curing Cycle" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMMUvphzlTEXo6IvkARQ07EBywe1DE0TOlh4S6CJlnoa5hA-trfGwH-QwTetSLrCfncd6ZbJL_mgeKYQDhcVLsWhEnr6P8hli3HUX_k33TM-90xbsbKlW6VAKsLVTj4NiMeissjsE9bcgvNI9LmoMuNTzXoNeYjGQ-WA7GDyKZDCUQ4St0QpZ7WLSDkIqoyf0CQ_w9E0BmspQnsyUbqD0o-MR0y0cqO5ZtURp4zdGHR6Ujv4jgk38CzRLiSx-vo9gqem92agVeUE">
+</div>
+<div class="w-2/3">
+<h4 class="text-heritage-crimson font-bold mb-2">Milestone 02: Curing Cycle #3</h4>
+<p class="text-sm text-gray-600 leading-relaxed mb-4">The atmospheric curing phase is critical. Tiles are kept on stone surfaces for 21 days to achieve maximum hardness. Monitoring of humidity levels (65-70%) ensures structural integrity.</p>
+<div class="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">
+<svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                Logged: July 05, 2024
+              </div>
+</div>
+</div>
+<!-- Milestone 03 -->
+<div class="flex gap-8">
+<div class="w-1/3 aspect-square border-2 border-dashed border-gray-200 bg-gray-50 flex flex-col items-center justify-center text-gray-400">
+<svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></svg>
+<span class="text-[10px] font-bold uppercase tracking-widest">Quality Control Lab</span>
+</div>
+<div class="w-2/3">
+<h4 class="text-heritage-crimson font-bold mb-2">Milestone 03: Dimensional Stability</h4>
+<p class="text-sm text-gray-600 leading-relaxed mb-4">Final pass on dimensional tolerance. Each tile was measured for squareness and edge crispness. Variation restricted to &lt; 0.5mm across the 20x20 batch.</p>
+<div class="inline-flex items-center gap-2 text-[10px] font-bold text-green-600 uppercase border border-green-200 bg-green-50 px-2 py-1 rounded">
+<svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+                Status: Pass
+              </div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto text-center pt-16">
+<span class="page-number">Page 02</span>
+</div>
+</section>
+<!-- END: Page 02 -->
+<!-- BEGIN: Page 03 - Technical Specs & Warranty -->
+<section class="pdf-page px-16 py-20 flex flex-col">
+<div class="watermark">CONFIDENTIAL: YIREHMEX</div>
+<h2 class="heading-primary text-3xl border-b border-gray-200 pb-4 mb-8">Technical Specifications</h2>
+<div class="grid grid-cols-5 gap-12">
+<!-- Specs Table -->
+<div class="col-span-3">
+<div class="bg-surface-cream overflow-hidden rounded shadow-sm border border-gray-100">
+<table class="w-full text-left text-sm">
+<thead>
+<tr class="text-[10px] uppercase tracking-wider text-gray-500 font-bold border-b border-gray-200">
+<th class="px-6 py-4">Parameter</th>
+<th class="px-6 py-4">Architectural Specification</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100 text-heritage-blue">
+<tr>
+<td class="px-6 py-4 font-bold">Dimensions</td>
+<td class="px-6 py-4">200mm x 200mm (Tolerance: ±0.5mm)</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Thickness</td>
+<td class="px-6 py-4">12mm - 14mm (Wear layer: 4mm)</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Composition</td>
+<td class="px-6 py-4">Portland Cement, Marble Dust, Mineral Oxides, Graded Sand</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Water Absorption</td>
+<td class="px-6 py-4">&lt; 8.5% (Natural state), &lt; 1% (Sealed)</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Compression Strength</td>
+<td class="px-6 py-4">250 - 300 kg/cm²</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Surface Finish</td>
+<td class="px-6 py-4">Hand-polished Natural Matte-Sheen</td>
+</tr>
+<tr>
+<td class="px-6 py-4 font-bold">Slip Resistance</td>
+<td class="px-6 py-4">P3 (Dry) / P1 (Wet) - AS 4586 standards</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Material Palette -->
+<div class="col-span-2 space-y-8">
+<div>
+<h4 class="text-[10px] uppercase tracking-widest text-gray-500 font-bold mb-4">Material Breakdown</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-heritage-blue rounded shadow-inner"></div>
+<div>
+<p class="font-bold text-heritage-blue text-sm">Azure Deep (MC-022)</p>
+<p class="text-xs text-gray-500">Primary Floor Base</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-heritage-crimson rounded shadow-inner"></div>
+<div>
+<p class="font-bold text-heritage-blue text-sm">Oxide Red (MC-004)</p>
+<p class="text-xs text-gray-500">Accent Detailing</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-[#F2F0E6] border border-gray-200 rounded shadow-inner"></div>
+<div>
+<p class="font-bold text-heritage-blue text-sm">Bone White (MC-001)</p>
+<p class="text-xs text-gray-500">Grid &amp; Bordering</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Note Block -->
+<div class="p-6 bg-surface-cream border-l-4 border-heritage-blue italic text-xs text-gray-600 leading-relaxed">
+            "The mineral pigments used in this project are guaranteed for 50 years of color stability when treated with the recommended pH-neutral sealants."
+          </div>
+</div>
+</div>
+<!-- Warranty Section -->
+<div class="mt-20 border-2 border-surface-cream p-12 text-center bg-surface-bright relative">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6">
+<svg class="w-12 h-12 text-heritage-crimson" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A3.323 3.323 0 0010.605 8.612m0 0a3.323 3.323 0 01-8.886-3.515m8.886 3.515H10v4.435M10 17.612l3.395 3.395m0 0l3.395-3.395m-3.395 3.395V16m4.588-9.262L20 6.5l.773-1.635M17 3.1c1.247 0 2.403.484 3.28 1.362" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path></svg>
+</div>
+<h3 class="heading-primary text-3xl mb-4">Architectural Warranty</h3>
+<p class="max-w-2xl mx-auto text-sm text-gray-600 leading-relaxed">
+          This dossier serves as a certificate of authenticity. Each tile batch produced for the Azure Coastal Villa has been inspected for artisanal excellence and structural conformity. YirehMex provides a 25-year structural warranty on all cement-bonded products under standard residential wear conditions.
+        </p>
+</div>
+<div class="mt-auto text-center pt-16">
+<span class="page-number">Page 03</span>
+</div>
+</section>
+<!-- END: Page 03 -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-white border-t border-gray-200 py-12 px-8 mt-12">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="w-1/3">
+<h4 class="font-caslon text-heritage-blue text-lg mb-2">Athangudi Artisanal Ceramics</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Preserving heritage through precision engineering and sustainable artisanal practices. Member of the Architectural Guild for Sustainable Craft.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-[10px] uppercase tracking-widest font-bold text-gray-400">
+<div class="space-y-2">
+<p class="text-gray-900 mb-4">Company</p>
+<a class="block hover:text-heritage-crimson" href="#">Privacy Policy</a>
+<a class="block hover:text-heritage-crimson" href="#">Technical Standards</a>
+<a class="block hover:text-heritage-crimson" href="#">Contact Architect</a>
+</div>
+<div class="col-span-2">
+<p class="text-gray-900 mb-4">Legal Notice</p>
+<p class="normal-case font-normal text-gray-500">© 2024 Athangudi Artisanal Ceramics. High-End Architectural Division. All Rights Reserved. For use by authorized partners only.</p>
+</div>
+<div class="text-right">
+<p class="text-gray-900 mb-4">Metadata</p>
+<p class="text-heritage-crimson">Exported on Oct 24, 2024</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+
+
+</body></html>

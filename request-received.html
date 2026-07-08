@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request Received | YirehMex</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes tile-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(2deg); }
+        }
+        .animate-tile {
+            animation: tile-float 4s ease-in-out infinite;
+        }
+        .success-checkmark {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: dash 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#8e706d",
+                        "background": "#fff8f7",
+                        "outline-variant": "#e2beba",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffdad6",
+                        "on-secondary-fixed": "#001b3d",
+                        "on-tertiary-fixed-variant": "#004b71",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb4ac",
+                        "surface-variant": "#f8dcd9",
+                        "surface": "#fff8f7",
+                        "primary-container": "#b22222",
+                        "tertiary-fixed-dim": "#8fcdff",
+                        "terracotta-warmth": "#D2691E",
+                        "tertiary-container": "#006292",
+                        "secondary-container": "#b6d0ff",
+                        "tertiary": "#00496e",
+                        "architectural-blue": "#1B365D",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-cream": "#F9F7F2",
+                        "on-error-container": "#93000a",
+                        "on-background": "#261816",
+                        "tertiary-fixed": "#cbe6ff",
+                        "surface-tint": "#b52424",
+                        "surface-container": "#ffe9e6",
+                        "secondary-fixed-dim": "#aec7f7",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fff8f7",
+                        "secondary-fixed": "#d6e3ff",
+                        "inverse-on-surface": "#ffedea",
+                        "surface-container-highest": "#f8dcd9",
+                        "heritage-crimson": "#B22222",
+                        "on-primary-fixed-variant": "#92030f",
+                        "on-primary-fixed": "#410003",
+                        "on-surface-variant": "#5a403e",
+                        "on-secondary-fixed-variant": "#2e476f",
+                        "on-tertiary-container": "#b1daff",
+                        "surface-container-high": "#fee2df",
+                        "primary": "#8f000d",
+                        "surface-container-low": "#fff0ef",
+                        "inverse-surface": "#3d2c2b",
+                        "on-primary-container": "#ffc8c2",
+                        "surface-dim": "#efd4d1",
+                        "on-secondary-container": "#3f5881",
+                        "on-surface": "#261816",
+                        "secondary": "#465f88",
+                        "on-tertiary-fixed": "#001e30"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "max-width": "1440px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface antialiased overflow-x-hidden">
+<!-- Transactional Header (Suppressed Nav Shell as per instructions) -->
+<header class="flex justify-between items-center px-6 py-8 w-full max-w-max-width mx-auto">
+<h1 class="font-display-lg text-[24px] text-heritage-crimson font-bold uppercase tracking-widest">YirehMex</h1>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all duration-300" onclick="window.history.back()">close</button>
+</header>
+<main class="min-h-[707px] flex flex-col items-center justify-center px-6 pb-20 relative">
+<!-- Background Ambient Element (Subtle Heritage Pattern) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-5 w-full max-w-lg">
+<img class="w-full" data-alt="A large, symmetrical geometric pattern reminiscent of traditional Athangudi tile designs. The lines are thin and architectural, rendered in a faint Heritage Crimson tone against a light cream background. The aesthetic is clean and minimal, emphasizing heritage through modern line art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSdB7aau6pSmYcUwX9GI82Xg6_9BEI4gzicvekcN6F133Zw6kWC5nBkm7JZ8LqbLxnnR38phr14lGvdZV0VOHraZ29n8GJGFdNb2hkHG7gNfSdqFixKwD2FUBeErGeCq4QrY86Dg1bMFUm_HDbmocs6DRDAbC2IuGmybn_fqRYAvzZ-cz1pLYDUl1vaqlho3gZeVdytdALeqTDSkub3aSkI0K4_JhBfAzscV1nTGcU1JL6-fH1xLNL8pojzz-w2DJ6NiMEIuQQpwM"/>
+</div>
+<!-- Success Animation & Title Section -->
+<div class="text-center mb-12">
+<div class="relative w-48 h-48 mx-auto mb-8 animate-tile">
+<!-- Floating Tile Success Indicator -->
+<div class="absolute inset-0 bg-white border border-heritage-crimson/10 shadow-sm flex items-center justify-center p-4">
+<img class="w-full aspect-square object-cover shadow-sm" data-alt="A close-up photograph of a square Athangudi tile. The pattern is a rich, hand-crafted floral motif in deep Heritage Crimson and creamy whites. The lighting is soft and natural, highlighting the tactile, matte texture of the cement material. The tile is angled slightly to show depth and precision-cut edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEIJiVZjAG-WS2Q_vn3X86PbI0rmbkYZzSTiXABwyd8MUTukxg6B_JlmidYbaRxb-OxdMMO50xL35EaNA1W1F5A8E3w0y-RWh_3lPYycoeeMr9JLSTe7QwItQSc-t_nflsxa4r_NbHLAdtNu8AEgWbFk4zaa1M3PXC7KaLTh6x2-zGG3Fnqb7vHnhp60jc5JsrkuS6RvtOGWitKRbzEC7t4fRpbLknAr54WwKYusQvEOqNyTSAo2AEef81bRd3EGtnkZoIpU0Ht58"/>
+<!-- Success Checkmark Overlay -->
+<div class="absolute -bottom-2 -right-2 bg-heritage-crimson text-white rounded-full p-3 shadow-lg flex items-center justify-center">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path class="success-checkmark" d="M5 13L9 17L19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-2">Request Received</h2>
+<p class="font-body-md text-on-surface-variant max-w-xs mx-auto">Your artisanal sample kit is now being curated by our master craftsmen.</p>
+</div>
+<!-- Summary Card: Bento Style Interaction -->
+<div class="w-full max-w-sm space-y-4">
+<div class="bg-surface-cream border border-heritage-crimson/10 p-6 rounded-lg">
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Project Ref</span>
+<p class="font-headline-md text-[20px] text-architectural-blue">#YM-2024-8842</p>
+</div>
+<div class="bg-heritage-crimson/5 px-3 py-1 rounded-full border border-heritage-crimson/10">
+<span class="font-label-sm text-label-sm text-heritage-crimson">In Production</span>
+</div>
+</div>
+<div class="space-y-4 border-t border-heritage-crimson/10 pt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+</div>
+<div>
+<p class="font-body-md font-semibold text-on-surface">3 Hand-crafted Patterns</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Chettinad, Floral, Geometric</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div>
+<p class="font-body-md font-semibold text-on-surface">Heritage Crimson Palette</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Primary: #B22222 | Accents: Cream</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Next Steps Panel -->
+<div class="p-6 bg-white border border-heritage-crimson/5 rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-architectural-blue mt-1">mail</span>
+<div>
+<h3 class="font-body-md font-bold text-on-surface">What's next?</h3>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Check your email for shipping details. Samples usually arrive within 5-7 business days.</p>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="pt-6">
+<a class="block w-full bg-heritage-crimson text-white text-center py-5 rounded-lg font-body-md font-bold hover:bg-primary transition-all active:scale-95 shadow-sm" href="#">
+                    Return to Collections
+                </a>
+<button class="block w-full mt-3 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest py-3 hover:text-primary transition-colors">
+                    View My Requests
+                </button>
+</div>
+</div>
+</main>
+<!-- Simple Footer for Transactional Screen -->
+<footer class="px-6 py-12 border-t border-heritage-crimson/5 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            © 2024 YirehMex Athangudi Tiles. <br/>
+<span class="mt-2 block opacity-60 italic">Artisanal Excellence Since 1992.</span>
+</p>
+</footer>
+<!-- Micro-interaction for feedback -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Subtle entrance animation for the summary card
+            const summaryCard = document.querySelector('.bg-surface-cream');
+            summaryCard.style.opacity = '0';
+            summaryCard.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                summaryCard.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+                summaryCard.style.opacity = '1';
+                summaryCard.style.transform = 'translateY(0)';
+            }, 300);
+        });
+    </script>
+</body></html>
